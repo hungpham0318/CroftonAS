@@ -1,0 +1,13 @@
+
+
+//copied from auction3 before I copied auction1 form-process-reg to auction3  process folder
+$to = "miked@croftonas.com";
+$subject = "Registration: ".strip_tags($_POST['dname'])." ".strip_tags($_POST['auction']);
+$headers = "From: crofton@croftonauctionservices.com \r\n";
+$headers .= "Reply-To: miked@croftonas.com". "\r\n";
+$headers .= 'Cc: cshepard@bscamerica.com,svest@bscamerica.com,bpick@bscamerica.com,'. strip_tags($_POST['inpYourEmail']) .  "\r\n";
+//$headers .= 'Cc: '. strip_tags($_POST['inpYourEmail']) .  "\r\n";
+$headers .= 'Bcc: crofton@comcast.net,suzanne@croftonas.com,kellyz@croftonas.com,missyo@croftonas.com,register@croftonas.com' . "\r\n";
+$headers .= "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
+

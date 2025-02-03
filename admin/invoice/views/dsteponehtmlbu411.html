@@ -1,0 +1,219 @@
+<div class="tablewrapper">	
+<table id="example" class="display nowrap" style="width:100%;">
+    <thead>
+    <tr>
+
+<!-- <th></th>-->
+<th></th>
+<th></th>
+<th>Dealership</th>
+<th>Auction Access #</th>
+<th>Sale Day Contact</th>
+<th>Sale Day Phone</th>
+<th>Id</th>
+<th>Dealer Phone</th>
+
+<th>Address</th>
+<th>City</th>
+<th>State</th>
+<th>Zip</th>
+
+<th>Mail Acct.</th>
+<th>Dealer Notes</th>
+ </tr>
+
+
+
+    </thead>
+      <tfoot>
+        <tr>
+
+<!--<th></th>-->
+<th></th>
+<th></th>
+<th>Dealership</th>
+<th>Auction Access #</th>
+<th>Sale Day Contact</th>
+<th>Sale Day Phone</th>
+<th>Id</th>
+<th>Dealer Phone</th>
+
+<th>Address</th>
+<th>City</th>
+<th>State</th>
+<th>Zip</th>
+
+<th>Mail Acct.</th>
+<th>Dealer Notes</th>
+ </tr>
+    </tfoot>
+</table>
+</div><!--should close tablewrapper-->
+</div><!--should close section1-->
+</div><!--should close container-->
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.1.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/select/1.1.2/js/dataTables.select.min.js"></script>
+<script src="https://cdn.datatables.net/keytable/2.1.1/js/dataTables.keyTable.min.js"></script>
+<script src="https://cdn.datatables.net/autofill/2.1.1/js/dataTables.autoFill.min.js"></script>
+<script src="../../Editor16/js/dataTables.editor.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+<script src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+<script src="https://cdn.datatables.net/colreorder/1.3.2/js/dataTables.colReorder.min.js"></script>
+
+<script src="https://cdn.datatables.net/scroller/1.4.2/js/dataTables.scroller.min.js"></script>
+
+<script src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.1.2/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/fixedcolumns/3.2.1/js/dataTables.fixedColumns.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.colVis.min.js"></script>
+
+
+<script>
+var editor; // use a global for the submit and return data rendering in the examples
+ 
+$(document).ready(function() {
+    editor = new $.fn.dataTable.Editor( {
+        ajax: "views/dsteponephp.php",
+        table: "#example",
+       deferRender:    true,
+    //scroller:       true,
+        fields: [ 
+
+{"label": "dname","name": "dealers.dname"},      
+{"label": "dnumber","name": "dealers.dnumber"},
+
+
+{"label": "dcontact","name": "dealers.dcontact"},
+{"label": "dsdphone","name": "dealers.dsdphone"},
+{"label": "did","name": "dealers.did"},
+{"label": "dphone","name": "dealers.dphone"},
+
+{"label": "daddress","name": "dealers.daddress"},
+{"label": "dcity","name": "dealers.dcity"},
+{"label": "dstate","name": "dealers.dstate"},
+{"label": "dzip","name": "dealers.dzip"},
+{"label": "dmailAcctNum","name": "dealers.dmailAcctNum"},
+{"label": "dnotes","name": "dealers.dnotes"}
+
+
+
+        ]
+ });
+ 
+// $('#example').on( 'click', 'tbody td, tbody span.dtr-data', function (e) {
+        // Ignore the Responsive control and checkbox columns
+//        if ( $(this).hasClass( 'control' ) || $(this).hasClass('select-checkbox') ) {
+//            return;
+//        }
+ 
+        //editor.inline( this );
+//  } );
+  $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder=" '+title+'" />' );
+    } );
+// Activate an inline edit on click of a table cell
+    // or a DataTables Responsive data cell
+    
+ 
+    var table = $('#example').DataTable( {
+   "scrollY": 500,
+   // responsive: true,
+    scrollX: "true",    
+    dom: "frtlip",
+    colReorder: true,
+    	    
+       
+ 	iDisplayLength: "500",
+	lengthMenu: [[10, 100, 500, -1], [10, 100, 500, "All"]], 
+  	ajax: "views/dsteponephp.php",
+        columns: [
+
+            { 
+// Checkbox select column
+                data: null,
+                defaultContent: '',
+                className: 'select-checkbox',
+                orderable: false
+            },
+{ "data": function (data, type, row, meta) {rowId: 'dealers.did'
+return '<a href="/admin/invoice/dinvoicesteptwo.php?did=' + data.dealers.did+ '">Invoice</a>'; }},
+
+{ data: "dealers.dname"},
+{ data: "dealers.dnumber"},
+
+
+{ data: "dealers.dcontact"},
+{ data: "dealers.dsdphone"},
+{ data: "dealers.did"},
+{ data: "dealers.dphone"},
+{ data: "dealers.daddress"},
+{ data: "dealers.dcity"},
+{ data: "dealers.dstate"},
+{ data: "dealers.dzip"},
+{ data: "dealers.dmailAcctNum"},
+{ data: "dealers.dnotes"}
+	 
+	 	 ],
+      columnDefs: [ {
+            orderable: false,
+            className: 'select-checkbox',
+            targets:   0
+        } ],
+        select: {
+            style:    'os',
+           selector: 'td:nth-child(1)'
+        },
+        order: [[ 1, 'asc' ]],
+
+         
+        buttons: [
+        
+            { extend: "create", editor: editor },
+            { extend: "edit",   editor: editor },
+            //{ extend: "remove", editor: editor },
+            //'excelHtml5',
+            //'csvHtml5',
+            //'pdfHtml5',
+            'colvis'
+        ],
+           
+
+
+             
+       
+     });
+     
+     
+//dom toolbar
+ 
+ 
+ 
+// Disable KeyTable while the main editing form is open
+ editor
+        .on( 'open', function ( e, mode, action ) {
+            if ( mode === 'main' ) {
+                table.keys.disable();
+            }
+        } )
+        .on( 'close', function () {
+            table.keys.enable();
+        } );
+        
+
+     table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );  
+    
+} );

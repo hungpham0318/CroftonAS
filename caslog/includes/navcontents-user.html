@@ -1,0 +1,45 @@
+	<?php if(!$user->is_logged_in()){ 
+	echo '<div class="btn-toolbar" role="toolbar" aria-label="...">';
+	echo '<div class="btn-group"><a href="/index.php" id="home" name="home" class="btn btn-primary">Home</a></div>';
+	//echo '<div class="btn-group"><a class="btn btn-primary" href="/contactus.php" title="Questions or Comments">Contact Us</a></div>';
+        echo '<div class="btn-group"><a class="btn btn-primary" href="/caslog/sign-up.php" title="Sign me up!">Sign Me Up!</a></div>';
+        echo '<div id="textalignright" class="btn-group"><a class="btn btn-primary" href="/caslog/login.php" title="Users may log in">Log In</a></div>';
+        }
+
+if($user->is_logged_in()){
+	echo '<div class="btn-toolbar" role="toolbar" aria-label="...">';
+	echo '<div class="btn-group"><a href="/index.php" id="home" name="home" class="btn btn-primary">Home</a></div>';
+		echo '<div class="btn-group"><a href="/caslog/userlanding.php" title="" id="" class="btn btn-primary">User Home</a></div>';
+	echo '<div class="btn-group"><a class="btn btn-primary" href="/areg/stepone.php">Register New</a></div>';
+	echo '<div class="btn-group"><a a class="btn btn-primary" href="'.'/caslog/edituser2.php?quid='.$uid.'">Your Info</a></div>';
+	echo '<div class="btn-group"><a class="btn btn-primary" href="/contactcas.php">Change-Request</a></div>';
+	
+	echo '<div id="textalignright" class="btn-group"><a class="btn btn-primary" href="/caslog/logout.php" title="">Log Out</a></div>';
+	}
+echo '</div>';
+?>
+<!--
+<div id="navigation" >
+		<div class="btn-toolbar" role="toolbar" aria-label="...">
+				<div class="btn-group">
+				<a href="/index.php" id="home" name="home" class="btn btn-primary dropdown-toggle btn-lg">Home</a></div>
+				<div class="btn-group"><a class="btn btn-primary dropdown-toggle btn-lg" href="/contactus.php" title="Users may log in for User Contact Form which has name, email, and phone pre-filled">Contact Us</a></div>
+				<div class="btn-group"><a class="btn btn-primary dropdown-toggle btn-lg" href="/caslog/index.php" title="Sign me up!">Sign Me Up!</a></div>
+				<div id="textalignright" class="btn-group dropdown-toggle btn-lg"><a class="btn btn-primary" href="/caslog/login.php" title="Users may log in">Log In</a></div>
+				</div>
+		</div><!--navigation-->
+
+			<!-- <div class="btn-toolbar" role="toolbar" aria-label="...">
+	<div class="btn-group"><a href="/caslog/userlanding.php" title="" class="btn btn-primary">User Home</a>
+	
+  	
+ 
+ <div class="btn-group"><a href="/areg/stepone.php" class="btn btn-primary">Register Vehicles</a></div>
+	<div class="btn-group"><a href="/caslog/userlandingveh.php" class="btn btn-primary ">Registration History</a></div>
+	<div class="btn-group"><a href="/caslog/userlandinginfo.php" class="btn btn-primary">View/Edit Your Info</a></div>
+	<div class="btn-group"><a href="/caslog/logout.php" class="btn btn-primary">Log Out</a></div>
+        <div class="btn-group"><a href="contactus.php" title="Change-Request Form" class="btn btn-primary">Request Change</a></div>
+ 
+ <div class="btn-group"><a href="/caslog/index.php" title="Sign me up!" class="btn btn-primary">Sign Me Up!</a></div>
+
+  </div></div> -->

@@ -1,0 +1,91 @@
+<nav id="primary_nav_wrap">
+<!--<label for="show-menu" class="show-menu">Show Menu</label>
+<input type="checkbox" id="show-menu" role="button">
+<div id="" style="z-index: 1;">-->
+
+<ul >
+  <li><a href="#">Home</a></li>
+  
+     
+  <li><a href="#">Recon</a>
+  <ul class="dpn">
+  	<li><a href="/admin/worldview/viewrecon.php">viewrecon.php</a></li>
+  	<li><a href="/admin/worldview/reconview.php">reconview.php</a></li>
+  	<li><a href="/admin/worldview/casrecon.php">casrecon.php</a></li>
+  	<li><a href="/admin/worldview/allfields.php">allfields.php</a></li>
+  	
+  		<li><a href="/admin/worldview/newreconview.php">newreconview.php</a></li>
+  	<li><a href="/admin/worldview/casview.php">casview.php</a></li>
+  	<li><a href="/admin/worldview/shoprecon.php">shoprecon.php</a></li>
+  	<li><a href="/admin/worldview/allfields.php">allfields.php</a></li>
+   </ul>
+  </li>
+  <li><a href="#"> Master</a>
+ <ul class="dpn">
+  	<li><a href="/admin/worldview/casreconview.php"> casreconview.php </a></li>
+  	<li><a href="/admin/worldview/viewmaster.php">Lane 5</a></li>
+<li><a href="/admin/worldview/viewmaster.php">Lane 21</a></li>
+<li><a href="/admin/worldview/viewmaster.php">Lane 57</a></li>
+<li><a href="/admin/worldview/viewmaster.php">Lane 4</a></li>
+  	
+  </ul>
+  </li>
+  <li><a href="#"> Sold</a> 
+ <ul class="dpn">
+  	<li><a href="/admin/worldview/viewsold.php">Sold</a></li>
+  	
+  </ul>
+  </li>
+  <li><a href="#"> Archived</a>
+ <ul class="dpn">
+  <li><a href="/admin/worldview/viewarchive.php">Archived</a></li>
+      <li><a href="# ">Alternate Custom View</a></li>
+      <li><a href="#">Future Alt View</a></li>
+</ul>
+</li>
+ <li><a href="/admin/invoice/viewinvoices.php"> Invoicing</a>
+   <ul class="dpn">
+	<li><a href="/admin/invoice/viewinvoices.php">From Vehicle View</a></li>
+        <li><a href="/admin/invoice/invoicestepone.php">From Dealership View</a></li>
+        <li><a href="#"> Future Alt View</a></li>
+    </ul>
+  </li>
+	<!--<li><a href="#">Receivables</a>
+	<ul class="dpn">
+	<li><a href="/admin/worldview/viewreceivables.php">Receivables</a></li>
+		<li><a href="#">Alternate Custom View</a></li>
+		<li><a href="#">Future Alt View</a></li>
+    </ul>
+</li>-->
+  <li><a href="#">Users</a>
+ <ul class="dpn">
+    <li><a href="/admin/worldview/viewusers.php">Users List</a></li>
+    <li><a href="/admin/cas_new/newarelate.php">Add Auction Access</a></li>
+    <li><a href="/admin/cas_new/newdrelate.php">Add Dealership Relationship</a></li>
+<li><a href="/admin/cas_new/chooseuser.php">Edit User</a></li>
+    </ul>
+  </li>
+
+  <li><a href="#">Dealers</a>
+ <ul class="dpn">
+  <li><a href="/admin/worldview/viewdealers.php">Dealers</a></li>
+    <li><a href="/admin/cas_new/choosedealer.php">Edit Dealer</a></li>
+    <li><a href="/admin/cas_new/choosedrelate.php">Edit Dealer Relative</a></li>
+    <li><a href="/admin/cas_new/choosearelate.php">Edit Auction Relative</a></li>
+ </ul>
+  </li>
+
+<!-- <li><a href="#">Misc Reports</a>
+       <ul class="dpn">-->
+        <!-- <li><a href="/admin/manage/currentregs.php">Current Registrations</a></li>
+         <li><a href="/admin/manage/displaybydate.php">History all Dates</a></li> -->
+         <!-- <li><a href="/admin/displayusers.php">User List</a></li>
+        <li><a href="/admin/displaydealers.php">Dealer List</a></li>
+          <li><a href="/admin/displayallshort.php">User Relatives</a></li>
+          <li><a href="/admin/displayallcrofton.php">Crofton Relatives</a></li>
+
+        </ul>
+      </li>-->
+      <li><a href="/admin/process/logout.php">Logout</a></li>
+			</ul>
+</nav><!-- from inside birdmenuinc -->

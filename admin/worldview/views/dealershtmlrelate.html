@@ -1,0 +1,221 @@
+<div class="tablewrapper">	
+<!--<table id="example" class="" style="width:100%;font-size:12px;display:nowrap;line-height:.6em;">-->
+<table id="example" class="display nowrap" style="width:100%;">
+    <thead style='line-height;.8em;white-space: pre-line;font-size:11px'>
+    <tr>
+
+<th>Dealership</th>
+<th>Auction Access #</th>
+<th>Sale Day Contact</th>
+<th>Sale Day Phone</th>
+<th>Id</th>
+<th>Dealer Phone</th>
+<th>Attn</th>
+<th>Address</th>
+<th>City</th>
+<th>State</th>
+<th>Zip</th>
+
+<th>Mail Acct.</th>
+<th>Email Invoice</th>
+<th>Dealer Notes</th>
+<th>Rep Fee</th>
+ </tr>
+</thead>
+
+<tfoot style='line-height;.8em;white-space: pre-line;font-size:11px;'>
+<tr>
+
+<th>Dealership</th>
+<th>Auction Access #</th>
+<th>Sale Day Contact</th>
+<th>Sale Day Phone</th>
+<th>Id</th>
+<th>Dealer Phone</th>
+<th>Attn</th>
+<th>Address</th>
+<th>City</th>
+<th>State</th>
+<th>Zip</th>
+
+<th>Mail Acct.</th>
+<th>Email Invoice</th>
+<th>Dealer Notes</th>
+<th>Rep Fee</th>
+ </tr>
+</tfoot>
+</table>
+</div><!--should close tablewrapper-->
+</div><!--should close section1-->
+
+
+
+
+<h2> Dealership Contacts</h2>
+<div id="frame-dcdrelates" style="color:#660000;border:1.5px solid #660000;width:100%;margin-top:30px;display:block;">
+<h2>&nbsp;</h2>
+<table style="width:100%;"><tr style="width:100%;display:block;"> 
+<td style="width:45%;display:block;margin:0 auto;text-align: center;float:left;">Dealership Contact relationships</td>
+<td style="width:45%;display:block;margin:0 auto;text-align: center;float:right;">Contacts</td>
+</tr>
+
+
+<tr>
+<td style="border:1px solid #660000;width:45%;display:inline-block;margin:30px;float:left;"><iframe src="/admin/snipstuff/dcrelatejoin.html" width="100%" height="500px"  sandbox="allow-same-origin allow-scripts"></iframe></td>
+
+<!--<td style="border:1px solid #660000;width:45%;display:inline-block;margin:30px;float:right;"><iframe src="/admin/snipstuff/arelatejoin.html" width="100%" height="500px"  sandbox="allow-same-origin allow-scripts"></iframe></td>-->
+
+</tr></table>
+
+<frame-udrelates>
+
+
+
+
+
+
+</div><!--should close container-->
+
+
+
+
+
+
+
+
+
+
+<script src="http://code.jquery.com/jquery-1.12.3.js"></script>
+<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js "></script>
+
+<script src="https://cdn.datatables.net/buttons/1.1.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/select/1.1.2/js/dataTables.select.min.js"></script>
+
+<script src="../../Editor/js/dataTables.editor.min.js"></script>
+<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+
+<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.1.2/js/buttons.html5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+<script src="https://cdn.datatables.net/colreorder/1.3.2/js/dataTables.colReorder.min.js"></script>
+ <script src="https://cdn.datatables.net/fixedcolumns/3.2.2/js/dataTables.fixedColumns.min.js">
+<script src="https://cdn.datatables.net/scroller/1.4.2/js/dataTables.scroller.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.colVis.min.js"></script>
+<script>
+var editor; // use a global for the submit and return data rendering in the examples
+ 
+$(document).ready(function() {
+    editor = new $.fn.dataTable.Editor( {
+        ajax: "views/dealersphp.php",
+        table: "#example",
+        fields: [ 
+{"label": "Dealership","name": "dealers.dname"},      
+{"label": "Auction Access #","name": "dealers.dnumber"},
+
+
+{"label": "Sale Day Contact","name": "dealers.dcontact"},
+{"label": "Sale Day Phone","name": "dealers.dsdphone"},
+{"label": "Id","name": "dealers.did", type:  "readonly", def:   ""},
+{"label": "Dealer Phone","name": "dealers.dphone"},
+{"label": "Attention To","name": "dealers.dattn"},
+{"label": "Address","name": "dealers.daddress"},
+{"label": "City","name": "dealers.dcity"},
+{"label": "State","name": "dealers.dstate"},
+{"label": "Zip","name": "dealers.dzip"},
+{"label": "Mail Account","name": "dealers.dmailAcctNum"},
+{"label": "Email Invoice","name": "dealers.dinvoiceemail"},
+{"label": "Notes","name": "dealers.dnotes"},
+{"label": "Rep Fee","name": "dealers.drepfee"}
+        ]
+ });
+ 
+
+    
+ 
+    var table = $('#example').DataTable( {
+   
+    
+    dom: "Bfrtlip",
+    colReorder: false,
+	scrollY: 500,
+    scrollX:        true,
+    scrollCollapse: true,
+    paging:         false,
+    fixedColumns:    {
+       leftColumns: 1
+		},
+    iDisplayLength: "-1",
+	
+  	ajax: "views/dealersphp.php",
+    columns: [ 
+ 
+			
+
+{ data: "dealers.dname"},
+{ data: "dealers.dnumber"},
+
+
+{ data: "dealers.dcontact"},
+{ data: "dealers.dsdphone"},
+{ data: "dealers.did"},
+{ data: "dealers.dphone"},
+{ data: "dealers.dattn"},
+{ data: "dealers.daddress"},
+{ data: "dealers.dcity"},
+{ data: "dealers.dstate"},
+{ data: "dealers.dzip"},
+{ data: "dealers.dmailAcctNum"},
+{ data: "dealers.dinvoiceemail"},
+{ data: "dealers.dnotes"},
+{ data: "dealers.drepfee"}
+
+
+
+	 ],
+	 
+
+        select: {
+            style:    'os',
+          selector: 'td:nth-child(1)'
+		 
+        },
+        order: [[ 1, 'asc' ]],
+
+
+         
+   buttons: [
+
+    
+            { extend: "create", editor: editor },
+            { extend: "edit",   editor: editor },
+{extend: 'pdfHtml5', orientation: 'landscape', pageSize: 'A2', text: 'Landscape Pdf', exportOptions: {
+                    columns: ':visible'},
+                    customize : function(doc) {doc.pageMargins = [30,20,20,30]; },},
+{extend: 'pdfHtml5', orientation: 'portrait', pageSize: 'A2', text: 'Portrait Pdf', exportOptions: {
+                    columns: ':visible'},
+                    customize : function(doc) {doc.pageMargins = [30,30,30,30];},
+                    },
+                    {extend: 'excelHtml5',  text: 'Excel', exportOptions: {
+                    columns: ':visible'}},
+                   
+           // { extend: "remove", editor: editor },
+     'colvis',
+      //'excelHtml5',
+       
+            
+        ],
+           
+
+"rowCallback": function ( row, data ) { 
+//$('td', row).attr('nowrap','nowrap');
+$('th', row).css('text-transform', 'Uppercase','white-space','pre-line','font-family','monospace','font-size','10px', 'line-height:.6em;');
+$('td', row).css('text-transform', 'Uppercase','white-space','nowrap','font-family','monospace','font-size','12px');
+
+}
+           
+       
+     });
+ 
+
+   
+} );

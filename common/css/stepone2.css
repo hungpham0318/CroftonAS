@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, select, input, option,
+dl, dt, dd, textarea,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, select {
+	-webkit-appearance:none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 1em;
+	font: inherit;
+	vertical-align: baseline;
+	line-height:1em;
+
+
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display:inline-block;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url(/images/wideaerial-sm3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+font-family: 'Open Sans', sans-serif;
+font: normal 16px 'Open Sans';
+        font-size: 16px;
+        font-weight: normal;
+        font-family:'Open Sans';
+	color: #660000;
+	line-height: 1em;
+display:block;
+margin:auto;
+}
+p {
+display:block;
+line-height: inherit;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+#datepicker input{display:inline-grid;}
+
+/*
+body{
+	background-image: -webkit-gradient(linear, right top, left top, from(#BCAA8B), to(#DEC9A3));
+    	background-image: -webkit-linear-gradient(right,  #BCAA8B, #DEC9A3);
+    	background-image: -moz-linear-gradient(right, #BCAA8B, #DEC9A3);
+    	background-image: -ms-linear-gradient(right, #BCAA8B, #DEC9A3);
+    	background-image: -o-linear-gradient(right, #BCAA8B, #DEC9A3);
+	background-color: #DEC9A3;
+	line-height: 1em; 
+	font: normal 1em 'Open Sans'; 
+	color: #660000;
+	background-color: #dec9a3;
+	padding-top: 20px;
+	padding-left: 20px;
+	color: #660000;
+
+}*/
+.wrapper{
+	background-color: #ffffff;
+	border-radius: 4px;
+	width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	display: block;
+	
+	 
+
+
+
+
+
+
+	}
+.containerb   {
+	background-color: #ffffff;
+	border-radius: 4px;
+	padding: 20px;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	display: block;
+	}
+.container-noboot  {
+	background-color: #ffffff;
+	border-radius: 4px;
+	padding: 20px;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	display: block;
+	}
+.footcontainer {
+	background-color: #FFF;
+	border-radius: 4px;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
+	/*width: auto;*/
+	margin-right: auto;
+	margin-left: auto;
+	width:1024px;
+	text-align: center;
+	font-size: 1em; 
+	line-height: 2em;
+	color: #660000; 
+display:block;
+}
+#banner{
+       width:100%;
+       padding:0px 0px 0px 0px;
+}
+#banner img{
+       width: 100%;
+       padding:0px 0px 0px 0px;
+}
+#navigation {
+padding: 5px 0;
+border-top: 1px solid rgba(0,0,0,0.075);
+border-bottom: 1px solid rgba(0,0,0,0.075);
+margin-bottom: 10px;
+width: 100%;
+padding-left:1em;
+
+}
+#headline{
+font-size: 1.5em;
+padding-bottom: 20px;
+padding-top: 10px;
+margin:auto;
+}
+#section1{
+width:100%;
+overflow: hidden;
+margin:auto;
+text-align:justify;
+display:inline-block;
+line-height:2em;
+}
+#leftcolumns1 {
+              
+ /*  float: left;*/ 
+/*   */
+                width: 94%;
+                background:#ffffff;
+                text-align: justify;
+                margin-top: 25px;
+              /*  padding:0px 0px 0px 0px;*/
+                overflow: hidden;
+                line-height: 2em;
+                }
+#rightcolumns1 { 
+                background:#ffffff;
+		float: right;
+                text-align: right;
+                margin-top: 0px;  
+                overflow: hidden;  
+                padding: 0 0 0 0; 
+                width: auto; 
+display:block;      
+           } 
+#section2{
+	width: 100%;
+	text-align:justify;
+	display:block;
+line-height: 2em;}
+/*   */
+	
+#leftcolumns2 {
+                float: left;
+               display:block;
+
+                width: 48%;
+                background-color:#ffffff;
+           
+
+ 
+}
+#leftcolumns2 img{
+	padding: 7px;
+	border: 2px solid #660000;
+	float: left;
+	width: 100%;
+	}
+#rightcolumns2 {           
+	margin-top: 10px;  
+	overflow: hidden;  
+	padding: 0 0 0 0;
+	display: block; 
+	text-align: left;
+	color: #660000;
+	width: 50%;
+	float:right;
+/**/
+line-height: 2em;
+} 
+#rightcolumns2 img{
+	padding: 7px; 
+	border:.2em solid #660000;
+	width:100%;
+}
+#sect2rightcol2{
+	text-align: left;
+	color: #660000;
+	width: 35%;
+}  
+#rightcolumn {     
+	background:#ffffff;
+	float: right;
+	text-align: right;
+	margin-top: 0px;  
+	overflow: hidden;  
+	padding: 0 20px 0 0;        
+           }
+#rightcolumns2 p {
+	text-align: left;
+	width:100%;
+font-size:1em;
+}           
+#fulllower {
+	height: auto;
+	background:#ffffff;
+	color: #660000;
+	padding: 30px 30px 30px 30px;
+	text-align: justify;
+line-height: 2em;
+float:left;
+		/**/
+}
+
+.footerlayoutcontainer {
+	background-color: #FFF;
+	border-radius: 4px;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-size: .9em; 
+	line-height: 1.2em;
+	color: #660000; 
+}
+
+.containerheaderlayout {
+	background-color: #ffffff;
+	border-radius: 4px;
+	padding: 20px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	display: block;
+	}
+input, select { 
+	-webkit-appearance:none;
+	color: #660000;
+	font-size: 1em;
+	padding: 10px 10px 10px 10px;
+	margin: 0 auto;
+	display:block;
+	width: 300px; /* 150 + 2 + 45 = 197 */
+	border: 1px solid #660000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+	-webkit-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+	box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+}
+#stepone{
+width:50%;margin:0 auto;display:block;clear:both;
+}
+#selectauction{
+	-webkit-appearance:none;
+	width:322px;
+	border: 1px solid #660000;
+	line-height:2em;
+	}
+#selectauctionfield{
+	-webkit-appearance:none;
+	color: #660000;
+}
+small{
+line-height:1em;
+	width:300px;
+	color: #660000;
+	font-size:1em;
+	font-weight:bold;
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+	margin-bottom:-1em;
+
+}
+label {
+line-height:1em;
+	width:300px;
+	color: #660000;
+	font-size:1em;
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+	margin-bottom:-1em;
+	font-weight:bolder;
+	
+}
+#selectauctionfield select{
+	-webkit-appearance:none;
+	font-size:1em;
+	border: 1px solid #660000;
+	line-height:2em;
+	width:300px;
+	color: #660000;
+	padding: 10px 10px 10px 10px;
+	margin: 0 auto;
+	display:block;
+	border: 1px solid #660000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+textarea{
+	color: #660000;
+	padding: 10px 10px 10px 10px;
+	margin: 0 0 0 0;
+        border: 1px solid #660000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	overflow: auto;
+	}
+ul {
+	display: block;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: disc;
+	margin: 1em 0;
+	padding: 0 0 0 30pt;
+	text-align: left;
+}
+li {
+	display: list-item;
+	text-align: left;
+}
+#lblUserMessage{
+width:100%;
+}
+
+/*
+
+@media only screen and (max-width:320px){
+    body{font-size: 1em;}
+.btn {font-size: .8em;
+    padding: 1em 1.8em;}
+}
+
+@media screen and (min-width : 320px){}
+@media screen and (min-width : 480px){}
+@media screen and (min-width : 1224px){}
+@media screen and (min-width : 1824px){}
+@media screen and (min-width : 29em){}
+@media screen and (min-width : 35em){}
+@media all and (-webkit-device-pixel-ratio: 1){}
+
+@media screen and (resolution: 96dpi){}
+
+@media screen and (-webkit-device-pixel-ratio: 1.5), screen and (resolution: 96dpi){}
+
+@media only screen and (max-width: 30em) {
+ 
+  }
+}
+@media print {
+    #header-image {
+        display: none;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .container-noboot {width: 100%;
+        
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        
+    }
+}
+
+*/
+
+/* from PURE buttons-core.css */
+ .pure-button {
+    /* Structure */
+    display: inline-block;
+    *display: inline; /*IE 6/7*/
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-right: 12px;
+}
+
+/* Firefox: Get rid of the inner focus border */
+ .pure-button::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+}
+/* end from PURE buttons-core.css */
+/* from PURE buttons.css */
+/*csslint unqualified-attributes:false*/
+
+ .pure-button {
+    font-size: .8em;
+    *font-size: .9em; /*IE 6/7 - To reduce IE's oversized button text*/
+    *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+    padding: 0.5em 1.5em 0.5em;
+    color: #fefbfb; /* rgba not supported (IE 8) */
+    /* color: rgba(0, 0, 0, 0.80); rgba supported */
+    /* *color: #444; IE 6 & 7 */
+    border: 1px solid #86272f; /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, 0); /*IE9 + everything else*/
+    background-color: #dec9a3;
+    text-decoration: none;
+    border-radius: 2px;
+    -webkit-font-smoothing: antialiased;
+    /* Transitions */
+    -webkit-transition: 0.1s linear -webkit-box-shadow;
+    -moz-transition: 0.1s linear -moz-box-shadow;
+    -ms-transition: 0.1s linear box-shadow;
+    -o-transition: 0.1s linear box-shadow;
+    transition: 0.1s linear box-shadow;
+}
+
+ .pure-button-hover,
+ .pure-button:hover {
+  background-color: #660000;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.05)));
+    background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.15));
+    background-image: -moz-linear-gradient(top, rgba(0,0,0, 0.05) 0%, rgba(0,0,0, 0.05));
+    background-image: -ms-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.15));
+    background-image: -o-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.05));
+    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.05));
+}
+
+ .pure-button:focus {
+    outline: 0;
+}
+ .pure-button-active,
+ .pure-button:active {
+ background-color: #660000;
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+}
+.button-success {
+ background-color: #660000;
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+}
+ .pure-button[disabled],
+ .pure-button-disabled,
+ .pure-button-disabled:hover,
+ .pure-button-disabled:active {
+    border: none;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    filter: alpha(opacity=40);
+    -khtml-opacity: 0.40;
+    -moz-opacity: 0.40;
+    opacity: 0.40;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+ .pure-button-hidden {
+    display: none;
+}
+
+/* Firefox: Get rid of the inner focus border */
+ .pure-button::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+}
+
+ .pure-button-primary,
+ .pure-button-selected,
+ a.pure-button-primary,
+ a.pure-button-selected {
+    background-color: #dec9a3;
+    color: #040301;
+}
+.display_table th {padding-bottom:10px;
+padding:3px;
+border:2px solid #660000;
+color: #660000;
+text-align: left;
+}
+ul {
+	display: block;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: disc;
+	margin: 1em 0;
+	padding: 0 0 0 30pt;
+	text-align: left;
+}
+li {
+	display: list-item;
+	text-align: left;
+}
+#ajaxrequest{
+font-size: 1.2em;
+font-weight: bold;
+color: red;
+margin: auto;
+padding-left: 200px;
+}

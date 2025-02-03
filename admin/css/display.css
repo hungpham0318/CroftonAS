@@ -1,0 +1,348 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, select, input, option,
+dl, dt, dd, 
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	background-image: -webkit-gradient(linear, right top, left top, from(#BCAA8B), to(#DEC9A3));
+    	background-image: -webkit-linear-gradient(right,  #BCAA8B, #DEC9A3);
+    	background-image: -moz-linear-gradient(right, #BCAA8B, #DEC9A3);
+    	background-image: -ms-linear-gradient(right, #BCAA8B, #DEC9A3);
+    	background-image: -o-linear-gradient(right, #BCAA8B, #DEC9A3);
+	background-color: #DEC9A3;
+	line-height: 22px; 
+	font: normal 16px 'Verdana', Verdana, sans-serif; 
+	color: #801323;
+	background-color: #dec9a3;
+	padding-top: 20px;
+	padding-left: 20px;
+	color: #801323;
+}
+
+#banner{
+       width: 100%;
+       padding:0px 0px 0px 0px;
+}
+
+    
+#navigation {
+padding: 5px 0;
+border-top: 1px solid rgba(0,0,0,0.075);
+border-bottom: 1px solid rgba(0,0,0,0.075);
+margin-bottom: 10px;
+width: 100%;
+height: 34px; 
+}
+#headline{
+font-size: 150%;
+padding-bottom: 20px;
+padding-top: 10px;
+}
+
+#section1{
+width:100%;
+overflow: hidden;
+}
+#sect1leftcol{text-align: justify;
+	
+	color: #801323;
+	padding-bottom: 10px;
+	padding-top: 0px; 
+	padding-right: 20px; 
+}
+#intoday p{margin:0px;}
+#section2{
+	width: 100%;
+	overflow: hidden;}
+
+#sect2leftcol2{
+	text-align: justify;
+	 
+	color: #801323;
+	}
+#imglggroup img{padding-bottom: 30px;
+	padding-top: 10px; 
+	padding-right: 40px; 
+	float: left;}
+#wehaveimg{
+	padding-bottom: 30px;
+	padding-top: 10px; 
+	padding-right: 40px; 
+	float: right;
+	}
+           
+#sect2rightcol2{
+	text-align: left;
+	color: #801323;
+}           
+
+
+#leftcolumn {
+              float: left;
+                width: 600px;
+                background:#ffffff;
+                text-align: left;
+                margin-top: 25px;
+                padding:0px 0px 0px 25px;
+                overflow: hidden;
+                
+           }
+
+#rightcolumn {     
+                
+                background:#ffffff;
+		float: right;
+                text-align: right;
+                margin-top: 0px;  
+                overflow: hidden;  
+                padding: 0 20px 0 0;        
+           }   
+           
+#leftcolumn2 {
+                float: left;
+                height: auto;
+                width: 480px;
+                background-color:#ffffff;
+                text-align: left;
+                margin-top: 0px;
+                padding:0px 25px 0px 25px;
+                overflow: hidden;
+                
+           }
+#rightcolumn2 {           
+                background:#ffffff;
+		
+		
+                margin-top: 10px;
+                overflow: hidden;            
+           }
+#fulllower {
+                height: auto;
+              
+                background:#ffffff;
+               color: #801323;
+           	padding: 30px 30px 30px 30px;
+		text-align: justify;}
+           
+
+.footcontainer {
+    background-color: #FFF;
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
+    max-width: 80%;
+    margin-right: auto;
+margin-left: auto;
+width: 90%;
+text-align: center;
+font-size: 100%; 
+line-height: 120%;
+color: #801323; 
+
+}
+.container {
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 20px;
+    float: center;
+    width: 90%;
+    margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;}
+	
+
+#selectauctionfield{
+line-height:40px;
+color: #801323;
+}
+input, select
+{ 
+color: #801323;
+    padding: 5px 5px 5px 5px;
+    margin: 0 0 0 0;
+    width: 300px; /* 150 + 2 + 45 = 197 */
+     border: 1px solid #801323;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+    -webkit-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+    box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+}
+select{ width:322px;}
+td {padding-bottom:10px;}
+.display_table td {padding-bottom:10px;
+padding:3px;
+border:1px solid #801323;
+color: #801323;
+}
+.display_table th {padding-bottom:10px;
+padding:3px;
+border:2px solid #801323;
+color: #801323;
+text-align: left;
+}
+ul {
+	display: block;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: disc;
+	margin: 1em 0;
+	padding: 0 0 0 30pt;
+	text-align: left;
+}
+li {
+	display: list-item;
+	text-align: left;
+}
+#ajaxrequest{
+font-size: 1.2em;
+font-weight: bold;
+color: red;
+margin: auto;
+padding-left: 200px;
+}
+
+/* from PURE buttons-core.css */
+ .pure-button {
+    /* Structure */
+    display: inline-block;
+    *display: inline; /*IE 6/7*/
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-right: 12px;
+}
+
+/* Firefox: Get rid of the inner focus border */
+ .pure-button::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+}
+/* end from PURE buttons-core.css */
+/* from PURE buttons.css */
+/*csslint unqualified-attributes:false*/
+
+ .pure-button {
+    font-size: 80%;
+    *font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
+    *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+    padding: 0.5em 1.5em 0.5em;
+    color: #fefbfb; /* rgba not supported (IE 8) */
+    /* color: rgba(0, 0, 0, 0.80); rgba supported */
+    /* *color: #444; IE 6 & 7 */
+    border: 1px solid #86272f; /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, 0); /*IE9 + everything else*/
+    background-color: #dec9a3;
+    text-decoration: none;
+    border-radius: 2px;
+    -webkit-font-smoothing: antialiased;
+    /* Transitions */
+    -webkit-transition: 0.1s linear -webkit-box-shadow;
+    -moz-transition: 0.1s linear -moz-box-shadow;
+    -ms-transition: 0.1s linear box-shadow;
+    -o-transition: 0.1s linear box-shadow;
+    transition: 0.1s linear box-shadow;
+}
+
+ .pure-button-hover,
+ .pure-button:hover {
+  background-color: #801323;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.05)));
+    background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.15));
+    background-image: -moz-linear-gradient(top, rgba(0,0,0, 0.05) 0%, rgba(0,0,0, 0.05));
+    background-image: -ms-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.15));
+    background-image: -o-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.05));
+    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.05));
+}
+
+ .pure-button:focus {
+    outline: 0;
+}
+ .pure-button-active,
+ .pure-button:active {
+ background-color: #801323;
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+}
+.button-success {
+ background-color: #801323;
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+}
+ .pure-button[disabled],
+ .pure-button-disabled,
+ .pure-button-disabled:hover,
+ .pure-button-disabled:active {
+    border: none;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    filter: alpha(opacity=40);
+    -khtml-opacity: 0.40;
+    -moz-opacity: 0.40;
+    opacity: 0.40;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+ .pure-button-hidden {
+    display: none;
+}
+
+/* Firefox: Get rid of the inner focus border */
+ .pure-button::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+}
+
+ .pure-button-primary,
+ .pure-button-selected,
+ a.pure-button-primary,
+ a.pure-button-selected {
+    background-color: #dec9a3;
+    color: #040301;
+}

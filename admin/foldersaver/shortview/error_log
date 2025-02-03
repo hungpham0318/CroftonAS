@@ -1,0 +1,107 @@
+[05-Jun-2016 23:54:06 America/Chicago] PHP Warning:  include(mainview.html): failed to open stream: No such file or directory in /home/manheim/public_html/admin/shortview/shortviewhtml_r.php on line 112
+[05-Jun-2016 23:54:06 America/Chicago] PHP Warning:  include(mainview.html): failed to open stream: No such file or directory in /home/manheim/public_html/admin/shortview/shortviewhtml_r.php on line 112
+[05-Jun-2016 23:54:06 America/Chicago] PHP Warning:  include(): Failed opening 'mainview.html' for inclusion (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/shortview/shortviewhtml_r.php on line 112
+[06-Jun-2016 00:48:56 America/Chicago] PHP Warning:  include(mainview.html): failed to open stream: No such file or directory in /home/manheim/public_html/admin/shortview/shortviewhtml_r.php on line 112
+[06-Jun-2016 00:48:56 America/Chicago] PHP Warning:  include(mainview.html): failed to open stream: No such file or directory in /home/manheim/public_html/admin/shortview/shortviewhtml_r.php on line 112
+[06-Jun-2016 00:48:56 America/Chicago] PHP Warning:  include(): Failed opening 'mainview.html' for inclusion (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/shortview/shortviewhtml_r.php on line 112
+[06-Jun-2016 00:49:13 America/Chicago] PHP Warning:  include(mainview.html): failed to open stream: No such file or directory in /home/manheim/public_html/admin/shortview/shortviewhtml_r.php on line 112
+[06-Jun-2016 00:49:13 America/Chicago] PHP Warning:  include(mainview.html): failed to open stream: No such file or directory in /home/manheim/public_html/admin/shortview/shortviewhtml_r.php on line 112
+[06-Jun-2016 00:49:13 America/Chicago] PHP Warning:  include(): Failed opening 'mainview.html' for inclusion (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/shortview/shortviewhtml_r.php on line 112
+[06-Jun-2016 22:07:34 America/Chicago] PHP Warning:  include(newview.html): failed to open stream: No such file or directory in /home/manheim/public_html/admin/shortview/newviewhtml.php on line 117
+[06-Jun-2016 22:07:34 America/Chicago] PHP Warning:  include(newview.html): failed to open stream: No such file or directory in /home/manheim/public_html/admin/shortview/newviewhtml.php on line 117
+[06-Jun-2016 22:07:34 America/Chicago] PHP Warning:  include(): Failed opening 'newview.html' for inclusion (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/shortview/newviewhtml.php on line 117
+[06-Jun-2016 22:32:53 America/Chicago] PHP Fatal error:  Call to a member function data() on a non-object in /home/manheim/public_html/admin/Editor/php/Editor/Editor.php on line 813
+[06-Jun-2016 23:43:21 America/Chicago] PHP Parse error:  syntax error, unexpected 'where' (T_STRING) in /home/manheim/public_html/admin/shortview/newview.php on line 61
+[06-Jun-2016 23:43:48 America/Chicago] PHP Parse error:  syntax error, unexpected 'where' (T_STRING) in /home/manheim/public_html/admin/shortview/newview.php on line 61
+[07-Jun-2016 23:10:21 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 119
+[07-Jun-2016 23:16:28 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 119
+[07-Jun-2016 23:25:09 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 119
+[08-Jun-2016 00:30:12 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 119
+[08-Jun-2016 01:26:58 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/shortview/linkview.html on line 113
+[08-Jun-2016 01:26:58 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 01:28:58 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/shortview/linkview.html on line 113
+[08-Jun-2016 01:28:58 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 01:30:08 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/shortview/linkview.html on line 113
+[08-Jun-2016 01:30:08 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 01:31:03 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 01:31:27 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 01:36:59 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 01:38:20 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 01:38:55 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 01:41:28 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 01:41:42 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 01:42:05 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 01:48:55 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 01:49:12 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 01:51:32 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 01:51:36 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 01:52:30 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 01:57:10 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 01:59:27 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 01:59:27 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 02:00:05 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 02:01:22 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 02:05:49 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 02:08:26 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 02:08:40 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 02:08:42 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 02:10:48 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 02:11:56 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 121
+[08-Jun-2016 02:50:07 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 02:50:36 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 02:50:36 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 02:56:56 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 02:59:00 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 03:00:05 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 03:00:36 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 03:00:38 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 03:01:01 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 03:03:41 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 03:03:52 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 03:06:20 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 03:10:17 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 03:11:04 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 03:13:56 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 03:36:14 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 03:36:59 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 03:37:19 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 03:38:59 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 03:40:06 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 03:40:39 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 03:40:40 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 04:10:28 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 04:10:28 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 04:11:01 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 15:26:28 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 15:27:32 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 15:28:51 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 17:05:17 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 17:10:04 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 17:11:24 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 17:11:24 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 17:13:15 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 17:19:46 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 17:20:30 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 18:16:37 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 18:26:15 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 21:34:32 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 21:34:51 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 21:34:54 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 21:36:31 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 21:41:29 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 21:43:07 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 21:43:09 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[08-Jun-2016 21:44:20 America/Chicago] PHP Warning:  include(mainview.html): failed to open stream: No such file or directory in /home/manheim/public_html/admin/shortview/shortviewhtml.php on line 112
+[08-Jun-2016 21:44:20 America/Chicago] PHP Warning:  include(mainview.html): failed to open stream: No such file or directory in /home/manheim/public_html/admin/shortview/shortviewhtml.php on line 112
+[08-Jun-2016 21:44:20 America/Chicago] PHP Warning:  include(): Failed opening 'mainview.html' for inclusion (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/shortview/shortviewhtml.php on line 112
+[08-Jun-2016 21:47:39 America/Chicago] PHP Warning:  include(mainview.html): failed to open stream: No such file or directory in /home/manheim/public_html/admin/shortview/shortviewhtml.php on line 112
+[08-Jun-2016 21:47:39 America/Chicago] PHP Warning:  include(mainview.html): failed to open stream: No such file or directory in /home/manheim/public_html/admin/shortview/shortviewhtml.php on line 112
+[08-Jun-2016 21:47:39 America/Chicago] PHP Warning:  include(): Failed opening 'mainview.html' for inclusion (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/shortview/shortviewhtml.php on line 112
+[09-Jun-2016 07:32:58 America/Chicago] PHP Warning:  include(mainview.html): failed to open stream: No such file or directory in /home/manheim/public_html/admin/shortview/shortviewhtml.php on line 112
+[09-Jun-2016 07:32:58 America/Chicago] PHP Warning:  include(mainview.html): failed to open stream: No such file or directory in /home/manheim/public_html/admin/shortview/shortviewhtml.php on line 112
+[09-Jun-2016 07:32:58 America/Chicago] PHP Warning:  include(): Failed opening 'mainview.html' for inclusion (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/shortview/shortviewhtml.php on line 112
+[17-Jun-2016 14:53:27 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185
+[17-Jun-2016 14:53:49 America/Chicago] PHP Warning:  include(mainview.html): failed to open stream: No such file or directory in /home/manheim/public_html/admin/shortview/shortviewhtml.php on line 112
+[17-Jun-2016 14:53:49 America/Chicago] PHP Warning:  include(mainview.html): failed to open stream: No such file or directory in /home/manheim/public_html/admin/shortview/shortviewhtml.php on line 112
+[17-Jun-2016 14:53:49 America/Chicago] PHP Warning:  include(): Failed opening 'mainview.html' for inclusion (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/shortview/shortviewhtml.php on line 112
+[17-Jun-2016 16:38:11 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/shortview/linkview.html on line 185

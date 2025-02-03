@@ -1,0 +1,379 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, select, input, option, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align:top;
+    font-family: Verdana, Geneva, san-serif;
+    
+  
+}
+body { 
+    width:100%!important;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, san-serif;
+    font-size:.9em;
+    background-color: #ffffff;
+}
+table {
+    width:100%;
+}
+
+input, select {
+	border: 1px solid #009999;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+     -khtml-border-radius: 5px;
+    height: 25px;
+    text-indent: 2px;
+    overflow:hidden;
+    display: inline-block;
+    vertical-align: top;
+    font-size: .8em !important;
+    background-color: #ffffff;
+ 
+    }
+select {
+border: 1px solid #801323;
+
+-webkit-appearance: menulist-button;
+    height:27px;
+}
+input:focus, textarea:focus, select:focus, input:hover, select:hover, textarea:hover, input:active, select:active, textarea:active {
+border: 1px solid #801323;outline:1px solid #801323;
+}
+
+
+form{ display:block;
+    overflow:visible;}
+#wholeform { width:100%;
+    background-color:#ffffff;
+    border:1px solid #009999;
+    width:100%!important;
+    margin:0 auto;
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    display:block;
+    overflow:visible;
+}
+
+#hline {
+    color: #009999;
+    background-color: #009999;
+    width: 100%;
+    height: 4px;
+}
+#hline2 {
+    color: #009999;
+    background-color: #009999;
+    width: 100%;
+    height: 4px;
+}
+#hline3 {
+    color: #009999;
+    background-color: #009999;
+    width: 100%;
+    height: 4px;
+}
+#hline4 {
+    color: #009999;
+    background-color: #009999;
+    width: 100%;
+    height: 6px;
+}
+#formtitle {
+    color: #ffffff;
+    text-align: center;
+    background-color: #009999;
+    font-size: 23px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, san-serif;
+     margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.selected #formtitle {
+    color: white;
+    font-family: Verdana, Geneva, san-serif;
+}
+
+
+/* userdealer div */
+#userdealer {width: 100%;
+	
+	/*border:1px solid #009999;*/
+	display: table;
+		}
+#userdealer col{
+	display: table-column;
+	/*width:auto;*/
+} 
+
+/* dealeruser table */
+#dealeruser {
+
+	width:99%;
+	margin-right:auto;
+	margin-left:auto;
+	/*border:1px solid #009999;*/
+	display: table;
+  	}
+#dealeruser table {
+	width:99%;
+	/*border:1px solid #009999;*/
+	display: table;
+  	border: none;
+  	column-count:4;
+}
+#dealeruser input {
+    width:99%;
+    padding-left:5px;
+}
+#dealeruser select {
+    width:100%;
+    padding-left:5px;
+    font-size: 1em;
+    border: 1px solid #009999;
+    -webkit-appearance: menulist-button;
+    line-height: 21px;
+}
+
+
+#dealeruser colgroup{column-count:4;} 
+ 
+#dealeruser td {
+    padding:0px;
+    font-size:1em;
+    margin-left: 10px;
+}
+#dealeruser th {
+    padding-left: 50px;
+    vertical-align: middle;
+    white-space:nowrap;
+    text-align:left;
+    min-width: 10%;
+    padding-right: 15px;
+}
+#emailmessagediv{
+		
+	width:90%;
+	margin-left: 20px;	
+	}
+#emailmessage{	
+	width:100%;
+	
+}
+#emailmessage th{
+	
+text-align: left;
+padding-left:50px;
+padding-right:60px;
+min-width:20%;
+}
+#inpemailtextarea{
+	overflow:hidden;    
+	vertical-align: top;	
+	background-color: #ffffff;	
+	width:98%;
+	float: left;
+	border: 1px solid #009999;
+    	border-radius:3px; 
+    	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;    
+	padding-left: 5px;
+	margin-left: 10px;
+}
+
+#lblUserMessage {	font-size: 13px;
+	text-overflow: ellipsis;
+	color: #ff0000;
+	/* overflow: hidden;*/
+    -webkit-margin-top-collapse: separate;
+    -webkit-margin-bottom-collapse: separate;
+    margin-top: 0px;
+    border-width: .5px !important;
+    border-style: none;
+    width: 100%;
+    height: 18px;
+    display:block;
+    overflow:hidden;
+    border-color:#ffffff;
+    padding-left: 60px;
+    
+}
+.selected #lblUserMessage {
+    color: white;
+}
+#vehiclegrid {width:100%;margin:auto;display:block;overflow:hidden;}
+#vehiclegrid table{width:100%;display:block;overflow:visible; margin:auto;border:1px solid #009999;}
+#vehiclegrid select {
+    padding-left:2px;
+    font-size: .8em!important;
+    border: 1px solid #009999;
+    -webkit-appearance: menulist-button;
+    line-height: 21px;
+}
+#vehiclegrid th {
+    vertical-align: bottom;
+    font-size:90%;
+    border:1px solid #009999;
+    height:1.5em;
+}
+#vehiclegrid td {
+    padding-left:1px;
+    margin-right:0px;
+}
+#vehiclegrid input {
+    padding-left:0px;
+    margin-right:0px;
+}
+#inpYourName input[type="text"] {text-transform: uppercase!important;}
+.txtVIN {
+    color: black;    
+    display: block;
+    width: 99%;
+    text-transform: uppercase;
+}
+.txtYear {
+    color: black;
+    
+    -webkit-margin-top-collapse: separate;
+    -webkit-margin-bottom-collapse: separate;
+    display: block;
+    width:99%;
+    text-transform: uppercase;
+}
+.txtMake {
+    color: black;
+    -webkit-margin-top-collapse: separate;
+    -webkit-margin-bottom-collapse: separate;
+    display: block;
+    width: 99%;
+    text-transform: uppercase;
+}
+.txtModel {
+    color: black;    
+    -webkit-margin-top-collapse: separate;
+    -webkit-margin-bottom-collapse: separate;
+    display: block;
+    width: 99%;
+    text-transform: uppercase;
+}
+.txtColor {
+    color: black;
+    -webkit-margin-top-collapse: separate;
+    -webkit-margin-bottom-collapse: separate;
+    display: block;
+    width: 99%;
+    text-transform: uppercase;
+}
+.txtMileage {
+    color: black;
+    -webkit-margin-top-collapse: separate;
+    -webkit-margin-bottom-collapse: separate;
+    display: block;
+    width: 99%;
+    text-transform: uppercase;
+}
+
+.txtAnon {
+    color: black;
+    -webkit-margin-top-collapse: separate;
+    -webkit-margin-bottom-collapse: separate;
+    display: block;
+    width: 99%;
+    text-transform: uppercase;
+}
+
+.inpvehStock {
+    color: black;
+    -webkit-margin-top-collapse: separate;
+    -webkit-margin-bottom-collapse: separate;
+    display: block;
+    width: 99%;
+     text-transform: uppercase;
+}
+.popDetail {
+    width: 99%;
+    color: black;
+    -webkit-margin-top-collapse: separate;
+    -webkit-margin-bottom-collapse: separate;
+    display: block;
+    text-transform: uppercase;
+}
+.txtTrans {
+    color: black;
+    -webkit-margin-top-collapse: separate;
+    -webkit-margin-bottom-collapse: separate;
+    display: block;
+    width: 99%;
+     text-transform: uppercase;
+}
+
+.txtPrice {
+    width: 99%;
+    color: black;    
+    -webkit-margin-top-collapse: separate;
+    -webkit-margin-bottom-collapse: separate;
+    display: block;
+    text-transform: uppercase;
+}
+.mcost {
+    width: 99%;
+    color: black;    
+    -webkit-margin-top-collapse: separate;
+    -webkit-margin-bottom-collapse: separate;
+    display: block;
+    text-transform: uppercase;
+}
+
+
+
+#bottombuttons td {
+    padding-left: 40px;
+    padding-bottom: 50px;
+}
+
+.my-button {
+    /* Structure */
+    display: inline-block;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	background: #009999;
+	color: #ffffff; 
+	width:70%;
+}
+#bottomMsgBox  {
+	margin:auto;
+	text-align: center;}
+#bottombuttons{margin:auto;}
+
+.errorClass {
+              background-color: #FFFF00;
+} 
+#errorDiv {
+	color:  #CC6666;
+	text-align:right;
+	padding-right: 80px;
+		   }
+.errorFeedback {
+
+           
+           color: #CC6666;
+}
+
+#errorbox {
+		width:26%;
+	height: auto;
+}

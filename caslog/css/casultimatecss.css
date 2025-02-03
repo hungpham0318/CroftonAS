@@ -1,0 +1,124 @@
+
+
+.whowrap60 {
+width:60em;
+background-color:#ffffff;
+display:block;
+    background-color: #ffffff;
+    border-radius: .25em;
+    padding: 1.4em;
+    margin: auto;
+    
+   }
+.footcontainer{
+width:60em;
+background-color:#ffffff;
+display:block;
+    background-color: #ffffff;
+    border-radius: .25em;
+    padding: 1.4em;
+    margin: auto;
+    
+   }
+
+.mymiddle55ems{
+display:block;
+text-align: center;
+margin: auto;
+width: 55em;}
+
+.mymiddle50ems{
+display:block;
+text-align: center;
+margin: auto;
+width: 50em;}
+
+.mymiddle40ems{
+display:block;
+background:#ffffff;
+text-align: center;
+margin: auto;
+width: 66%;}
+
+.mymiddle30ems{
+display:block;
+text-align: center;
+margin: auto;
+width: 30em;}
+
+mymiddleboth{
+    height: 10em;
+    position: relative}
+
+div.mymiddleboth p {
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+}
+mymiddlebothflex{
+
+    height: 20em;
+    position: relative }
+mymiddlebothflex p {
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+/*...
+<IMG class="displayed" src="..." alt="...">*/
+
+P.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em
+}
+...
+<P class="blocktext">This rather...
+
+
+
+input, select { 
+	-webkit-appearance:none;
+	color: #660000;
+	font-size: 1em;
+	padding: 10px 10px 10px 10px;
+	margin: 0 0 0 0;
+	width: 300px; /* 150 + 2 + 45 = 197 */
+	border: 1px solid #660000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+	-webkit-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+	box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+}
+
+#password {
+    background: #f1f1f1 url(/images/login-sprite.png) no-repeat;
+    background-position: 5px -52px !important;
+    padding: 10px 10px 10px 30px;
+}
+#username {
+    background: #f1f1f1 url(http://manheimas.com/images/login-sprite.png) no-repeat;
+    background-position: 5px -2px !important;
+    padding: 10px 10px 10px 30px;
+}
+
+
+
+
+
+
+

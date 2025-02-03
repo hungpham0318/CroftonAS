@@ -1,0 +1,39 @@
+[04-Jun-2017 17:54:53 America/Chicago] PHP Parse error:  syntax error, unexpected 'Font' (T_STRING) in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 5
+[04-Jun-2017 17:55:43 America/Chicago] PHP Parse error:  syntax error, unexpected 'Font' (T_STRING) in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 5
+[04-Jun-2017 17:56:46 America/Chicago] PHP Parse error:  syntax error, unexpected 'Font' (T_STRING) in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 7
+[04-Jun-2017 17:58:09 America/Chicago] PHP Parse error:  syntax error, unexpected 'Font' (T_STRING) in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 7
+[04-Jun-2017 18:00:45 America/Chicago] PHP Parse error:  syntax error, unexpected 'Font' (T_STRING) in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 7
+[04-Jun-2017 18:02:06 America/Chicago] PHP Parse error:  syntax error, unexpected 'Font' (T_STRING) in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 7
+[04-Jun-2017 18:02:58 America/Chicago] PHP Warning:  require(/admin/accnts/invoicepdf/u/fpdf.php): failed to open stream: No such file or directory in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 4
+[04-Jun-2017 18:02:58 America/Chicago] PHP Fatal error:  require(): Failed opening required '/admin/accnts/invoicepdf/u/fpdf.php' (include_path='.:/opt/php54/lib/php') in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 4
+[04-Jun-2017 18:12:22 America/Chicago] PHP Warning:  rename('.9999.'.'.9999.'.pdf,/deleted/'.9999.'.'.9999.'.pdf): No such file or directory in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 6
+[04-Jun-2017 18:15:23 America/Chicago] PHP Warning:  rename(9999.'.'.9999.'.pdf,/deleted/'.9999.'.'.9999.'.pdf): No such file or directory in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 6
+[04-Jun-2017 18:16:02 America/Chicago] PHP Warning:  rename(9999'.'9999'.pdf,/deleted/'9999'.'9999'.pdf): No such file or directory in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 6
+[04-Jun-2017 18:36:23 America/Chicago] PHP Warning:  rename(9999.9999.pdf,/deleted/9999.9999.pdf): No such file or directory in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 5
+[04-Jun-2017 18:37:31 America/Chicago] PHP Warning:  rename($oldfile,&quot;/deleted/&quot;.$oldfile): No such file or directory in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 5
+[04-Jun-2017 18:41:21 America/Chicago] PHP Parse error:  syntax error, unexpected '/' in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 11
+[04-Jun-2017 18:41:44 America/Chicago] PHP Warning:  rename(9999.9999.pdf,/deleted/9999.9999.pdf): No such file or directory in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 11
+[04-Jun-2017 18:43:59 America/Chicago] PHP Warning:  rename($oldfile,$deloldfile): No such file or directory in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 11
+[04-Jun-2017 18:45:02 America/Chicago] PHP Warning:  rename(.9999.9999.pdf.,./deleted/9999.9999.pdf.): No such file or directory in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 11
+[04-Jun-2017 18:50:57 America/Chicago] PHP Parse error:  syntax error, unexpected '$idid' (T_VARIABLE) in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 12
+[04-Jun-2017 18:51:28 America/Chicago] PHP Warning:  rename(/admin/accnts/invoice/bunker/9999.9999.pdf,/admin/accnts/invoice/bunker/deleted//admin/accnts/invoice/bunker/9999.9999.pdf): No such file or directory in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 11
+[04-Jun-2017 18:52:29 America/Chicago] PHP Warning:  rename(9999.9999.pdf,/deleted/9999.9999.pdf): No such file or directory in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 11
+[04-Jun-2017 19:44:15 America/Chicago] PHP Fatal error:  Call to a member function Image() on a non-object in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 20
+[04-Jun-2017 20:54:55 America/Chicago] PHP Warning:  rename(9400.3993.pdf,deleted/9400.3993.pdf): No such file or directory in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 22
+[04-Jun-2017 20:54:55 America/Chicago] PHP Fatal error:  Call to a member function Image() on a non-object in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 31
+[04-Jun-2017 21:07:38 America/Chicago] PHP Fatal error:  Uncaught exception 'ImagickException' with message 'unable to open image `9400.3993.pdf': No such file or directory @ error/blob.c/OpenBlob/2617' in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php:14
+Stack trace:
+#0 /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php(14): Imagick->readimage('9400.3993.pdf[0...')
+#1 {main}
+  thrown in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 14
+[04-Jun-2017 21:08:38 America/Chicago] PHP Warning:  Imagick::writeimages() expects exactly 2 parameters, 1 given in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 18
+[04-Jun-2017 21:08:38 America/Chicago] PHP Fatal error:  Call to a member function Image() on a non-object in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 31
+[04-Jun-2017 21:12:06 America/Chicago] PHP Fatal error:  Uncaught exception 'ImagickException' with message 'unable to open image `9400.3993.pdf': No such file or directory @ error/blob.c/OpenBlob/2617' in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php:14
+Stack trace:
+#0 /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php(14): Imagick->readimage('9400.3993.pdf[0...')
+#1 {main}
+  thrown in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 14
+[04-Jun-2017 21:13:46 America/Chicago] PHP Warning:  Imagick::writeimages() expects exactly 2 parameters, 1 given in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 15
+[04-Jun-2017 21:13:46 America/Chicago] PHP Fatal error:  Call to a member function Image() on a non-object in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 35
+[04-Jun-2017 21:20:13 America/Chicago] PHP Fatal error:  Cannot access protected property FPDF::$w in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 32
+[04-Jun-2017 22:11:49 America/Chicago] PHP Parse error:  syntax error, unexpected '$pdf' (T_VARIABLE), expecting function (T_FUNCTION) in /home/croftona/public_html/admin/accnts/invoice/bunker/overwrite.php on line 38

@@ -1,0 +1,272 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, select, input, option, dl, dt, dd, textarea, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+margin : 0;
+padding : 0;
+border : 0;
+font-size : 1em;
+font : inherit;
+vertical-align : center;
+display: block;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+display : block;
+}
+table {
+/*border-collapse : collapse;*/
+border-spacing : 0;
+margin : 0 auto;
+width : 95%;
+}
+body {
+background-color : #660000;
+font-size : 16px;
+
+font-family : Tahoma, Geneva, sans-serif;
+color : #660000;
+background-color : #660000;
+line-height : 1em;
+display : block;
+/*margin : 0 auto;*/
+width : 100%;
+}
+p {
+display : block;
+line-height : inherit;
+}
+
+
+
+
+.container-noboot, .container {
+background-color : #ffffff;
+border-radius : 4px;
+padding : 10px;
+margin : 0 auto;
+display : block;
+width : 1024px;
+max-width:1024px;
+min-width:1024px;
+-webkit-box-shadow: -4px 5px 11px 0px rgba(60, 60, 62, 0.27);
+-moz-box-shadow:    -4px 5px 11px 0px rgba(60, 60, 62, 0.27);
+box-shadow:         -4px 5px 11px 0px rgba(60, 60, 62, 0.27);
+}
+
+/*
+@media screen and (min-width: 480px)
+{.container-noboot{width: 100%;}
+.container-supform{width: 100%;}
+.footcontainer{width: 100%;}
+#likelogin label{width: 100%;}
+#likelogin input{width: 100%;}
+#likelogin textarea{width: 100%;}}
+
+@media screen and (min-width: 1224px)
+{.container-noboot{width: 1024px;}
+.container-supform{width: 90%;}
+.footcontainer{width: 1024px;}
+}
+
+*/
+.container-supform {
+background-color : #ffffff;
+border-radius : 4px;
+padding : 0px;
+min-width : 80%;
+margin :  auto;
+/*margin : 0 auto;*/
+display : block;
+}
+tr td {
+  padding: 2px 4px;
+  border: #ccc solid 0px;
+
+  display: block;
+}
+label,input { height: 20px;font-size: 16px;display:inline-block;border-color:#660000;}
+
+
+tr{ /* border: #ccc solid 1px;
+border-radius : 5px;
+box-shadow : 0 1px 1px #ccc inset, 0 1px 0 #fff;*/
+  display: block;
+  min-width: 840px;
+  margin:0 auto;
+  }
+input {
+  padding: 5px 10px;
+height: 30px;
+width:280px;
+/*margin : 0 auto;*/
+border: #ccc solid 1px;
+border-radius : 5px;
+box-shadow : 0 1px 1px #ccc inset, 0 1px 0 #fff;
+/*min-width: 25em;
+max-width: 25em;
+width:25em;
+position:relative;
+left:40;*/
+*/
+}
+label {  padding: 5px 10px;
+height: 30px;
+/*min-width: 8em;
+max-width: 8em;*/
+width: 150px;
+display:block;
+/*position:relative;
+left:0;*/
+text-align:right;
+white-space:nowrap;
+}
+.sup-form {
+width : 99%;
+margin:0 auto;
+display:block;
+font-size 1.2em;
+font-weight:normal;
+}
+.sup-form-table {
+width : 100%;
+min-width:1080px;
+display:block;
+}
+.sup-table {
+margin : auto;
+min-width : 960px;
+}
+
+.sup-form-table td {
+display : inline-block;
+}
+.sup-form-table tr {
+
+width : 98%;
+
+}
+#inputs input {
+margin : 0 0 10px 0;
+display : inline-block;
+
+border : #ccc solid 1px;
+border-radius : 5px;
+box-shadow : 0 1px 1px #ccc inset, 0 1px 0 #fff;
+}
+.container-supform {
+background-color : #ffffff;
+border-radius : 4px;
+padding : 2px;
+width : 98%;
+margin : 0 auto;
+display : block;
+}
+
+
+
+.footcontainer {
+background-color : #ffffff;
+background : #ffffff;
+border-radius : 0.25em 0.25em 0.25em 0.25em;
+padding : 1.3em;
+border : rgba(0, 0, 0, 0.15) solid 0;
+box-shadow : 0 0 6px rgba(0, 0, 0, 0.05);
+margin : 0 auto;
+
+text-align : center;
+font-size : 1em;
+line-height : 1.6;
+color : #660000;
+display : block;
+
+width:1024px!important;;margin:0 auto;display:block;min-width:1024px!important;max-width:1024px!important;
+}
+
+
+
+
+
+#banner {
+width : 100%;
+padding : 0 0 0 0;
+}
+#banner img {
+width : 100%;
+padding : 0 0 0 0;
+}
+#navigation {
+padding : 5px 0;
+border-top : 1px solid rgba(0, 0, 0, 0.075);
+border-bottom : 1px solid rgba(0, 0, 0, 0.075);
+margin-bottom : 10px;
+width : 100%;
+}
+h2 {display:block;
+margin: 0 auto;
+width: 80%;
+font-weight:bold;}
+
+#likelogin input
+{
+margin: 0 0 10px 0;
+/*display:block;*/
+display : inline-block;
+margin: 1px;
+width:350px;
+ border: 1px solid #ccc;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+-moz-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+-webkit-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+line-height:1em;
+height:3em;
+border:1px solid #d2b48c;
+}
+#likelogin label
+{display : inline-block;
+margin: 1px;
+width:175px;}
+
+#likelogin textarea
+{
+margin: 0 0 10px 0;
+/*display:block;*/
+display : inline-block!important;
+margin: 0 auto;
+padding: 1px;
+width:960px;
+ border: 1px solid #ccc;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+-moz-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+-webkit-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+line-height:1em;
+height:3em;
+border:1px solid #d2b48c;
+}
+
+#likelogin input:focus
+{
+    background-color: #fff;
+    border: 1px solid #d2b48c!important;
+  outline: none;
+    -moz-box-shadow: 0 0 0 2px #b0b0b0 inset!important;
+    -webkit-box-shadow: 0 0 0 2px #b0b0b0 inset!important;
+    box-shadow: 0 0 0 2px #b0b0b0 inset!important;
+}
+#likelogin {
+width : 100%;
+min-width:1080px;
+display:block;
+}
+
+
+#likelogin td {
+display : inline-block;
+}
+#likelogin tr {
+
+width : 98%;
+
+}

@@ -1,0 +1,1 @@
+this directory holds folders that came from admin and should be put back under admin before the files will all work as is, properly.

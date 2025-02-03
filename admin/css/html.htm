@@ -1,0 +1,99 @@
+  <html>
+  <head>
+  <!-- Latest compiled JavaScript -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+
+<script>
+
+
+
+$(document).ready(function(){
+   $(".announce").click(function(){ // Click to only happen on announce links
+     $("#cafeId").val($(this).data('id'));
+     $('#createFormId').modal('show');
+   });
+});
+</script>
+
+
+
+
+
+</head>
+
+  <body>
+  
+  <table class="table table-condensed  table-striped">
+      <tbody>   
+        <tr>
+          <td>B&Js
+          </td>
+          <td>10690 N De Anza Blvd </td>
+          <td>
+              <a class="btn btn-primary announce" data-toggle="modal" data-id="106" >Announce</a>
+              </td>
+        </tr>
+
+        <tr>
+          <td>CoHo Cafe
+          </td>
+          <td>459 Lagunita Dr </td>
+          <td>
+             <a class="btn btn-primary announce" data-toggle="modal" data-id="105" >Announce</a>
+             </td>
+        </tr>
+
+
+        <tr>
+          <td>Hot Spot Espresso and Cafe
+          </td>
+          <td>1631 N Capitol Ave </td>
+          <td>
+				<a class="btn btn-primary announce" data-toggle="modal" data-id="104" >Announce</a>
+              
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+     <div class="modal fade" id="createFormId">
+<div class="modal-header">
+    <a href="#" class="close" data-dismiss="modal">&times;</a>
+    <h3>Create Announcement</h3>
+</div>
+<div class="modal-body">
+    <form class="form-horizontal" method="POST" commandName="announceBean" action="/announce" >
+        <input type="hidden" name="cafeId" value="104" />
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label" for="cafeName">Where I am Coding</label>
+                <div class="controls">
+                    <input id="cafeName" name="cafeName" class="input-xlarge disabled" type="text" readonly="readonly" type="text" value="B&amp;Js"/>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="date">Date</label>
+                <div class="controls">
+                    <input type="text" class="input-xlarge" id="date" name="date" />
+                    <p class="help-block"></p>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <input type="submit" class="btn btn-primary" value="create" />
+                    <input type="button" class="btn" value="Cancel" onclick="closeDialog ();" />
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div></div></div>
+	</body>
+	</html>
+	

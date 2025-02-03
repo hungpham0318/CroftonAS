@@ -1,0 +1,629 @@
+<?php session_start();
+$title="Dealer Contacts";
+if(!isset($_SESSION['ausername']) || $_SESSION['ausername']==""){header('Location: ../worldview/index.php?msg=Please_Log_In_to_continue!');}else{
+		$ausername=$_SESSION['ausername'];
+		$apassword=$_SESSION['apassword'];
+		}?>
+
+<html>
+<head>
+
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title><?php echo $title;?></title>
+	
+	<link rel="stylesheet" type="text/css" href="/admin/worldview/css/snow-nav-admin.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="shortcut icon" type="image/ico" href="http://croftonas.com/images/favicon.ico">
+	
+	
+
+	
+	
+	
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.1/css/selectize.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/autofill/2.2.0/css/autoFill.dataTables.css"/>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.3.1/css/buttons.jqueryui.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.3.1/css/buttons.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="/Editor16/css/editor.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="/Editor16/FieldType-Select2-1.6.2/editor.select2.min.css"/>
+
+<link rel="stylesheet" type="text/css" href="/Editor16/FieldType-Selectize-1.6.2/editor.selectize.min.css"/>
+<link rel="stylesheet" type="text/css" href="/Editor16/FieldType-Title-1.6.2/editor.title.min.css"/>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedcolumns/3.2.2/css/fixedColumns.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/rowgroup/1.0.0/css/rowGroup.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.2.2/css/select.dataTables.min.css"/>
+	
+
+<style>
+body{
+
+font-family: 'Open Sans', sans-serif!important;
+font-size:13px;
+ width:99%;}
+ tr.group,
+tr.group:hover {
+    background-color: #ddd !important;
+}
+ #customForm {
+    display: flex;
+    flex-flow: row wrap;
+}
+ 
+#customForm fieldset {
+    flex: 1;
+    border: 1px solid #aaa;
+    margin: 0.5em;
+}
+ 
+#customForm fieldset legend {
+    padding: 5px 20px;
+    border: 1px solid #aaa;
+    font-weight: bold;
+}
+ 
+#customForm fieldset.name {
+    flex: 2 100%;
+}
+ 
+#customForm fieldset.name legend {
+    background: #660000;
+    color: #ffffff;
+}
+ 
+#customForm fieldset.office legend {
+    background: #660000;
+    color: #ffffff;
+}
+ 
+#customForm fieldset.hr legend {
+    background: #660000;
+    color: #ffffff;
+}
+ 
+#customForm div.DTE_Field {
+    padding: 5px;
+}
+ 
+</style>
+
+
+</head>
+<body>
+<?php include "../worldview/css/snow-admin-nav.html";?>
+</br><!--<button id="kount">Row count</button>--></br><p>
+
+
+ <div id="customForm">
+                        <fieldset class="name">
+                            <legend>Contact</legend>
+  <!--                           
+d_contacts.dc_id
+d_contacts.dc_accnum
+d_contacts.dc_attn
+d_contacts.dc_address
+d_contacts.dc_city
+d_contacts.dc_state
+d_contacts.dc_zip
+d_contacts.dc_fullname
+d_contacts.dc_phone
+d_contacts.dc_copiesto
+d_contacts.dc_mailmethod
+d_contacts.dc_notes
+
+-->
+
+
+
+
+
+
+
+ 
+
+                           
+                            
+                            
+                            <editor-field name="d_contacts.dc_id"></editor-field>
+<editor-field name="d_contacts.dc_accnum"></editor-field>
+<editor-field name="d_contacts.dc_attn"></editor-field>
+<editor-field name="d_contacts.dc_address"></editor-field>
+<editor-field name="d_contacts.dc_city"></editor-field>
+                            <editor-field name="d_contacts.dc_state"></editor-field>
+                            <editor-field name="d_contacts.dc_zip"></editor-field>
+                            <editor-field name="d_contacts.dc_fullname"></editor-field>
+                            <editor-field name="d_contacts.dc_phone"></editor-field>
+                            <editor-field name="d_contacts.dc_copiesto"></editor-field>
+                            <editor-field name="d_contacts.dc_mailmethod"></editor-field>
+<editor-field name="d_contacts.dc_notes"></editor-field>
+<editor-field name="users.ucity"></editor-field>
+<editor-field name="users.ustate"></editor-field>
+<editor-field name="users.uzip"></editor-field>
+                            <editor-field name="users.ucompany"></editor-field>
+                            <editor-field name="users.unotes"></editor-field>
+                            <editor-field name="users.uperms"></editor-field>
+                            <editor-field name="users.ucas"></editor-field>
+                            <editor-field name="users.ufirst"></editor-field>
+                           <editor-field name="users.ulast"></editor-field>
+                         
+        
+                            
+                        </fieldset>
+                       
+                        
+                        
+                        
+                    </div>
+
+
+
+ <div style="width:97%;margin: 0 auto;">
+<table id="example" class="display compact" cellspacing="0" width="100%">
+                    <thead>
+                   
+                        <tr>
+
+
+<th>Contact Id</th>
+<th>Access No.</th>
+<th>Attn</th>
+<th>Address</th>
+<th>City</th>
+<th>State</th>
+<th>Zip</th>
+
+<th>Full Name</th>
+
+<th>Phone</th>
+<th>Email</th>
+<th>Mail Method Info</th>
+<th>Notes</th>
+
+
+							
+                        </tr>
+                    </thead>
+                    <tfoot> 
+                    <tr>
+
+<th>Contact Id</th>
+<th>Access No.</th>
+<th>Attn</th>
+<th>Address</th>
+<th>City</th>
+<th>State</th>
+<th>Zip</th>
+
+<th>Full Name</th>
+
+<th>Phone</th>
+<th>Email</th>
+<th>Mail Method Info</th>
+<th>Notes</th>
+
+
+
+
+                        </tr>
+                    </tfoot>
+                    
+                </table>
+	
+
+<div id="frame-udrelates" style="color:#660000;border:1.5px solid #660000;width:100%;margin-top:10px;display:block;">
+
+<table style="width:100%;"><tr style="width:100%;display:block;"> 
+<td style="width:45%;display:block;margin:0 auto;text-align: center;float:left;"></td>
+<td style="width:45%;display:block;margin:0 auto;text-align: center;float:right;"></td>
+</tr>
+
+
+<tr>
+<td style="border:1px solid #660000;width:45%;display:inline-block;margin:30px;float:left;"><iframe src="/admin/snipstuff/dcrelatejoin.html" width="100%" height="500px"  sandbox="allow-same-origin allow-scripts"></iframe></td>
+
+<td style="border:1px solid #660000;width:45%;display:inline-block;margin:30px;float:right;"><iframe src="/admin/snipstuff/cdrelatejoin.html" width="100%" height="500px"  sandbox="allow-same-origin allow-scripts"></iframe>
+
+</td></tr></table>
+
+<frame-udrelates>
+	
+	
+	
+	
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="/Editor16/js/dataTables.editor.min.js"></script>
+	<!--<script type="text/javascript" language="javascript" src="/Editor16/js/dataTables.editor.min.js"></script>-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.27/build/pdfmake.min.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.27/build/vfs_fonts.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/igorescobar/jQuery-Mask-Plugin/v1.13.4/dist/jquery.mask.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.1/js/standalone/selectize.min.js"></script>
+
+
+<script type="text/javascript" src="https://cdn.datatables.net/autofill/2.2.0/js/dataTables.autoFill.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.3.1/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.3.1/js/buttons.colVis.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.3.1/js/buttons.flash.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.3.1/js/buttons.html5.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.3.1/js/buttons.print.min.js"></script>
+
+
+
+<script type="text/javascript" src="https://editor.datatables.net/plug-ins/download?cdn=cdn-download&amp;q=field-type/editor.display.min.js"></script>
+<script type="text/javascript" src="https://editor.datatables.net/plug-ins/download?cdn=cdn-download&amp;q=field-type/editor.mask.min.js"></script>
+<script type="text/javascript" src="https://editor.datatables.net/plug-ins/download?cdn=cdn-download&amp;q=field-type/editor.select2.min.js"></script>
+<script type="text/javascript" src="https://editor.datatables.net/plug-ins/download?cdn=cdn-download&amp;q=field-type/editor.selectize.min.js"></script>
+<script type="text/javascript" src="https://editor.datatables.net/plug-ins/download?cdn=cdn-download&amp;q=field-type/editor.title.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.2/js/dataTables.fixedColumns.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.1.1/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/rowgroup/1.0.0/js/dataTables.rowGroup.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/select/1.2.2/js/dataTables.select.min.js"></script>
+
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+	<script type="text/javascript" language="javascript" class="init">
+	
+				//template.js
+var editor; // use a global for the submit and return data rendering in the examples
+
+$(document).ready(function() {
+    editor = new $.fn.dataTable.Editor( {
+        ajax: "dcontactsphp.php",
+//display: 'envelope',
+//display: 'lightbox',
+       table: "#example",
+       template: '#customForm',
+       fields: [ {"label": "Id","name":"d_contacts.dc_id"},
+{"label": "Access No.","name":"d_contacts.dc_accnum"},
+{"label": "Attn Line:","name":"d_contacts.dc_attn"},
+{"label": "Address","name":"d_contacts.dc_address"},
+{"label": "City","name":"d_contacts.dc_city"},
+{"label": "State","name":"d_contacts.dc_state"},
+{"label": "Zip","name":"d_contacts.dc_zip"},
+{"label": "Full Name","name":"d_contacts.dc_fullname"},
+{"label": "Phone","name":"d_contacts.dc_phone"},
+{"label": "Email ","name":"d_contacts.dc_copiesto"},
+{"label": "Mail Method Info","name":"d_contacts.dc_mailmethod"},
+{"label": "Notes","name":"d_contacts.dc_notes"},
+
+
+        ] 
+         
+         
+    } );
+
+
+var table = $('#example').DataTable( {
+         dom: "Bfrti",
+        ajax: "dcontactsphp.php",
+"scrollY": 700,
+   // responsive: true,
+    scrollX: "true",    
+   "scrollY": 700,
+    dom: "Bfrt",
+    //colReorder: true,
+   stateSave: true,
+    iDisplayLength: -1,
+   //  "drawCallback": function ( settings ) {
+   //         var api = this.api();
+    //        var rows = api.rows( {page:'current'} ).nodes();
+     //       var last=null;
+ 
+    //        api.column(2, {page:'current'} ).data().each( function ( group, i ) {
+     //           if ( last !== group ) {
+     //               $(rows).eq( i ).before(
+       //               //  '<tr class="group"><td colspan="5">'+group+'</td></tr>'
+        //                '<tr class="group"><td colspan="10">'+"Invoice Number:&nbsp;"+group+'<a href="editinvoice.php?iid='+group+'">&nbsp;&nbsp;Delete this Invoice (Click here to review and confirm deletion)</a></td></tr>'
+                //    );
+ 
+                 //   last = group;
+             //   }
+          //  } );
+      //  },
+select: {  
+type: 'os',
+style:    'os'
+//selector: 'td:not(:nth-child(36))' // no row selection on last column
+ //selector: 'td:first-child'
+//selector: 'td.select-checkbox'
+     },
+     
+     "columnDefs": [
+            { "visible": false, "targets": 2 }
+        ],
+        "order": [[ 2, 'asc' ]],
+        
+//order: [[ 19, 'desc' ],[22,'asc']],
+   columns: [ 
+{data: "d_contacts.dc_id"},
+{data: "d_contacts.dc_accnum"},
+{data: "d_contacts.dc_attn"},
+{data: "d_contacts.dc_address"},
+{data: "d_contacts.dc_city"},
+{data: "d_contacts.dc_state"},
+{data: "d_contacts.dc_zip"},
+{data: "d_contacts.dc_fullname"},
+{data: "d_contacts.dc_phone"},
+{data: "d_contacts.dc_copiesto"},
+{data: "d_contacts.dc_mailmethod"},
+{data: "d_contacts.dc_notes"},
+
+
+/*end new data*/
+	 ],
+	 select: {
+            style: 'os',
+            selector: 'td:not(:last-child)' // no row selection on last column
+        },    
+buttons: [ 
+ { extend: "create", text: "New Contact", editor: editor,formButtons: [
+                    'Create Contact',
+                    { label: 'Cancel', fn: function () { this.close(); } }
+                ] },
+           // { extend: "edit",   editor: editor },
+            { extend: "remove", editor: editor,formButtons: [
+                    'Delete',
+                    { label: 'Cancel', fn: function () { this.close(); } }
+                ] },
+
+          
+
+
+  {
+                extend: "edit",
+                editor: editor,
+                formButtons: [
+                    'Update',
+                    { label: 'Cancel', fn: function () { this.close(); } }
+                ]
+            },
+         //    {
+           //     text: 'Mark as Ready',
+            //    titleAttr: 'Select row(s) and click here to change Status to A - Active, and Substatus to Recon-Green - Ready, at Auction .',
+           //      action: function ( e, dt, node, config ) {
+  // editor
+   //.edit(dt.rows({selected:true}).indexes('mid'), false)
+    //    .val('master.msubstatus', 'recon-green' )
+ //  .val('master.mstatus', 'A' )
+  //.val('master.msolddate', '<?php echo date("Y-m-d");?>' )
+      //  .submit();},
+     //  editor: editor
+ // },
+  'colvis',
+	 
+             
+        
+     
+
+                
+                      {text: 'Reload table', action: function () { table.ajax.reload();}}
+    
+       // 'pageLength'
+        ],
+
+  "rowCallback": function ( row, data ) { 
+
+
+   
+  
+        
+   $('td', row).css('text-transform', 'uppercase');
+   $('td', row).css('white-space', 'nowrap');
+
+   
+$('td', row).attr('nowrap','nowrap');
+ $('td', row).css('font-family','Open Sans');
+$('td', row).css('white-space','nowrap');
+$('td', row).css('font-size','1em');
+$('td', row).attr('title','The information in Auction, Registrant, and Dealership columns is only editable when using the checkbox selector and the Edit button.');
+
+
+   
+   
+   
+   
+   
+   
+  }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  //if ( data.master.msubstatus =='Inv-No' ){ 
+    
+   // $('td', row).css('color', 'darkgreen');
+   //    $('td', row).css('border-color-top', 'darkgreen');
+
+   //}
+
+  
+    } );
+          
+          
+   
+  new $.fn.dataTable.Buttons( table, {
+        buttons: [
+         {
+   extend: 'pdfHtml5',
+    titleAttr: 'Use the Column Visibility list to exclude fields from this report',
+   text: '<?php echo $title;?>-Landscape',
+   exportOptions: { 
+    
+ columns: ':visible'
+    
+   },
+  header: true,
+   footer: false,
+   title: '<?php echo $title;?>',
+   orientation: 'landscape',
+  /**/
+     orientation: 'landscape',
+    exportOptions: {
+         columns: ':visible'
+    },
+    customize: function (doc) {
+        doc.pageMargins = [10,10,10,10];
+        doc.defaultStyle.fontSize = 7;
+        doc.styles.tableHeader.fontSize = 7;
+        doc.styles.title.fontSize = 9;
+        // Remove spaces around page title
+        doc.content[0].text = doc.content[0].text.trim();
+        // Create a footer
+        doc['footer']=(function(page, pages) {
+            return {
+                columns: [
+                    '<?php  echo "Printed: ". date("Y-m-d H:i:s");?>',
+                    {
+                        // This is the right column
+                        alignment: 'right',
+                        text: ['page ', { text: page.toString() },  ' of ', { text: pages.toString() }]
+                    }
+                ],
+                margin: [10, 0]
+            }
+        });
+        // Styling the table: create style object
+        var objLayout = {};
+        // Horizontal line thickness
+        objLayout['hLineWidth'] = function(i) { return .5; };
+        // Vertikal line thickness
+        objLayout['vLineWidth'] = function(i) { return .5; };
+        // Horizontal line color
+        objLayout['hLineColor'] = function(i) { return '#aaa'; };
+        // Vertical line color
+        objLayout['vLineColor'] = function(i) { return '#aaa'; };
+        // Left padding of the cell
+        objLayout['paddingLeft'] = function(i) { return 4; };
+        // Right padding of the cell
+        objLayout['paddingRight'] = function(i) { return 4; };
+        // Inject the object in the document
+        doc.content[1].layout = objLayout;
+    }
+    },
+    {
+   extend: 'pdfHtml5',
+    titleAttr: 'Use the Column Visibility list to exclude fields from this report',
+   text: '<?php echo $title;?>- Portrait',
+   
+  header: true,
+  
+   title: 'Invoices',
+   orientation: 'letter',
+ 
+    exportOptions: {
+        columns: ':visible'
+      //   columns: [1, 2, 3,  11, 12, 16, 17, 18 ]
+    },
+    customize: function (doc) {
+        doc.pageMargins = [10,10,10,10];
+        doc.defaultStyle.fontSize = 7;
+        doc.styles.tableHeader.fontSize = 11;
+        doc.styles.title.fontSize = 11;
+        // Remove spaces around page title
+        doc.content[0].text = doc.content[0].text.trim();
+        // Create a footer
+        doc['footer']=(function(page, pages) {
+            return {
+                columns: [
+                    '<?php  echo "Printed: ". date("Y-m-d H:i:s");?>',
+                    {
+                        // This is the right column
+                        alignment: 'right',
+                        text: ['page ', { text: page.toString() },  ' of ', { text: pages.toString() }]
+                    }
+                ],
+                margin: [10, 0]
+            }
+        });
+        // Styling the table: create style object
+        var objLayout = {};
+        // Horizontal line thickness
+        objLayout['hLineWidth'] = function(i) { return .5; };
+        // Vertikal line thickness
+        objLayout['vLineWidth'] = function(i) { return .5; };
+        // Horizontal line color
+        objLayout['hLineColor'] = function(i) { return '#aaa'; };
+        // Vertical line color
+        objLayout['vLineColor'] = function(i) { return '#aaa'; };
+        // Left padding of the cell
+        objLayout['paddingLeft'] = function(i) { return 4; };
+        // Right padding of the cell
+        objLayout['paddingRight'] = function(i) { return 4; };
+        // Inject the object in the document
+        doc.content[1].layout = objLayout;
+    }
+    }
+            
+        ]
+    } );
+ 
+    table.buttons( 1, null ).container().appendTo(
+        table.table().container()
+    );
+   // Order by the grouping
+    $('#example tbody').on( 'click', 'tr.group', function () {
+        var currentOrder = table.order()[0];
+        if ( currentOrder[0] === 2 && currentOrder[1] === 'asc' ) {
+            table.order( [ 2, 'desc' ] ).draw();
+        }
+        else {
+            table.order( [ 2, 'asc' ] ).draw();
+        }
+    } );
+$('#example tbody').on( 'click', 'tr', function () {
+        $(this).toggleClass('selected');
+    } );
+ 
+    //$('#kount').click( function () {
+      //  alert( table.rows('.selected').data().length +' row(s) selected' );
+   // } );
+
+ 
+});
+
+
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,2 @@
+[24-Feb-2016 00:50:31 America/Chicago] PHP Warning:  file_get_contents(../php/staff-array.php): failed to open stream: No such file or directory in /home/croftona/public_html/Editor-1.5.5/examples/resources/examples.php on line 8
+[24-Feb-2016 01:18:13 America/Chicago] PHP Warning:  file_get_contents(../php/staff-array.php): failed to open stream: No such file or directory in /home/croftona/public_html/Editor-1.5.5/examples/resources/examples.php on line 8

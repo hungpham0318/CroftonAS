@@ -1,0 +1,1 @@
+<ul style = "font-size: .8em;"><h3><?php echo $title;?>- Hints/Help</h3>

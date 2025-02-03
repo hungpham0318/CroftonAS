@@ -1,0 +1,373 @@
+<div class="tablewrapper">	
+<table id="example" class="display nowrap" style="width:100%;">
+    <thead>
+    <tr>
+
+<!-- <th></th>-->
+<th></th>
+<th>Id</th>
+<th>Vin</th>
+<th>Year</th>
+<th>Make</th>
+<th>Model</th>
+<th>Color</th>
+<th>Mileage</th>
+<th>Announcement</th>
+<th>Detail</th>
+<th>Via</th>
+<th>Floor</th>
+<!--<th>Timestamp</th>-->
+<th>RequestedDate</th>
+<th>Status</th>
+<th>SStatus</th>
+<th>Solddate</th>
+<th>Notes</th>
+<th>Sold Price</th>
+<th>Carfax</th>
+<th>Damage</th>
+<th>MiscInfo</th>
+<th>Lane</th>
+<th>Run</th>
+<th>Rundate</th>
+<th>RunOutcome</th>
+<th>Stock</th>        
+<th>Auction</th>
+<th>User</th>
+<th>Dealer</th> 
+<th>InvoiceId</th>
+<th>Archive</th>    
+<!--<th>r</th>
+<th>v</th>-->
+<!--<th>mreqsaledate</th> --> 
+
+
+</tr>
+    </thead>
+      <tfoot>
+        <tr>
+
+<!--<th></th>-->
+<th></th>
+<th>Id</th>
+<th>Vin</th>
+<th>Year</th>
+<th>Make</th>
+<th>Model</th>
+<th>Color</th>
+<th>Mileage</th>
+<th>Announcement</th>
+<th>Detail</th>
+<th>Via</th>
+<th>Floor</th>
+<!--<th>Timestamp</th>-->
+<th>RequestedDate</th>
+<th>Status</th>
+<th>SStatus</th>
+<th>Solddate</th>
+<th>Notes</th>
+<th>Sold Price</th>
+<th>Carfax</th>
+<th>Damage</th>
+<th>MiscInfo</th>
+<th>Lane</th>
+<th>Run</th>
+<th>Rundate</th>
+<th>RunOutcome</th>
+<th>Stock</th>        
+<th>Auction</th>
+<th>User</th>
+<th>Dealer</th> 
+<th>InvoiceId</th>
+<th>Archive</th>    
+<!--<th>r</th>
+<th>v</th>-->
+<!--<th>mreqsaledate</th> --> 
+
+        </tr>
+    </tfoot>
+</table>
+</div><!--should close tablewrapper-->
+</div><!--should close section1-->
+</div><!--should close container-->
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.1.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/select/1.1.2/js/dataTables.select.min.js"></script>
+<script src="https://cdn.datatables.net/keytable/2.1.1/js/dataTables.keyTable.min.js"></script>
+<script src="https://cdn.datatables.net/autofill/2.1.1/js/dataTables.autoFill.min.js"></script>
+<script src="../../Editor-1.5.5/js/dataTables.editor.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+<script src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+<script src="https://cdn.datatables.net/colreorder/1.3.2/js/dataTables.colReorder.min.js"></script>
+
+<script src="https://cdn.datatables.net/scroller/1.4.2/js/dataTables.scroller.min.js"></script>
+
+<script src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.1.2/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/fixedcolumns/3.2.1/js/dataTables.fixedColumns.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.colVis.min.js"></script>
+
+
+<script>
+var editor; // use a global for the submit and return data rendering in the examples
+ 
+$(document).ready(function() {
+    editor = new $.fn.dataTable.Editor( {
+        ajax: "views/invoicesphp.php",
+        table: "#example",
+       deferRender:    true,
+    //scroller:       true,
+        fields: [ 
+{"label": "mid","name": "newmaster.mid"},
+
+
+
+{"label": "mvin","name": "newmaster.mvin"},
+{"label": "myear","name": "newmaster.myear"},
+{"label": "mmake","name": "newmaster.mmake"},
+{"label": "mmodel","name": "newmaster.mmodel"},
+{"label": "mcolor","name": "newmaster.mcolor"},
+{"label": "mmileage","name": "newmaster.mmileage"},
+{"label": "mannounce","name": "newmaster.mannounce"},
+{"label": "mfloor","name": "newmaster.mfloor"},
+//{label: 'mrtime',name: 'newmaster.mrtime', type:  'datetime', def:   function () { return new Date(); }},
+ {
+                label: 'mreqsaledate:',
+                name:  'newmaster.mreqsaledate',
+                type:  'datetime'
+                },
+
+ 
+{"label": "mdetail","name": "newmaster.mdetail"},
+{"label": "mtransport","name": "newmaster.mtransport"},
+
+
+{
+                type: "select",
+               label: "Status:",
+                name: "newmaster.mstatus",
+               options: [
+               "I",
+               "A",
+               "S",
+               "Z",
+               "R",
+               "X"
+                       ]
+
+           }, {
+                type:  "select",  
+               label: "Substatus:",
+                name: "newmaster.msubstatus",
+                 options: [
+        "recon-red",
+        "recon-yellow",
+        "recon-green",
+        "recon-blue",
+        "arbit-m",
+        "Inv-No",
+        "Inv-Sent",
+        "Inv-Paid"
+    ]},
+    
+ {"label": "msolddate","name": "newmaster.msolddate"},
+{"label": "mnotes","name": "newmaster.mnotes"},
+{"label": "msoldprice","name": "newmaster.msoldprice"},
+{"label": "mcarfax","name": "newmaster.mcarfax"},
+{"label": "mdamage","name": "newmaster.mdamage"},
+{"label": "mmiscinfo","name": "newmaster.mmiscinfo"},
+{"label": "mlane","name": "newmaster.mlane"},
+{"label": "mrun","name": "newmaster.mrun"},
+{label: 'mrundate', name: 'newmaster.mrundate', type: 'datetime'},
+{"label": "mrunoutcome","name": "newmaster.mrunoutcome"},
+{"label": "mstock","name": "newmaster.mstock"},
+{"label": "Auction",
+"name": "newmaster.maid",
+type: "select",
+placeholder:"Select Auction"},
+
+
+{"label": "User",
+"name": "newmaster.muid",
+type: "select",
+placeholder:"Select User"},
+
+{"label": "Dealership",
+"name": "newmaster.mdid",
+type: "select",
+placeholder:"Select Dealer"},
+
+{"label": "minvid","name": "newmaster.minvid"},
+{"label": "marchive","name": "newmaster.marchive"},
+//{"label": "mrid","name": "newmaster.mrid"},
+//{"label": "mvid","name": "newmaster.mvid"},
+//{"label": "mreqsaledate2","name": "newmaster.mreqsaledate2"},
+
+        ]
+ });
+ 
+// $('#example').on( 'click', 'tbody td, tbody span.dtr-data', function (e) {
+        // Ignore the Responsive control and checkbox columns
+//        if ( $(this).hasClass( 'control' ) || $(this).hasClass('select-checkbox') ) {
+//            return;
+//        }
+ 
+        //editor.inline( this );
+//  } );
+  $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder=" '+title+'" />' );
+    } );
+// Activate an inline edit on click of a table cell
+    // or a DataTables Responsive data cell
+    
+ 
+    var table = $('#example').DataTable( {
+   "scrollY": 500,
+   // responsive: true,
+    scrollX: "true",    
+    dom: "Bfrtlip",
+    colReorder: true,
+    	    
+       
+ 	iDisplayLength: "500",
+	lengthMenu: [[10, 100, 500, -1], [10, 100, 500, "All"]], 
+  	ajax: "views/invoicesphp.php",
+        columns: [
+// {   // Responsive control column
+       //         data: null,
+       //         defaultContent: '',
+       //         className: 'control',
+       //         orderable: false
+       //     },
+ {   // Checkbox select column
+                data: null,
+                defaultContent: '',
+                className: 'select-checkbox',
+                orderable: false
+            },
+            { //data: "newmaster.mid"},
+
+  "data": function (data, type, row, meta) {rowId: 'newmaster.mid'
+return '<a href="/admin/accnts/invoicepdf/index.php?mid=' + data.newmaster.mid+ '">Invoice</a>'; }},
+{ data: "newmaster.mvin" },
+{ data: "newmaster.myear" },
+{ data: "newmaster.mmake" },
+{ data: "newmaster.mmodel" },
+{ data: "newmaster.mcolor" },
+{ data: "newmaster.mmileage" },
+{ data: "newmaster.mannounce" },
+{ data: "newmaster.mdetail" },
+{ data: "newmaster.mtransport" },
+{ data: "newmaster.mfloor" },
+//{ data: "newmaster.mrtime" },
+{ data: "newmaster.mreqsaledate" },
+{ data: "newmaster.mstatus" },
+{ data: "newmaster.msubstatus" },
+{ data: "newmaster.msolddate" },
+{ data: "newmaster.mnotes" },
+{ data: "newmaster.msoldprice" },
+{ data: "newmaster.mcarfax" },
+{ data: "newmaster.mdamage" },
+{ data: "newmaster.mmiscinfo" },
+{ data: "newmaster.mlane" },
+{ data: "newmaster.mrun" },
+{ data: "newmaster.mrundate" },
+{ data: "newmaster.mrunoutcome" },
+{ data: "newmaster.mstock" },
+{ data: "auctions.a_name" },
+{ data: "users.uname" },
+{ data: "dealers.dname" },
+{ data: "newmaster.minvid" },
+{ data: "newmaster.marchive" }
+//{ data: "newmaster.mrid" },
+//{ data: "newmaster.mvid" },
+//{ data: "newmaster.mreqsaledate2" }
+	 ],
+	 
+//	 order: [ 2, 'asc' ],
+//        select: {
+ //           style:    'os',
+//            selector: 'td.select-checkbox'
+//        },
+	 
+	 
+        autoFill: {
+            columns: ':not(:first-child)',
+            editor:  editor
+        },
+        keys: {
+            columns: ':not(:first-child)',
+            editor:  editor
+        },
+        select: {
+            style:    'os',
+            selector: 'td:nth-child(1)',
+            blurable: true
+        },
+         
+        buttons: [
+        
+            { extend: "create", editor: editor },
+            { extend: "edit",   editor: editor },
+            //{ extend: "remove", editor: editor },
+            //'excelHtml5',
+            //'csvHtml5',
+            //'pdfHtml5',
+            'colvis'
+        ],
+           
+  "rowCallback": function( row, data, index ) {
+   if ( data.newmaster.mid = data.newmaster.mid ) {
+      $('td:eq(1)', row).html( '<a href="/admin/accnts/invoicepdf/index.php?mid='+data+'">'+data+'</a>' );
+   }
+  },
+"rowCallback": function( row, data, index ) {
+    if ( data.newmaster.mstatus == "S" ) {
+      $('td:eq(15)', row).html( '<a href="/admin/accnts/invoicepdf/index.php?mid='+data[1]+'">Invoice</a>' );
+    }
+  },
+
+"rowCallback": function ( row, data ) { 
+$('td', row).attr('nowrap','nowrap');
+$('td', row).css('text-transform', 'Uppercase','white-space','nowrap','font-family','monospace');
+   if ( data.newmaster.msubstatus == "recon-green" ){ $('td', row).css('background-color', '#00FF66');}
+   else if ( data.newmaster.msubstatus == "recon-red" ){ $('td', row).css('background-color', '#FCA38B');}
+   else if ( data.newmaster.msubstatus == "recon-blue" ){ $('td', row).css('background-color', '#00CCFF');}
+   else if ( data.newmaster.msubstatus == "recon-yellow" ){ $('td', row).css('background-color', '#FFFF66');}
+   else if ( data.newmaster.msubstatus == "arbit-m" ){ $('td', row).css('background-color', '#99FF66');}
+   else if ( data.newmaster.msubstatus == "arbit-z" ){ $('td', row).css('background-color', '#CCFF66');}
+   else if ( data.newmaster.msubstatus == "Inv-No" ){ $('td', row).css('background-color', 'Orange');}
+  else if ( data.newmaster.msubstatus == "Inv-Sent" ){ $('td', row).css('background-color', '#ffffff');}
+   else if ( data.newmaster.msubstatus == "Inv-Paid" ){ $('td', row).css('background-color', 'Transparent');}
+}
+           
+       
+     });
+ 
+
+// Disable KeyTable while the main editing form is open
+ editor
+        .on( 'open', function ( e, mode, action ) {
+            if ( mode === 'main' ) {
+                table.keys.disable();
+            }
+        } )
+        .on( 'close', function () {
+            table.keys.enable();
+        } );
+        
+
+     table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );    
+} );

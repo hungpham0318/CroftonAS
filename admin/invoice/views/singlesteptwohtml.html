@@ -1,0 +1,231 @@
+<div class="tablewrapper">	
+<table id="example" class="display nowrap" style="width:100%;">
+    <thead>
+    <tr>
+<th></th>
+<th>ic_id</th>
+<th>ic_iid</th>
+<th>ic_mid</th>
+<th>ic_date</th>
+<th>ic_amount</th>
+<th>ic_description</th>
+<th>ic_solddate</th>
+<th>sold price</th>
+<th>ic_qty</th>
+<th>ic_rate</th>
+<th>ic_maid</th>
+<th>ic_stock</th>
+<th>ic_paid</th>
+<th>ic_note</th>
+</tr>
+    </thead>
+      <tfoot>
+        <tr>
+<th></th>
+<th>ic_id</th>
+<th>ic_iid</th>
+<th>ic_mid</th>
+<th>ic_date</th>
+<th>ic_amount</th>
+<th>ic_description</th>
+<th>ic_solddate</th>
+<th>sold price</th>
+<th>ic_qty</th>
+<th>ic_rate</th>
+<th>ic_maid</th>
+<th>ic_stock</th>
+<th>ic_paid</th>
+<th>ic_note</th>
+</tr>
+</tfoot>
+</table>
+</div><!--should close tablewrapper-->
+</div><!--should close section1-->
+</div><!--should close container-->
+<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.1/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/select/1.2.0/js/dataTables.select.min.js"></script>
+<script src="https://cdn.datatables.net/keytable/2.1.1/js/dataTables.keyTable.min.js"></script>
+<script src="https://cdn.datatables.net/autofill/2.1.1/js/dataTables.autoFill.min.js"></script>
+<script src="/admin/Editor/js/dataTables.editor.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+<script src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+<script src="https://cdn.datatables.net/colreorder/1.3.2/js/dataTables.colReorder.min.js"></script>
+
+<script src="https://cdn.datatables.net/scroller/1.4.2/js/dataTables.scroller.min.js"></script>
+
+<script src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.1.2/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/fixedcolumns/3.2.1/js/dataTables.fixedColumns.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.colVis.min.js"></script>
+
+
+
+
+<script>
+var editor; 
+// use a global for the submit and return data rendering in the examples
+ 
+$(document).ready(function() {
+    editor = new $.fn.dataTable.Editor( {
+        ajax: "views/dealersphp.php",
+       
+
+      fields: [ 
+{"label": "dname","name": "dealers.dname"},      
+{"label": "dnumber","name": "dealers.dnumber"},
+
+
+{"label": "dcontact","name": "dealers.dcontact"},
+{"label": "dsdphone","name": "dealers.dsdphone"},
+{"label": "did","name": "dealers.did"},
+{"label": "dphone","name": "dealers.dphone"},
+{"label": "dattn","name": "dealers.dattn"},
+{"label": "daddress","name": "dealers.daddress"},
+{"label": "dcity","name": "dealers.dcity"},
+{"label": "dstate","name": "dealers.dstate"},
+{"label": "dzip","name": "dealers.dzip"},
+{"label": "dmailAcctNum","name": "dealers.dmailAcctNum"},
+{"label": "dnotes","name": "dealers.dnotes"}
+
+        ]
+
+
+
+    } );
+ 
+    $('[data-editor-field]').on( 'click', function (e) {
+        editor.bubble( this );
+    } );
+
+
+
+
+
+    editor = new $.fn.dataTable.Editor( {
+        ajax: "views/steptwophp.php",
+//ajax: "views/ichargesphp.php",
+        table: "#example",
+     //  deferRender:    true,
+    //scroller:       true,
+        fields: [ 
+        
+       
+        
+{"label": "ic_id", "name" : "i_charges_temp.ic_id"},
+{"label": "ic_iid", "name":"i_charges_temp.ic_iid"},
+{"label": "ic_mid", "name":"i_charges_temp.ic_mid"},
+{"label": "ic_date", "name":"i_charges_temp.ic_date"},
+{"label": "ic_amount", "name":"i_charges_temp.ic_amount"},
+{"label": "ic_description", "name":"i_charges_temp.ic_description"},
+{"label": "ic_solddate", "name":"i_charges_temp.ic_solddate",
+                type:  'datetime',
+                def:   function () { return new Date(); }
+            },
+{"label": "ic_price", "name":"i_charges_temp.ic_price"},
+{"label": "ic_qty", "name":"i_charges_temp.ic_qty"},
+{"label": "ic_rate", "name":"i_charges_temp.ic_rate"},
+{"label": "ic_maid", "name":"i_charges_temp.ic_maid"},
+{"label": "ic_stock", "name":"i_charges_temp.ic_stock"},
+{"label": "ic_paid", "name":"i_charges_temp.ic_paid"},
+{"label": "ic_note", "name":"i_charges_temp.ic_note"},
+
+        ]
+ });
+ 
+
+
+// Activate an inline edit on click of a table cell
+    // or a DataTables Responsive data cell
+    
+ 
+    var table = $('#example').DataTable( {
+   "scrollY": 500,
+   // responsive: true,
+    scrollX: "true",    
+    dom: "Bfrtlip",
+    colReorder: true,
+    select: true,
+    	    
+       
+ 	iDisplayLength: "500",
+	lengthMenu: [[10, 100, 500, -1], [10, 100, 500, "All"]], 
+  	ajax: "views/steptwophp.php",      
+        columns: [
+
+ {   // Checkbox select column
+                data: null,
+                defaultContent: '',
+                className: 'select-checkbox',
+                orderable: false
+            },
+            { data: "i_charges_temp.ic_id" },
+{ data: "i_charges_temp.ic_iid" },
+{ data: "i_charges_temp.ic_mid" },
+{ data: "i_charges_temp.ic_date" },
+{ data: "i_charges_temp.ic_amount" },
+{ data: "i_charges_temp.ic_description" },
+{ data: "i_charges_temp.ic_solddate" },
+{ data: "i_charges_temp.ic_price" },
+{ data: "i_charges_temp.ic_qty" },
+{ data: "i_charges_temp.ic_rate" },
+{ data: "i_charges_temp.ic_maid" },
+{ data: "i_charges_temp.ic_stock" },
+{ data: "i_charges_temp.ic_paid" },
+{ data: "i_charges_temp.ic_note" }
+
+	 ],
+	 
+//	 order: [ 2, 'asc' ],
+//        select: {
+ //           style:    'os',
+//            selector: 'td.select-checkbox'
+//        },
+	 
+	 
+        autoFill: {
+            columns: ':not(:first-child)',
+            editor:  editor
+        },
+        keys: {
+            columns: ':not(:first-child)',
+            editor:  editor
+        },
+        select: {
+            style:    'os',
+            selector: 'td:nth-child(1)',
+            blurable: true
+        },
+    
+         
+        buttons: [
+         
+            { extend: "create", editor: editor },
+            { extend: "edit",   editor: editor },
+            { extend: "remove", editor: editor },
+            //'excelHtml5',
+            //'csvHtml5',
+            //'pdfHtml5',
+            'colvis'
+        ]
+           
+     });
+
+// Disable KeyTable while the main editing form is open
+ editor
+        .on( 'open', function ( e, mode, action ) {
+                    if ( mode === 'main' ) {
+                table.keys.disable();
+            }
+        } )
+        .on( 'close', function () {
+            table.keys.enable();
+        } );
+        table.columns().every( function () {
+        var that = this;
+
+    } );    
+
+} );

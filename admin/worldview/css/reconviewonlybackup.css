@@ -1,0 +1,146 @@
+
+body{/*font-family:"Lucide Console",Monaco, monospace;*/
+/*font-family: Tahoma, Geneva, sans-serif;*/
+ font-size: 16x!important;}
+font-family: "Trebuchet MS, Helvetica, sans-serif!important;;
+#example{font-family:"Lucide Console",Monaco, monospace!important;
+ font-size: 16px!important;}
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {font-family: "Roboto", sans-serif;
+ font-size: 14px;
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  /*background: #4CAF50;*/
+   background: #660000;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #880000;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+thead th{
+font-family:"Lucida Console", Monaco, monospace;
+font-weight:600;
+text-transform:uppercase;
+margin-top:1.5em!important;
+margin-bottom:1.5em!important;
+margin-left:1.5em!important;
+margin-right:1.5em!important;
+padding-top:1.5px!important;
+padding-bottom:1.5px!important;
+padding-left:1.5px!important;
+padding-right:6px!important;
+}
+tfoot th{
+font-family:"Lucida Console", Monaco, monospace;
+font-weight:500;
+text-transform:uppercase;
+margin-top:1.5em!important;
+margin-bottom:1.5em!important;
+margin-left:1.5em!important;
+margin-right:1.5em!important;
+padding-top:1.5px!important;
+padding-bottom:1.5px!important;
+padding-left:1.5px!important;
+padding-right:6px!important;
+}
+table.dataTable tfoot.dataTable th.dataTable{
+font-family: "Lucida Console", Monaco, monospace;
+font-weight:500;
+text-transform:uppercase;
+margin-top:.5px!important;
+margin-bottom:.5px!important;
+margin-left:.5px!important;
+margin-right:.5px!important;
+padding-top:.5px!important;
+padding-bottom:.5px!important;
+padding-left:.5px!important;
+padding-right:.5px!important;
+}
+table.dataTable tbody td{
+padding-top:1px!important;
+padding-bottom:1px!important;
+padding-left:1px!important;
+padding-right:1px!important;
+
+}
+/*table.dataTable input, select {
+.select-checkbox tbody td input{
+padding-top:1px!important;
+padding-bottom:1px!important;
+padding-left:1px!important;
+padding-right:1px!important;
+margin:0 auto!important;
+
+
+vertical-align:baseline;
+
+}*/
+.dt-body-center>.select-checkbox input{max-width:10px;}
+input[type="radio"], input[type="checkbox"] {
+    font-size:16px!important;
+    width: 16px!important;
+    padding-top: 1px!important;
+    padding-bottom: 1px!important;
+    padding-left: 1px!important;
+    padding-right: 1px!important;
+    margin: .5px!important;  
+-moz-box-shadow:none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+input[type="radio"], input[type="checkbox"] {
+    line-height: normal;
+width:8px;
+  
+padding-top:2px!important;
+padding-bottom:2px!important;
+padding-left:2px!important;
+padding-right:2px!important;
+margin:.5px!important;
+}

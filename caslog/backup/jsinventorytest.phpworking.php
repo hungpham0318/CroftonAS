@@ -1,0 +1,627 @@
+<?php session_start();
+require('includes/config.php'); 
+//require __DIR__ . "../caslog/includes/config.php";
+//require(__DIR__.'/../caslog/includes/config.php');
+//require('caslog/includes/config.php'); 
+
+//if not logged in redirect to login page
+if(!$user->is_logged_in()){ header('Location: login.php'); } 
+$quid = $_SESSION['uid'];
+
+//define page title
+$title =  $_SESSION['uname']."&apos;s Page";
+
+//include header template
+//require('caslog/layout/headers.php'); 
+
+//require('./caslog/layout/header.php'); 
+$Userid= trim($_GET['x']);
+$active = trim($_GET['y']);
+
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"> 
+	
+<link href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
+
+
+<link href="https://cdn.datatables.net/responsive/2.1.0/css/responsive.dataTables.min.css" rel="stylesheet">
+<link href="https://cdn.datatables.net/buttons/1.2.1/css/buttons.dataTables.min.css" rel="stylesheet">
+	<link href="/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link rel="https://cdn.datatables.net/responsive/2.1.0/css/responsive.dataTables.min.css" rel="stylesheet">
+	<link rel="https://cdn.datatables.net/buttons/1.2.1/css/buttons.dataTables.min.css" rel="stylesheet">
+	<!--<link rel="stylesheet" href="/common/css/home.css" rel="stylesheet">-->
+ <!--	<link rel="stylesheet" href="/caslog/style/main.css" rel="stylesheet">-->
+	<link rel="stylesheet" href="/common/css/sb-btn.css" rel="stylesheet">	
+	<link rel="stylesheet" href="/common/css/userlanding.css" rel="stylesheet">
+	<!--<link rel="stylesheet" href="admin/css/admin.css" rel="stylesheet">-->
+	 <!--<link rel="stylesheet" href="../admin/worldview/css/status-key.css" rel="stylesheet">-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	
+	<style>
+	.wrapper{width:100%;background:#ffffff;}
+.sortablehidden	select{max-width:200px!important;display:none;}
+#example{width:100%!important;text-transform:uppercase;}
+table.dataTable, table.dataTable th, table.dataTable select {max-width:16em!important;}
+table.dataTable, table.dataTable th, table.dataTable td {max-width:16em!important;}
+.btn {width:192px;}
+td{overflow:hidden;}
+
+body{font-family: 'Inconsolata', monospace;
+background-color:#ffffff;
+background-img:none!important;
+font-size: 24px;
+line-height:1em;
+}
+#myDIV3 {
+   display:none;
+   visibility:collapse;}
+#myDIV {background-color:#ffffff;
+}
+#myDIV3 {background:#ffffff;}
+
+#textDiv {
+    font-size: 12px;
+}
+.first {
+    font-size: 12px;
+}
+.second {
+    font-size: 30px;
+}
+#panel, #flip, #flipback {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+#flipback {visibility:hidden;}
+#panel {
+    padding: 50px;
+    display: none;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+</style>
+</head>
+<body>
+<div class="container wrapper">
+
+
+
+
+<!--
+<button onclick="myDisappear()">Disappear</button>
+<button onclick="myReappear()">Reappear</button>
+
+<button onclick="myInrhtml()">innerHt</button>
+<button onclick="myInrtxt()">innertxt</button>
+
+
+
+<input type="button" id="fontPlusBtn" value="Increase"/>
+<input type="button" id="fontMinusBtn" value="Decrease"/>-->
+<div id="textDiv"><span class="first">
+
+
+<div id="myDIV"><p>Begin Div 1<p> <button onclick="myReplace()">Replace-1st-Div</button></p><button onclick="myFunction()">Arial 1em</button>
+<button onclick="myBigger()">3em</button>
+<button onclick="myNormal()">Normal</button>
+<button onclick="mySmaller()">-</button>
+<button onclick="myVerdana()">Verdana</button>
+<button onclick="myCourier()">Courier</button>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+</div>
+<div id="myDIV3"><p>Begin Div 3<p> <button onclick="myReplace2()">Undo Replace</button></p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.  Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+</div></span>
+<div id="flip">Choose Dealership: </div>
+
+<div id="panel">Hello world!
+<form action="#" method="POST">
+<div id="myDIV2"><p>Begin Div 2 
+<?php
+
+echo $quid;
+	echo'<select id="did" name="did" tabindex="1" onchange="this.form.submit()">
+			<option value="">SELECT DEALERSHIP</option>';
+			include_once 'selectajaxdchoice.php';	
+ 
+// echo'<select id="did" name="did" size="1" onfocus()>                                      
+//    <option selected="true" disabled="disabled">Choose Dealership</option>';
+      //      <select id="dname" name="dname" tabindex="1" onchange="$(function()">
+//include_once"../admin/process/connecti.php";
+/* Check connection
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+
+$con = mysqli_connect("$dbhost","$dbuser","$dbpass","$dbname");
+$quid=$GLOBALS['quid'];
+
+		 $query2 = mysqli_query($con,"SELECT DISTINCT  'mdid'  FROM master LEFT JOIN i_charges ON  (master.mid=i_charges.ic_mid) LEFT JOIN invoices ON (master.minvid = invoices.iid)  LEFT JOIN dealers ON (master.mdid = dealers.did) WHERE master.muid = $quid AND master.mdid = $qdid AND master.marchive = 0 LIMIT 0, 10000");
+	if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+    while($row = mysqli_fetch_array($query2))
+    {echo '<option value = "'.$row['master.mdid'].'">'.$row['master.mdid']." ".$row['dealers.dname'].'</option>';}*/
+?>
+
+</div></form>
+</div>
+</div>
+<div id="flipback">Click to hide</div>
+
+<h2>Animated Modal with Header and Footer</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+     <div id="maincontainer" class="container" style="width:1170px!important">
+	<div class="containerheaderlayout">
+	
+<div>
+	<div class="row">
+
+	<!--	<h2> Welcome <?php //echo $_SESSION['uname']; ?></h2>
+				</p>-->
+				
+			<!--	<h2>Member only page - Welcome</br>-->
+				<?php
+				
+				$quid=$_SESSION['uid'];
+				
+				?>
+				</h2>
+	</div>
+<?php 
+	
+//begin insert
+include "../admin/process/connecti.php";
+// Check connection
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+//<!--table id="example" class="display responsive nowrap" cellspacing="0"   style="width:100%!important;font-size: 1em;"-->
+
+$con = mysqli_connect("$dbhost","$dbuser","$dbpass","$dbname");
+echo '<div id="table-scroll" style="width:100%!important;font-family:Roboto Mono, monospace!important;font-size: .86em;"><table id="example" class="display responsive nowrap" cellspacing="0" >';
+$quid=$GLOBALS['quid'];
+
+$qdid= $_POST['did'];
+    $sdate = $row[SaleDate];
+   
+		 $query2 = mysqli_query($con,"SELECT * FROM master LEFT JOIN i_charges ON  (master.mid=i_charges.ic_mid) LEFT JOIN invoices ON (master.minvid = invoices.iid)  LEFT JOIN dealers ON (master.mdid = dealers.did) WHERE master.muid = $quid AND master.mdid = $qdid AND master.marchive = 0 LIMIT 0, 10000");
+	if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  echo $qdid;
+  echo $quid;
+  }	
+            
+echo '<thead><tr style="width:99%!important;font-family:Roboto Mono, monospace!important;font-size: 1em;">
+<th>Submitted</th>
+<th>Vin</th>
+<th>Status</th>
+<th>Solddate</th>
+<th>Year</th>
+<th>Make</th>
+<th>Dealer</th>
+<th>Model</th>
+<th>Stock</th>
+
+
+<th>Sold Price</th>
+<th>Sale&apos;s Net</th>
+<th>Invoice</th>
+<th>Invoice Item</th>
+
+<th>Detail</th>
+<th>Announcement</th>
+<th>Transport</th>
+
+
+
+
+
+      
+</tr></thead>';
+
+echo '<tfoot><tr style="width:99%!important;font-family:Roboto Mono, monospace!important;font-size: 1em;">
+
+
+
+
+<th class="sortablehidden"></th>
+<th class="sortablehidden">VIN</th>
+<th class="sortablehidden">Status</th>
+<th class="sortablehidden">Sold Date</th>
+<th class="sortablehidden">Year</th>
+<th class="sortablehidden">Make</th>
+<th style=""></th>
+<th class="sortablehidden">Model</th>
+<th class="sortablehidden">Stock</th>
+
+<th style="display:none;">Sold Price</th>
+<th style="display:none;">Sale&apos;s Net</th>
+<th style="display:none;">Invoice</th>
+<th style="display:none;">Invoice Item</th>
+
+<th style="display:none;">Detail</th>
+<th style="display:none;">Announcement</th>
+<th style="display:none;">Transport</th>
+
+
+
+
+
+</tr></tfoot><tbody class="display_table">';
+	
+    while($row = mysqli_fetch_array($query2)) {
+    $vehid = $row['mid'];
+   
+	echo '<tr>
+	<td>'.date("m/d/Y", strtotime($row['mrtime'])).'</td>
+	
+	
+	
+	<td>'.$row['mvin'].'</td>
+	<td>'.$row['mstatus'].'</td>
+	<td>'.$row['msolddate'].'</td>
+	<td>'.$row['myear'].'</td>
+<td>'.$row['mmake'].'</td>
+<td>'.$row['dname'].'</td>
+<td>'.$row['mmodel'].'</td>
+<td>'.$row['mstock'].'</td>
+
+
+
+
+
+<td>'.$row['msoldprice'].'</td>
+<td>'.$row['msalesnet'].'</td>
+
+<td><a href="'.$row['ipdfurl'].'" target="_blank">'.$row['minvid'].'</a></td>
+<td>'.$row['ic_description'].'</td>
+
+<td>'.$row['mdetail'].'</td>
+<td>'.$row['mannounce'].'</td>
+<td>'.$row['mtransport'].'</td>';
+
+
+echo '</tr>';
+	//<td>'.substr($row['mrtime'],5,6).'-'.substr($row['mrtime'],0,4).'</td>
+    }
+  
+   //end insert
+	
+
+ echo "</tbody></table>";
+
+ include "../admin/worldview/css/status-key.html";
+ echo"</div></div>";?>
+
+
+<?php //include "../admin/worldview/css/status-key.html";?>
+
+<!--</table> </div></div>-->
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
+
+
+</div></div>
+</span>
+</div>
+
+
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) 
+  <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+ <!--script type="text/javascript" charset="utf8" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script--> 
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<!-- BootStrap -->
+    <script type="text/javascript" charset="utf8" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<!-- DataTables -->
+	
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.2.1/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/buttons/1.2.1/js/buttons.colVis.min.js"></script>
+	
+	<!-- Core Logic -->
+	
+	
+	
+	
+
+ <script> 
+
+
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+ //When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+   modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+function myInrhtml(){
+var elmyDIV = document.getElementById("myDIV");
+var inmyDIV = elmyDIV.innerHTML;
+elmyDIV.innerHTML = ''+inmyDIV;
+}
+function myInrhtmlinclude(){
+var elPanel = document.getElementById("panel");
+var inElPanel = elPanel.innerHTML;
+elPanel.innerHTML = '<?php include 'optionpopulation.php';?>'+inElPanel;
+}
+
+function myInrtxt(){ 
+    var txt;
+    var r = confirm("USE INNER TEXT \n only when there is no markup\n or else my button disappears... and there is no getting it back. ");
+    if (r == true) {
+        var eltxmyDIV = document.getElementById("myDIV");
+	var intxmyDIV = eltxmyDIV.innerText;
+	eltxmyDIV.innerHTML = 'USE INNER TEXT only when there is no markup or my button disappears... and there is no getting it back. inner text took out my button markup'+intxmyDIV;}    
+    else { }
+}
+
+
+function myFunction(){
+	document.getElementById("textDiv").style.fontFamily = "Arial, sans-serif";
+	document.getElementById("textDiv").style.fontSize = "1em";
+	document.getElementById("textDiv").style.lineHeight = "1em";
+ }
+ 
+ function myDisappear(){
+	document.getElementById("myDIV").style.display = "none";
+	document.getElementById("myDIV").style.visibility = "collapse";
+}
+
+ function myReappear(){
+	document.getElementById("myDIV").style.display = "block";
+	document.getElementById("myDIV").style.visibility = "visible";
+}
+
+function myBigger() {
+        document.getElementById("myDIV").style.fontSize = "3em";
+	document.getElementById("myDIV").style.lineHeight = "1em";
+}
+
+function myNormal() {
+    document.getElementById("myDIV").style.fontSize = "24px";
+}
+
+function mySmaller() {
+    document.getElementById("myDIV").style.fontSize = ".8em";
+}
+
+function myVerdana() {
+    document.getElementById("myDIV").style.fontFamily = "Verdana, sans-serif";
+}
+
+function myCourier() {
+    document.getElementById("myDIV").style.fontFamily = "Courier, monospace";
+}
+
+function myCourier2() {
+    document.getElementById("myDIV").style.fontFamily = "Courier, monospace";
+    document.getElementById("myDIV").style.fontSize = "1em";
+    document.getElementById("myDIV").style.display = "block";
+   document.getElementById("myDIV2").style.visibility = "collapse";
+}
+
+function myReplace(){
+	document.getElementById("myDIV").style.display = "none";
+	document.getElementById("myDIV").style.visibility = "collapse";
+	document.getElementById("myDIV3").style.display = "block";
+	document.getElementById("myDIV3").style.visibility = "visible";
+}
+
+ function myReplace2(){
+  document.getElementById("myDIV3").style.display = "none";
+   document.getElementById("myDIV3").style.visibility = "collapse";
+
+  document.getElementById("myDIV").style.display = "block";
+   document.getElementById("myDIV").style.visibility = "visible";
+}
+ if (location.pathname !== '/') {
+$("a[href*='" + location.pathname + "']").addClass("btn-current");
+} else {
+var home = document.getElementById("home").getElementsByTagName('a')[0];
+home.className = 'btn-current';
+}
+
+
+
+
+
+
+$(document).ready(function() {
+
+ $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+        document.getElementById("flipback").style.visibility = "visible";
+    });
+    $("#flipback").click(function(){
+        $("#panel").slideUp("slow");
+       
+   document.getElementById("flipback").style.visibility = "collapse";
+    });
+$("#fontPlusBtn").click(function (){
+    $("#textDiv > *").css("font-size", function(i, value) {
+        return parseInt(value) * 1.1;
+    });
+});
+$("#fontMinusBtn").click(function (){
+    $("#textDiv > *").css("font-size", function(i, value) {
+        return parseInt(value) / 1.1;
+    });
+});
+
+ $('#example').DataTable( {
+    //   "order": [[ 2, "asc" ]],
+        "order": [[ 0, 'desc' ], [ 2, 'asc' ], [ 3, 'asc' ]],
+      dom: "frtBip",
+        initComplete: function () {
+            this.api().columns().every( function () {
+                var column = this;
+                var select = $('<select><option value="">ALL YOUR DEALERSHIPS</option></select>')
+                    .appendTo( $(column.footer()).empty() )
+                    .on( 'change', function () {
+                        var val = $.fn.dataTable.util.escapeRegex(
+                            $(this).val()
+                        );
+ 
+                        column
+                            .search( val ? '^'+val+'$' : '', true, false )
+                            .draw();
+                    } );
+ 
+                column.data().unique().sort().each( function ( d, j ) {
+                    select.append( '<option value="'+d+'">'+d+'</option>' )
+                } );
+            } );
+        },
+       "iDisplayLength": 10,
+ lengthMenu: [
+  [ 10, -1, 20, 50, ],
+   [ 'Show 10', 'Show All', 'Show 20', 'Show 50' ]
+   ],
+   buttons: [
+        
+        
+     'pageLength'
+   ],
+    
+    "rowCallback": function ( row, data ) { 
+//$('td', row).attr('nowrap','nowrap');
+$('td', row).css('text-transform', 'Uppercase','white-space','nowrap');
+ $('dtr-data', row).css('text-transform', 'Uppercase','white-space','nowrap');
+}
+        
+    
+    
+    
+        
+    } );
+});
+
+ 
+</script>
+
+</body>
+</html>

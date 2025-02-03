@@ -1,0 +1,365 @@
+<?php session_start();
+//admin/regman/reconhtml.php
+if(!isset($_SESSION['ausername']) || $_SESSION['ausername']==""){ $title="Control";}else{
+		$ausername=$_SESSION['ausername'];
+		$apassword=$_SESSION['apassword'];
+    $title="Control";
+		}?>
+	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><?php echo $title;?>&nbsp;the World!</title>
+<link rel="stylesheet" href="/admin/css/normalize.necolas.css">
+
+
+<!--Do not forget to OPEN the following links back up if I add a datatable! -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.1.0/css/responsive.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/colreorder/1.3.2/css/colReorder.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.1.2/css/buttons.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/select/1.1.2/css/select.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/keytable/2.1.1/css/keyTable.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/autofill/2.1.1/css/autoFill.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/scroller/1.4.2/css/scroller.dataTables.min.css">
+<link rel="stylesheet" href="../Editor/css/editor.dataTables.min.css">
+<!--<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">-->
+
+<link rel="stylesheet" href="/admin/css/pure.min.totrytofix.css" type="text/css">
+<!--<link rel="stylesheet" href="/admin/css/adminworld.css" type="text/css">-->
+<!--<link rel="stylesheet" href="/admin/css/admin.css" type="text/css">-->
+<link rel="stylesheet" href="/admin/css/world-all-try.css" type="text/css">
+<!--<link rel="stylesheet" href="/common/css/sb-btn.css" type="text/css">-->
+
+	<link rel="stylesheet" href="/common/css/worldlogin.css" type="text/css">	
+	<link href="/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+<style>
+body {font-family:'Open Sans' sans-serif; 
+font-size:100%;
+overflow-y:scroll;
+width: auto;
+}
+
+div.DTE_Inline input {
+        border: none;
+        background-color: transparent;
+        padding: 0 !important;
+        font-size: 90%;
+      
+        
+    }
+ 
+    div.DTE_Inline input:focus {
+        outline: none;
+        background-color: transparent;
+    }
+    tfoot input {
+        width: 100%;
+        padding: 1px;
+        box-sizing: border-box;
+    }
+
+ 
+</style>
+
+</head>
+<body>
+
+<div class='container-nobootstop'>
+	<div class="">
+	<!--<div id="banner"> 
+<img src="../../images/croftonasbanner3.png" alt="crofton auction services banner for website" />
+</div> -->
+	
+		<div id="section1">
+<div id="">
+<img src="/images/croftonasbanner3.png"  alt="crofton auction services banner for website" />
+
+<?php 
+	if(!isset($_SESSION['ausername']) || $_SESSION['ausername']=="")
+	{echo '<div id="rightcolumnAdminIncludeClip">';
+			include '../forms/worldloginform.php';
+			echo '</div>';
+	}
+	else{echo'<div id="rightcolumnAdminIncludeClip">';
+		$bar = $ausername;
+		include '../forms/worldloggedinform.php';
+		echo '</div>';
+	 }?> 
+</div>
+</div>	
+</div>
+
+		<div id="navigation">
+ 	<?php if(!isset($_SESSION['ausername']) || $_SESSION['ausername']=="")
+	{}else{ include '../incmanmenu.htm';
+	}?>
+	<br/>
+	</div>	<!---->
+	
+	 <?php if(!isset($_SESSION['ausername']) || $_SESSION['ausername']=="")
+	{echo "<hr><div>worldtemp.php</div>";}else{ echo "<hr><div>worldtemp.php</div>";}?>
+<div id="sect1leftcol"><?php if(!isset($_SESSION['ausername']) || $_SESSION['ausername']=="")
+	{echo '<p>Log in to see Menu</p>';}else{echo'<div id="headline" > Control of the World!</div>';} ?>
+
+</div>
+
+
+<!-- put the page between the divs below . -->
+<div class="world-content">
+<!-- put the page between these two divs. -->
+</div>
+<!-- put the page between the  divs above. -->
+</div> <!--closes container-noboot-->
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.1.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/select/1.1.2/js/dataTables.select.min.js"></script>
+<script src="https://cdn.datatables.net/keytable/2.1.1/js/dataTables.keyTable.min.js"></script>
+<script src="https://cdn.datatables.net/autofill/2.1.1/js/dataTables.autoFill.min.js"></script>
+<script src="../../Editor-1.5.5/js/dataTables.editor.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+<script src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+<script src="https://cdn.datatables.net/colreorder/1.3.2/js/dataTables.colReorder.min.js"></script>
+
+<script src="https://cdn.datatables.net/scroller/1.4.2/js/dataTables.scroller.min.js"></script>
+
+<script src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.1.2/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/fixedcolumns/3.2.1/js/dataTables.fixedColumns.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.colVis.min.js"></script>
+
+<script>
+var editor; // use a global for the submit and return data rendering in the examples
+ 
+$(document).ready(function() {
+    editor = new $.fn.dataTable.Editor( {
+        ajax: "reconphp.php",
+        table: "#example",
+       deferRender:    true,
+    //scroller:       true,
+        fields: [ 
+{"label": "mid","name": "newmaster.mid", type:  "readonly", def:   ""},
+//{"label": "mvid","name": "newmaster.mvid", type:  "hidden", def:   ""},
+//{"label": "maid","name": "auctions.a_id", type:  "hidden", def:   "1"},
+//{"label": "mrid","name": "newmaster.mrid", type:  "hidden", def:   ""},
+//{"label": "uid","name": "users.uid", type:  "hidden", def:   ""},
+//{"label": "did","name": "dealers.did", type:  "hidden", def:   ""},
+{"label": "mvin","name": "newmaster.mvin"},
+{"label": "myear","name": "newmaster.myear"},
+{"label": "mmake","name": "newmaster.mmake"},
+{"label": "mmodel","name": "newmaster.mmodel"},
+{"label": "mcolor","name": "newmaster.mcolor"},
+{"label": "mmileage","name": "newmaster.mmileage"},
+{"label": "mannounce","name": "newmaster.mannounce"},
+{"label": "mstock","name": "newmaster.mstock"},
+{"label": "mdetail","name": "newmaster.mdetail"},
+{"label": "mtransport","name": "newmaster.mtransport"},
+{"label": "mfloor","name": "newmaster.mfloor"},
+//{"label": "mrtime","name": "newmaster.mrtime"},
+//{"label": "mreqsaledate2","name": "newmaster.mreqsaledate2", type:  "readonly", def:   ""},
+{"label": "mreqsaledate","name": "newmaster.mreqsaledate"}, 
+{
+                type: "select",
+               label: "Status:",
+                name: "newmaster.mstatus",
+               options: [
+               "I",
+               "A",
+               "S",
+               "Z",
+               "R",
+               "X"
+                       ]
+
+           }, {
+                type:  "select",  
+               label: "Substatus:",
+                name: "newmaster.msubstatus",
+                 options: [
+        "recon-red",
+        "recon-yellow",
+        "recon-green",
+        "recon-blue",
+        "arbit-m",
+        "Inv-No",
+        "Inv-Sent",
+        "Inv-Paid"
+    ]},
+    
+ //{"label": "msolddate","name": "newmaster.msolddate"},
+{"label": "mnotes","name": "newmaster.mnotes"},
+//{"label": "msoldprice","name": "newmaster.msoldprice"},
+{"label": "mcarfax","name": "newmaster.mcarfax"},
+{"label": "mdamage","name": "newmaster.mdamage"},
+{"label": "mmiscinfo","name": "newmaster.mmiscinfo"},
+{"label": "mlane","name": "newmaster.mlane"},
+{"label": "mrun","name": "newmaster.mrun"},
+{"label": "mrundate","name": "newmaster.mrundate"}
+//{"label": "mrunoutcome","name": "newmaster.mrunoutcome"}
+//{"label": "minvid","name": "newmaster.minvid"},
+//{"label": "marchive","name": "newmaster.marchive"}
+        ]
+ });
+ 
+// $('#example').on( 'click', 'tbody td, tbody span.dtr-data', function (e) {
+        // Ignore the Responsive control and checkbox columns
+//        if ( $(this).hasClass( 'control' ) || $(this).hasClass('select-checkbox') ) {
+//            return;
+//        }
+ 
+        //editor.inline( this );
+//  } );
+  $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder=" '+title+'" />' );
+    } );
+// Activate an inline edit on click of a table cell
+    // or a DataTables Responsive data cell
+    
+ 
+    var table = $('#example').DataTable( {
+   "scrollY": 500,
+   // responsive: true,
+    scrollX: "true",    
+    dom: "Bfrtlip",
+    colReorder: true,
+    	    
+       
+ 	iDisplayLength: "50",
+	lengthMenu: [[10, 100, 500, -1], [10, 100, 500, "All"]], 
+  	ajax: "reconphp.php",
+        columns: [
+       // {   // Responsive control column
+       //         data: null,
+       //         defaultContent: '',
+       //         className: 'control',
+       //         orderable: false
+       //     },
+ {   // Checkbox select column
+                data: null,
+                defaultContent: '',
+                className: 'select-checkbox',
+                orderable: false
+            },
+            { data: "newmaster.mid" },
+//{ data: "newmaster.mvid" },
+//{ data: "auctions.a_id" },
+//{ data: "newmaster.mrid" },
+//{ data: "users.uid" },
+//{ data: "dealers.did" },
+{ data: "newmaster.mvin" },
+{ data: "newmaster.myear" },
+{ data: "newmaster.mmake" },
+{ data: "newmaster.mmodel" },
+{ data: "newmaster.mcolor" },
+{ data: "newmaster.mmileage" },
+{ data: "newmaster.mannounce" },
+{ data: "newmaster.mstock" },
+{ data: "newmaster.mdetail" },
+{ data: "newmaster.mtransport" },
+{ data: "newmaster.mfloor" },
+//{ data: "newmaster.mrtime" },
+//{ data: "newmaster.mreqsaledate2" },
+{ data: "newmaster.mreqsaledate" },
+{ data: "newmaster.mstatus" },
+{ data: "newmaster.msubstatus" },
+//{ data: "newmaster.msolddate" },
+{ data: "newmaster.mnotes" },
+//{ data: "newmaster.msoldprice" },
+{ data: "newmaster.mcarfax" },
+{ data: "newmaster.mdamage" },
+{ data: "newmaster.mmiscinfo" },
+{ data: "newmaster.mlane" },
+{ data: "newmaster.mrun" },
+{ data: "newmaster.mrundate" },
+//{ data: "newmaster.mrunoutcome" },
+//{ data: "newmaster.minvid" },
+//{ data: "newmaster.marchive" }	
+	 ],
+	 
+//	 order: [ 2, 'asc' ],
+//        select: {
+ //           style:    'os',
+//            selector: 'td.select-checkbox'
+//        },
+	 
+	 
+        autoFill: {
+            columns: ':not(:first-child)',
+            editor:  editor
+        },
+        keys: {
+            columns: ':not(:first-child)',
+            editor:  editor
+        },
+        select: {
+            style:    'os',
+            selector: 'td:nth-child(1)',
+            blurable: true
+        },
+         
+        buttons: [
+        
+            { extend: "create", editor: editor },
+            { extend: "edit",   editor: editor },
+            //{ extend: "remove", editor: editor },
+            //'excelHtml5',
+            //'csvHtml5',
+            //'pdfHtml5',
+            'colvis'
+        ],
+           
+
+"rowCallback": function ( row, data ) { 
+$('td', row).attr('nowrap','nowrap');
+$('td', row).css('text-transform', 'Uppercase','white-space','nowrap','font-family','monospace');
+   if ( data.newmaster.msubstatus == "recon-green" ){ $('td', row).css('background-color', '#00FF66');}
+   else if ( data.newmaster.msubstatus == "recon-red" ){ $('td', row).css('background-color', '#FCA38B');}
+   else if ( data.newmaster.msubstatus == "recon-blue" ){ $('td', row).css('background-color', '#00CCFF');}
+   else if ( data.newmaster.msubstatus == "recon-yellow" ){ $('td', row).css('background-color', '#FFFF66');}
+   else if ( data.newmaster.msubstatus == "arbit-m" ){ $('td', row).css('background-color', '#99FF66');}
+   else if ( data.newmaster.msubstatus == "arbit-z" ){ $('td', row).css('background-color', '#CCFF66');}
+   else if ( data.newmaster.msubstatus == "Inv-No" ){ $('td', row).css('background-color', 'Orange');}
+  else if ( data.newmaster.msubstatus == "Inv-Sent" ){ $('td', row).css('background-color', '#ffffff');}
+   else if ( data.newmaster.msubstatus == "Inv-Paid" ){ $('td', row).css('background-color', 'Transparent');}
+}
+           
+       
+     });
+ 
+
+// Disable KeyTable while the main editing form is open
+ editor
+        .on( 'open', function ( e, mode, action ) {
+            if ( mode === 'main' ) {
+                table.keys.disable();
+            }
+        } )
+        .on( 'close', function () {
+            table.keys.enable();
+        } );
+        
+
+     table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );    
+} );
+</script>
+</body></html>
+	
+	

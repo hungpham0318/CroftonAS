@@ -1,0 +1,246 @@
+<div class="tablewrapper">	
+<table id="example" class="display nowrap" style="width:100%;">
+    <thead>
+    <tr>
+       
+	<th>Full Name</th>
+	<th>Email</th>
+	<th>Cell</th>
+	<th>UserId</th>
+	
+
+
+	<th>Dealership</th>
+	
+	<th>Fax</th>
+	<th>Office Ph</th>
+	<th>User Notes</th>
+		<th>Username</th>
+	
+	<th>ucas</th>
+	
+	<th>First</th>
+	<th>Last</th>
+	<th>Active</th>
+    </tr>
+</thead>
+<tfoot> 
+<tr>
+
+	
+	<th>Full Name</th>
+	<th>Email</th>
+	<th>Cell</th>
+	<th>UserId</th>
+	
+	
+	
+	<th>Dealership</th>
+	
+	<th>Fax</th>
+	<th>Office Ph</th>
+	<th>User Notes</th>
+		<th>Username</th>
+	<th>ucas</th>
+		
+		<th>First</th>
+	<th>Last</th>
+	<th>Active</th>
+    </tr>
+</tfoot>
+</table>
+</div><!--should close tablewrapper-->
+</div><!--should close section1-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2> User Access for Dealerships and Auctions</h2>
+<div id="frame-udrelates" style="color:#660000;border:1.5px solid #660000;width:100%;margin-top:30px;display:block;">
+<h2>&nbsp;</h2>
+<table style="width:100%;"><tr style="width:100%;display:block;"> 
+<td style="width:45%;display:block;margin:0 auto;text-align: center;float:left;">Dealerships</td>
+<td style="width:45%;display:block;margin:0 auto;text-align: center;float:right;">Auctions</td>
+</tr>
+
+
+<tr>
+<td style="border:1px solid #660000;width:45%;display:inline-block;margin:30px;float:left;"><iframe src="/admin/snipstuff/udrelatejoin.html" width="100%" height="500px"  sandbox="allow-same-origin allow-scripts"></iframe></td>
+
+<td style="border:1px solid #660000;width:45%;display:inline-block;margin:30px;float:right;"><iframe src="/admin/snipstuff/arelatejoin.html" width="100%" height="500px"  sandbox="allow-same-origin allow-scripts"></iframe>
+
+</td></tr></table>
+
+<frame-udrelates>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--should close container-->
+
+</div><!--should close container-->
+
+<script src="http://code.jquery.com/jquery-1.12.3.js"></script>
+<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js "></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.2.1/js/dataTables.buttons.min.js"></script>
+<!--<script src="https://cdn.datatables.net/buttons/1.1.2/js/dataTables.buttons.min.js"></script>-->
+<script src="https://cdn.datatables.net/select/1.1.2/js/dataTables.select.min.js"></script>
+
+<script src="../../Editor/js/dataTables.editor.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+<script src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+<script src="https://cdn.datatables.net/colreorder/1.3.2/js/dataTables.colReorder.min.js"></script>
+ <script src="https://cdn.datatables.net/fixedcolumns/3.2.2/js/dataTables.fixedColumns.min.js">
+
+<script src="https://cdn.datatables.net/scroller/1.4.2/js/dataTables.scroller.min.js"></script>
+
+<script src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.1.2/js/buttons.html5.min.js"></script>
+
+<script src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.colVis.min.js"></script>
+<script>
+var editor; // use a global for the submit and return data rendering in the examples
+ 
+$(document).ready(function() {
+    editor = new $.fn.dataTable.Editor( {
+        ajax: "views/usersphp.php",
+        table: "#example",
+        fields: [ 
+//{"label": "Id","name": "users.uid", type:  "readonly", def:   ""},
+{"label": "Full Name","name": "users.uname"},
+{"label": "Email","name": "users.email", type:  "readonly", def:   ""},
+{"label": "Mobile","name": "users.umobile"},
+
+
+
+{"label": "Dealership","name": "users.ucompany"},
+
+{"label": "Fax","name": "users.ufax"},
+{"label": "Office Phone","name": "users.uofficeph"},
+{"label": "Notes","name": "users.unotes"},
+{"label": "Username","name": "users.username"},
+{"label": "Simple","name": "users.ucas",  type:  "readonly"},
+//{"label": "Encrypted Password","name": "users.password", type:  "readonly"},
+{"label": "First Name","name": "users.ufirst"},
+{"label": "Last Name","name": "users.ulast"},
+{"label": "Active","name": "users.active"}
+        ]
+ 
+ });
+        
+
+      var table = $('#example').DataTable( {
+  
+    dom: "lBfrtip",
+    colReorder: true,
+ "order": [ 10, 'asc' ],
+
+     scrollY:        500,
+        scrollX:        true,
+        scrollCollapse: true,
+        paging:         false,
+        fixedColumns:    {
+            leftColumns: 2
+        },
+  
+
+
+ 
+  	ajax: "views/usersphp.php",
+                 
+        
+        
+       columns: [ 
+
+{ data: "users.uname"},
+{ data: "users.email"},
+{ data: "users.umobile"},
+{ data: "users.uid"},
+
+
+
+{ data: "users.ucompany"},
+
+{ data: "users.ufax"},
+{ data: "users.uofficeph"},
+{ data: "users.unotes"},
+{ data: "users.username"},
+{ data: "users.ucas"},
+//{ data: "users.password"},
+{ data: "users.ufirst"},
+{ data: "users.ulast"},
+{ data: "users.active"}
+	 ],
+	   select: {
+            style:    'os',
+           selector: 'td:nth-child(1)'
+        },
+      
+        order: [[ 11, 'asc' ]],
+
+
+	 
+	 
+        autoFill: {
+            columns: ':not(:first-child)',
+            editor:  editor
+        },
+        keys: {
+            columns: ':not(:first-child)',
+            editor:  editor
+        },
+
+         
+        buttons: [
+       
+            { extend: "create", editor: editor },
+            { extend: "edit",   editor: editor },
+          
+{
+            text: 'Reload',
+            action: function ( e, dt, node, config ) {
+                dt.ajax.reload();
+            }
+        },
+
+            //'excelHtml5',
+            //'csvHtml5',
+           // 'pdfHtml5',
+           'colvis'
+        ],
+           
+      
+       
+     });
+
+
+
+        
+
+ 
+} );

@@ -1,0 +1,218 @@
+<?php session_start();
+require('includes/config.php');
+
+//if logged in redirect to members page
+if( $user->is_logged_in() ){ header('Location: /index.php'); }
+
+//if form has been submitted process it
+if(isset($_POST['submit'])){
+
+	//very basic validation
+	if(strlen($_POST['username']) < 6){
+		$error[] = 'Username must be at least 6 characters.';
+	} else {
+		$stmt = $db->prepare('SELECT username FROM users WHERE username = :username');
+		$stmt->execute(array(':username' => $_POST['username']));
+		$row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+		if(!empty($row['username'])){
+			$error[] = 'Username provided is already in use.';
+		}
+
+	}
+
+	if(strlen(strip_tags($_POST['password'])) < 6){
+		$error[] = 'Password must be at least 6 characters.';
+	}
+
+	if(strlen(strip_tags($_POST['passwordConfirm'])) < 6){
+		$error[] = 'Confirm password must be at least 6 characters.';
+	}
+
+	if(strip_tags($_POST['password']) != strip_tags($_POST['passwordConfirm'])){
+		$error[] = 'Passwords do not match.';
+	}
+
+	//email validation
+	if(!filter_var(strip_tags($_POST['email']), FILTER_VALIDATE_EMAIL)){
+	    $error[] = 'Please enter a valid email address';
+	} else {
+		$stmt = $db->prepare('SELECT email FROM users WHERE email = :email');
+		$stmt->execute(array(':email' => $_POST['email']));
+		$row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+		if(!empty($row['email'])){
+			$error[] = 'Email provided is already in use.';
+		}
+
+	}
+
+
+	//if no errors have been created carry on
+	if(!isset($error)){
+
+		//hash the password
+		$hashedpassword = $user->password_hash($_POST['password'], PASSWORD_BCRYPT);
+
+		//create the activasion code
+		$activasion = md5(uniqid(rand(),true));
+
+		try {
+
+			//insert into database with a prepared statement
+			$stmt = $db->prepare('INSERT INTO users (username,password,email,active,uname,umobile,ucompany,uperms) VALUES (:username, :password, :email, :active, :uname, :umobile, :ucompany, :uperms)');
+			$stmt->execute(array(
+				':username' => strip_tags($_POST['username']),
+				':password' => $hashedpassword,
+				':email' => strip_tags($_POST['email']),
+				':active' => $activasion,
+                                ':uname' => $_POST['uname'],
+				':umobile' => $_POST['umobile'],
+				':ucompany' => $_POST['ucompany'],
+				':uperms' => $_POST['uperms']
+			));
+
+			$id = $db->lastInsertId('uid');
+$username = $_POST['username'];
+				$password = $hashedpassword;
+				$email = strip_tags($_POST['email']);
+				$username =strip_tags($_POST['username']);
+                                $uname = $_POST['uname'];
+				$umobile = $_POST['umobile'];
+				$ucompany = $_POST['ucompany'];
+				$uperms = $_POST['uperms'];
+			//send email
+
+			 $to = "newreg@manheimas.com";
+ 			$subject = "Registration Confirmation";
+			$body = "<p>Please review and activate this new user</p>
+			<p>To review this user's information, To activate this user please click on this link: <a href='".DIR."activate.php?x=$id&y=$activasion'>".DIR."activate.php?x=$id&y=$activasion</a></p><p>Regards Site Admin</p></br>Username'.$username.'</br>id:'.$id.'</br>FullName:'.$uname.'</br>Mobile:'.$umobile.'</br>Company:'.$ucompany.'</br>Active:'.$active.'</br>Permissions:'.$uperms.'</br>";
+			$mail = new Mail();
+
+			$mail->setFrom(SITEEMAIL);
+			$mail->addAddress($to);
+			$mail->subject($subject);
+			$mail->body($body);
+			$mail->send();
+
+			//redirect to index page
+			header('Location: index.php?action=joined');
+			exit;
+
+		//else catch the exception and show the error.
+		} catch(PDOException $e) {
+		    $error[] = $e->getMessage();
+		}
+
+	}
+
+}
+
+//define page title
+$title = 'Sign Up!';
+
+//include header template
+
+
+require('layout/rheaders.php'); 
+
+
+?>
+
+
+<div class="container-noboot">
+	<div id="banner">
+			<img src="/images/croftonasbanner3.png" alt="crofton auction services banner for website" />
+	</div>
+<div id="navigation">
+	<?php require "includes/navcontents.html"; ?>
+	
+	
+	
+</div>
+	
+
+			<form role="form" method="post" action="" autocomplete="off">
+				<h2>Please Sign Up</h2>
+				<h2>Already a member? <a href='login.php'>Login</a></h2>
+				<hr>
+
+				<?php
+				//check for any errors
+				if(isset($error)){
+					foreach($error as $error){
+						echo '<p class="bg-danger">'.$error.'</p>';
+					}
+				}
+
+				//if action is joined show success
+				if(isset($_GET['action']) && $_GET['action'] == 'joined'){
+					echo "<h2 class='bg-success'>Registration successful, please check your email to activate your account.</h2>";
+				}
+				?>
+<div class="container">	
+
+<div class="form-group">
+
+<input style="display:none" type="text" name="fakeusernameremembered"/>
+<input style="display:none" type="password" name="fakepasswordremembered"/> 
+</div>
+
+<div class="row col-md-6 col-md-6">
+<div class="form-group">
+<input type="text" name="uname" id="uname" class="form-control input-lg" placeholder="Full Name" value="<?php if(isset($error)){ echo strip_tags($_POST['uname']); } ?>" tabindex="1">
+</div>
+
+<div class="form-group">
+<input type="text" name="umobile" id="umobile" class="form-control input-lg" placeholder="Cell" value="<?php if(isset($error)){echo strip_tags($_POST['umobile']); } ?>" tabindex="2">
+</div>
+</div>
+
+
+<div class="row col-md-6 col-md-6">
+<div class="form-group">
+<input type="text" name="ucompany" id="ucompany" class="form-control input-lg" placeholder="Your Company Name" value="<?php if(isset($error)){ echo strip_tags($_POST['ucompany']); } ?>" tabindex="3">
+</div>
+
+<div class="form-group">
+<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" value="<?php if(isset($error)){echo strip_tags($_POST['email']); } ?>" tabindex="5">
+</div>
+</div>
+
+
+<div class="row col-md-6 col-md-6">		
+<div class="form-group">
+<input type="text" name="username" id="username" class="form-control input-lg" placeholder="Username(no spaces)" value="<?php if(isset($error)){echo strip_tags($_POST['username']); }else{echo "";} ?>" tabindex="4">
+</div>
+</div>
+
+
+<div class="row col-md-6 col-md-6">	
+<div class="form-group">
+<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="6" value="">
+</div>
+					
+<div class="form-group">
+<input type="password" name="passwordConfirm" id="passwordConfirm" class="form-control input-lg" placeholder="Confirm Password" tabindex="7">
+</div>
+</div>
+<div class="form-group">
+<input type="hidden" name="uperms" id="uperms" class="form-control input-lg" placeholder="uperms" value="1">
+</div>
+
+
+<div class="row">
+<div class=" col-md-6 col-md-6">
+<input type="submit" name="submit" value="Register" class="pure-button " tabindex="8">
+</div>
+</div>
+<!--<div class="row">
+<div class=" col-md-6 col-md-6"><input type="submit" name="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="8">
+</div>-->
+</div></form>
+</div>
+
+<?php
+//include footer 
+require('layout/footer.php');?>
+</div>

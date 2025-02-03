@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>workingvehiclesbeforecolumntoggling</title>
+
+
+
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.1.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/select/1.1.2/js/dataTables.select.min.js"></script>
+<script src="https://cdn.datatables.net/keytable/2.1.1/js/dataTables.keyTable.min.js"></script>
+<script src="https://cdn.datatables.net/autofill/2.1.1/js/dataTables.autoFill.min.js"></script>
+<script src="../../Editor-1.5.5/js/dataTables.editor.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.1.2/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/fixedcolumns/3.2.1/js/dataTables.fixedColumns.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.1.2/css/buttons.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/select/1.1.2/css/select.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/keytable/2.1.1/css/keyTable.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/autofill/2.1.1/css/autoFill.dataTables.min.css">
+<link rel="stylesheet" href="../../Editor-1.5.5/css/editor.dataTables.min.css">
+
+
+
+
+
+
+
+
+
+
+<style>
+div.DTE_Inline input {
+        border: none;
+        background-color: transparent;
+        padding: 0 !important;
+        font-size: 90%;
+    }
+ 
+    div.DTE_Inline input:focus {
+        outline: none;
+        background-color: transparent;
+    }
+</style>
+
+</head>
+<body>
+<table id="example" class="display" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th></th>
+            <th>DealerId</th>
+            <th>UserId</th>
+            <th>VIN</th>
+            <th>Year</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Color</th>
+            <th>Mileage</th>
+            <th>Announcement</th>
+            <th>Stock #</th>
+            <th>Detail</th>
+            <th>Transport</th>
+            <th>Floor</th>
+            <th>Status</th>
+            <th>Subtatus</th>
+            <th>Timestamp</th>
+            <th>VehicleId</th>
+            <th>RecordId</th>
+        </tr>
+    </thead>
+</table>
+<script>
+var editor; // use a global for the submit and return data rendering in the examples
+ 
+$(document).ready(function() {
+    editor = new $.fn.dataTable.Editor( {
+        ajax: "vehicles.php",
+        table: "#example",
+        fields: [ {
+                label: "VehicleId:",
+                name: "v_id"
+            }, {
+                label: "DealerId:",
+                name: "v_did"
+            }, {
+            	label: "UserId:",
+                name: "v_uid"
+            }, {
+            label: "RecordId:",
+                name: "v_rid"
+            }, {
+              label: "VIN:",
+                name: "txtVIN"
+            }, {
+              label: "Year:",
+                name: "txtYear"
+            }, {
+              label: "Make:",
+                name: "txtMake"
+            }, {
+              label: "Model:",
+                name: "txtModel"
+            }, {
+              label: "Color:",
+                name: "txtColor"
+            }, {
+                label: "Mileage:",
+                name: "txtMileage"
+            }, {
+                label: "Announcement:",
+                name: "txtAnon"
+            }, {
+                label: "StockNo:",
+                name: "inpvehStock"
+            }, {
+            label: "Detail:",
+                name: "popDetail"
+            }, {
+            label: "Transport:",
+                name: "txtTrans"
+            }, {
+             label: "Floor:",
+                name: "txtPrice"
+            }, {
+               label: "Status:",
+                name: "v_status"
+            }, {
+             label: "Substatus:",
+                name: "v_substatus"
+            }, {
+                label: "Timestamp:",
+                name: "r_time"
+            }
+        ]
+ });
+ 
+ 
+ 
+    var table = $('#example').DataTable( {
+    scrollX: "true",
+    scrollY: "true",    
+    dom: "lBfrtip",
+    	    
+       
+ 	iDisplayLength: "50",
+	lengthMenu: [[10, 50, 100, -1], [10, 50, 100, "All"]], 
+  	ajax: "vehicles.php",
+        columns: [
+            {
+                data: null,
+                defaultContent: '',
+                className: 'select-checkbox',
+                orderable: false
+            },
+            
+            { data: "v_did" },
+            { data: "v_uid" },
+            { data: "txtVIN" },
+            { data: "txtYear" },
+            { data: "txtMake" },
+            { data: "txtModel" },
+            { data: "txtColor" },
+            { data: "txtMileage" },
+            { data: "txtAnon" },
+            { data: "inpvehStock" },
+            { data: "popDetail" },
+            { data: "txtTrans" },
+            { data: "txtPrice" },
+            { data: "v_status" },
+            { data: "v_substatus" },
+            { data: "r_time" },
+            { data: "v_id" },
+            { data: "v_rid" }
+	 ],
+        autoFill: {
+            columns: ':not(:first-child)',
+            editor:  editor
+        },
+        keys: {
+            columns: ':not(:first-child)',
+            editor:  editor
+        },
+        select: {
+            style:    'os',
+            selector: 'td:first-child',
+            blurable: true
+        },
+        buttons: [
+            { extend: "create", editor: editor },
+            { extend: "edit",   editor: editor },
+            { extend: "remove", editor: editor },
+            'copyHtml5',
+            'excelHtml5',
+            'csvHtml5',
+            'pdfHtml5'
+        ],
+               
+
+"rowCallback": function ( row, data ) { 
+$('td', row).css('text-transform', 'Uppercase');
+   if ( data.v_substatus == "recon-green" ){ $('td', row).css('background-color', '#00FF66');}
+   else if ( data.v_substatus == "recon-red" ){ $('td', row).css('background-color', '#FCA38B');}
+   else if ( data.v_substatus == "recon-blue" ){ $('td', row).css('background-color', '#00CCFF');}
+   else if ( data.v_substatus == "recon-yellow" ){ $('td', row).css('background-color', '#FFFF66');}
+   else if ( data.v_substatus == "arb-m" ){ $('td', row).css('background-color', '#99FF66');}
+   else if ( data.v_substatus == "arb-z" ){ $('td', row).css('background-color', '#CCFF66');}
+   else if ( data.v_substatus == "" ){ $('td', row).css('background-color', 'Transparent');}
+}
+           
+       
+     });
+ 
+    // Disable KeyTable while the main editing form is open
+    editor
+        .on( 'open', function ( e, mode, action ) {
+            if ( mode === 'main' ) {
+                table.keys.disable();
+            }
+        } )
+        .on( 'close', function () {
+            table.keys.enable();
+        } );
+} );
+
+</script>
+</body>
+</html>

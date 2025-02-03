@@ -1,0 +1,220 @@
+<div class="tablewrapper">	
+<table id="example" class="display nowrap" cellspacing="0" width="100%">
+    <thead>
+    <tr>
+<th></th>
+	<th>uid</th>
+	<th>uname</th>
+	<th>email</th>
+	<th>umobile</th>
+	<th>ufax</th>
+	<th>uofficeph</th>
+	<th>username</th>
+	<th>password</th>
+	<th>active</th>
+	<th>resetToken</th>
+	<th>resetComplete</th>
+	<th>uaddress</th>
+	<th>ucity</th>
+	<th>ustate</th>
+	<th>uzip</th>
+	<th>ucompany</th>
+	<th>unotes</th>
+	<th>uperms</th>
+    </tr>
+</thead>
+<tfoot> <tr>
+<th></th>
+	<th>uid</th>
+	<th>uname</th>
+	<th>email</th>
+	<th>umobile</th>
+	<th>ufax</th>
+	<th>uofficeph</th>
+	<th>username</th>
+	<th>password</th>
+	<th>active</th>
+	<th>resetToken</th>
+	<th>resetComplete</th>
+	<th>uaddress</th>
+	<th>ucity</th>
+	<th>ustate</th>
+	<th>uzip</th>
+	<th>ucompany</th>
+	<th>unotes</th>
+	<th>uperms</th>
+    </tr>
+</tfoot>
+</table>
+          </div>
+</div>
+</div>
+
+<script>
+var editor; // use a global for the submit and return data rendering in the examples
+ 
+$(document).ready(function() {
+    editor = new $.fn.dataTable.Editor( {
+        ajax: "udamanp.php",
+        table: "#example",
+        //deferRender:    true,
+    //scroller:       true,
+        fields: [ 
+{"label": "uid","name": "users.uid"},
+{"label": "uname","name": "users.uname"},
+{"label": "email","name": "users.email"},
+{"label": "umobile","name": "users.umobile"},
+{"label": "ufax","name": "users.ufax"},
+{"label": "uofficeph","name": "users.uofficeph"},
+{"label": "username","name": "users.username"},
+{"label": "password","name": "users.password"},
+{"label": "active","name": "users.active"},
+{"label": "resetToken","name": "users.resetToken"},
+{"label": "resetComplete","name": "users.resetComplete"},
+{"label": "uaddress","name": "users.uaddress"},
+{"label": "ucity","name": "users.ucity"},
+{"label": "ustate","name": "users.ustate"},
+{"label": "uzip","name": "users.uzip"},
+{"label": "ucompany","name": "users.ucompany"},
+{"label": "unotes","name": "users.unotes"},
+{"label": "uperms","name": "users.uperms"}
+        ]
+ });
+ 
+// $('#example').on( 'click', 'tbody td, tbody span.dtr-data', function (e) {
+        // Ignore the Responsive control and checkbox columns
+//        if ( $(this).hasClass( 'control' ) || $(this).hasClass('select-checkbox') ) {
+//            return;
+//        }
+ 
+        //editor.inline( this );
+//  } );
+  $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder=" '+title+'" />' );
+    } );
+// Activate an inline edit on click of a table cell
+    // or a DataTables Responsive data cell
+    
+ 
+    var table = $('#example').DataTable( {
+   "scrollY": 500,
+   // responsive: true,
+    scrollX: "true",    
+    dom: "lBfrtip",
+    colReorder: true,
+    	    
+       
+ 	iDisplayLength: "50",
+	lengthMenu: [[10, 100, 500, -1], [10, 100, 500, "All"]], 
+  	ajax: "udamanp.php",
+        columns: [
+       // {   // Responsive control column
+       //         data: null,
+       //         defaultContent: '',
+       //         className: 'control',
+       //         orderable: false
+       //     },
+ {   // Checkbox select column
+                data: null,
+                defaultContent: '',
+                className: 'select-checkbox',
+                orderable: false
+            },
+{ data: "users.uid"},
+{ data: "users.uname"},
+{ data: "users.email"},
+{ data: "users.umobile"},
+{ data: "users.ufax"},
+{ data: "users.uofficeph"},
+{ data: "users.username"},
+{ data: "users.password"},
+{ data: "users.active"},
+{ data: "users.resetToken"},
+{ data: "users.resetComplete"},
+{ data: "users.uaddress"},
+{ data: "users.ucity"},
+{ data: "users.ustate"},
+{ data: "users.uzip"},
+{ data: "users.ucompany"},
+{ data: "users.unotes"},
+{ data: "users.uperms"}	
+	 ],
+	 
+//	 order: [ 2, 'asc' ],
+//        select: {
+ //           style:    'os',
+//            selector: 'td.select-checkbox'
+//        },
+	 
+	 
+        autoFill: {
+            columns: ':not(:first-child)',
+            editor:  editor
+        },
+        keys: {
+            columns: ':not(:first-child)',
+            editor:  editor
+        },
+        select: {
+            style:    'os',
+            selector: 'td:nth-child(1)',
+            blurable: true
+        },
+         
+        buttons: [
+        
+            { extend: "create", editor: editor },
+            { extend: "edit",   editor: editor },
+            { extend: "remove", editor: editor },
+            'excelHtml5',
+            //'csvHtml5',
+            'pdfHtml5',
+            'colvis'
+        ],
+           
+
+//"rowCallback": function ( row, data ) { 
+//$('td', row).attr('nowrap','nowrap');
+//$('td', row).css('text-transform', 'Uppercase','white-space','nowrap','font-family','monospace');
+  // if ( data.newmaster.msubstatus == "recon-green" ){ $('td', row).css('background-color', '#00FF66');}
+  // else if ( data.newmaster.msubstatus == "recon-red" ){ $('td', row).css('background-color', '#FCA38B');}
+  // else if ( data.newmaster.msubstatus == "recon-blue" ){ $('td', row).css('background-color', '#00CCFF');}
+  // else if ( data.newmaster.msubstatus == "recon-yellow" ){ $('td', row).css('background-color', '#FFFF66');}
+  // else if ( data.newmaster.msubstatus == "arbit-m" ){ $('td', row).css('background-color', '#99FF66');}
+  // else if ( data.newmaster.msubstatus == "arbit-z" ){ $('td', row).css('background-color', '#CCFF66');}
+  // else if ( data.newmaster.msubstatus == "Inv-No" ){ $('td', row).css('background-color', 'Orange');}
+ // else if ( data.newmaster.msubstatus == "Inv-Sent" ){ $('td', row).css('background-color', '#ffffff');}
+  // else if ( data.newmaster.msubstatus == "Inv-Paid" ){ $('td', row).css('background-color', 'Transparent');}
+//}
+           
+       
+     });
+ 
+
+// Disable KeyTable while the main editing form is open
+ editor
+        .on( 'open', function ( e, mode, action ) {
+            if ( mode === 'main' ) {
+                table.keys.disable();
+            }
+        } )
+        .on( 'close', function () {
+            table.keys.enable();
+        } );
+        
+
+     table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );    
+} );
+</script>
+</body></html>

@@ -1,0 +1,317 @@
+<head>
+
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title><?php echo $title;?></title>
+<link rel="stylesheet" type="text/css" href="/admin/worldview/css/status-key.css">
+	<link rel="stylesheet" type="text/css" href="/admin/worldview/css/substatus-key.css">
+	<link rel="stylesheet" type="text/css" href="/admin/worldview/css/snow-nav-admin.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="shortcut icon" type="image/ico" href="http://croftonas.com/images/favicon.ico">
+	
+
+	
+
+	
+	
+	
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.1/css/selectize.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/autofill/2.2.0/css/autoFill.dataTables.css"/>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.3.1/css/buttons.jqueryui.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.3.1/css/buttons.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="/Editor16/css/editor.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="/Editor16/FieldType-Select2-1.6.2/editor.select2.min.css"/>
+
+<link rel="stylesheet" type="text/css" href="/Editor16/FieldType-Selectize-1.6.2/editor.selectize.min.css"/>
+<link rel="stylesheet" type="text/css" href="/Editor16/FieldType-Title-1.6.2/editor.title.min.css"/>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedcolumns/3.2.2/css/fixedColumns.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/rowgroup/1.0.0/css/rowGroup.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.2.2/css/select.dataTables.min.css"/>
+	
+
+<style>
+body{
+/*  font-family:   "Helvetica Narrow","Arial Narrow",Tahoma,Arial,Helvetica,sans-serif;
+font-family: 'Open Sans', sans-serif;*/
+
+/*font-family: 'Open Sans', sans-serif!important;*/
+ font-family: Verdana, sans-serif!important;
+font-size:16px;
+ width:99%;}
+#keysbutton{background-color:#660000;color:#ffffff;}
+#wrapkeysmenu{display:block; float:left;text-align:left;width:100%;}
+#floatrightmenu{text-align:right;float:right; width:55%;display:block;}
+#statuskey{width:290px;border:none;}
+#substatuskey{width:375px;border:none;}
+#showhidekeys {
+    width:40%;
+    padding: 5px 0;
+    text-align: left;
+    background-color: white;
+    margin-top:5px;
+    display:none;
+
+}
+
+
+th{font-family: 'Open Sans', sans-serif;text-transform:uppercase;}
+div.DTE_Body div.DTE_Body_Content div.DTE_Field {
+  
+    box-sizing: border-box;
+}
+ 
+
+div.DTE_Body div.DTE_Form_Content {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.DTE_Label{
+font-size:.7em!important
+
+}
+
+.DTE_Field {
+width:20em!important;
+white-space: nowrap;
+margin:1px;
+float:left;
+text-transform:uppercase;}
+
+div.DTED_Lightbox_Wrapper {
+    left: 1em;
+    right: 1em;
+    margin: 0 auto;
+    width: 99%;
+overflow-x: hidden ;
+overflow-y: auto;
+}
+#customForm {
+    display: flex;
+    flex-flow: row wrap;
+display: -webkit-flex;
+    display: flex;
+    width: 100%;
+  -webkit-align-content: center;
+    align-content: center;
+    background-color: white;
+    margin:0 auto;
+    padding: .2em;  
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+text-transform:uppercase;
+}
+#customForm input {
+    min-width:15em;
+  max-width:15em;
+font-size:1em;
+
+text-transform:uppercase;
+}
+#customForm.hr input text {
+    width:15em;
+ min-width:15em;
+  max-width:15em;
+
+
+text-transform:uppercase;
+}
+ #customForm.hr select {
+ min-width:15em;
+  max-width:15em;
+height:2.3em;
+text-transform:uppercase;
+font-size:1em!important;
+}
+  #customForm select {
+    width:15em;
+ min-width:15em;
+  max-width:15em;
+height:2.3em;
+font-size:1em!important;
+}
+#customForm fieldset {
+    flex: 1;
+    border: 1px solid #aaa;
+    margin: 0.2em;
+
+text-transform:uppercase;
+min-width: 21.5em!important;
+}
+ 
+#customForm fieldset legend {
+    padding: .2em .2em;
+    border: 1px solid #aaa;
+    font-weight: bold;
+
+
+
+
+margin:1px;}
+}
+ #customForm fieldset legend.inside {
+    padding: 5px 20px;
+    border: 1px solid #aaa;
+    font-weight: bold;
+}
+ 
+#customForm fieldset.name {
+    flex: 1 100%;
+margin:0 auto;
+
+
+}
+
+
+#customForm fieldset.office {
+    flex: 2 ;
+
+
+}
+#customForm fieldset.hr {
+    flex: 2  ;
+  
+    float:left;
+}
+#customForm fieldset.inside {
+    flex: 2 ;
+   
+    float:left;
+}
+ 
+#customForm fieldset.name legend {
+    background: #660000;
+color:#ffffff;
+}
+ 
+#customForm fieldset.office legend {
+    background: #660000;
+color:#ffffff;
+}
+ 
+#customForm fieldset.hr legend {
+    background: #660000;
+color:#ffffff;
+}
+ 
+#customForm div.DTE_Field {
+ min-width:20em;
+  max-width:20em;
+    padding: .2em;
+}
+
+.DTE_Field  {text-transform:uppercase;
+}
+.DTE_Field_Type_text {
+}
+#DTE_Field_Name_master.mvin {
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.dt-button-collection a.dt-button.active:not(.disabled) {
+    background-color: #880000;opacity: 1;}
+a.dt-button.disabled {
+    color: #d0d0d0;
+    border: 1px solid #d0d0d0;
+    cursor: default;
+    background-color: #440000;opacity:.3;}
+a.dt-button:hover, a.dt-button:focus, a.dt-button.active:hover { background-color: #990000!important; background-image: none!important;}
+a.dt-button:active,a.dt-button.active { background-color: #440000!important; opacity:.8; background-image: none!important;}
+a.dt-button {
+ background-color: #660000;
+/*  background-color: rgb(233, 233, 233);*/
+  background-image: none!important;
+  border-bottom-color: rgb(153, 153, 153);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(153, 153, 153);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(153, 153, 153);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(153, 153, 153);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+color: #ffffff;
+  /*color: rgb(0, 0, 0);*/
+  cursor: pointer;
+  display: inline-block;
+  filter: none;
+  
+  
+  font-size: 1em;
+  height: 2.3em;
+  margin-right: 0px;
+  outline-color: rgb(0, 0, 0);
+  outline-style: none;
+  outline-width: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-bottom: 5.72px;
+  padding-left: 11.44px;
+  padding-right: 11.44px;
+  padding-top: 5.72px;
+  position: relative;
+  text-decoration-color: rgb(0, 0, 0);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  user-select: none;
+  white-space: nowrap;
+ /*width: 102.641px;*/
+}
+.active {background-color:#440000;}

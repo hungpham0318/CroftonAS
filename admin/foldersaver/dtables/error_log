@@ -1,0 +1,14 @@
+[25-Feb-2016 22:53:33 America/Chicago] PHP Warning:  include(manage-incmenu.htm): failed to open stream: No such file or directory in /home/croftona/public_html/admin/dtables/coloreddataTable.php on line 140
+[25-Feb-2016 22:53:33 America/Chicago] PHP Warning:  include(manage-incmenu.htm): failed to open stream: No such file or directory in /home/croftona/public_html/admin/dtables/coloreddataTable.php on line 140
+[25-Feb-2016 22:53:33 America/Chicago] PHP Warning:  include(): Failed opening 'manage-incmenu.htm' for inclusion (include_path='.:/opt/php54/lib/php') in /home/croftona/public_html/admin/dtables/coloreddataTable.php on line 140
+[25-Feb-2016 22:54:19 America/Chicago] PHP Warning:  include(manage-incmenu.htm): failed to open stream: No such file or directory in /home/croftona/public_html/admin/dtables/coloreddataTable.php on line 140
+[25-Feb-2016 22:54:19 America/Chicago] PHP Warning:  include(manage-incmenu.htm): failed to open stream: No such file or directory in /home/croftona/public_html/admin/dtables/coloreddataTable.php on line 140
+[25-Feb-2016 22:54:19 America/Chicago] PHP Warning:  include(): Failed opening 'manage-incmenu.htm' for inclusion (include_path='.:/opt/php54/lib/php') in /home/croftona/public_html/admin/dtables/coloreddataTable.php on line 140
+[26-Feb-2016 12:55:42 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[26-Feb-2016 12:56:14 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[26-Feb-2016 12:58:08 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[26-Feb-2016 14:26:40 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[27-Feb-2016 18:57:39 America/Chicago] PHP Warning:  include(../../Editor/php/DataTables.php): failed to open stream: No such file or directory in /home/croftona/public_html/admin/dtables/vehicles.php on line 8
+[27-Feb-2016 18:57:39 America/Chicago] PHP Warning:  include(../../Editor/php/DataTables.php): failed to open stream: No such file or directory in /home/croftona/public_html/admin/dtables/vehicles.php on line 8
+[27-Feb-2016 18:57:39 America/Chicago] PHP Warning:  include(): Failed opening '../../Editor/php/DataTables.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/croftona/public_html/admin/dtables/vehicles.php on line 8
+[27-Feb-2016 18:57:39 America/Chicago] PHP Fatal error:  Class 'DataTables\Editor' not found in /home/croftona/public_html/admin/dtables/vehicles.php on line 21

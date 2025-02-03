@@ -1,0 +1,156 @@
+[09-Aug-2016 21:48:00 America/Chicago] PHP Notice:  Undefined index: data in /home/manheim/public_html/admin/Editor/php/Editor/Editor.php on line 569
+[09-Aug-2016 21:48:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/manheim/public_html/admin/Editor/php/Editor/Editor.php on line 569
+[09-Aug-2016 21:48:00 America/Chicago] PHP Notice:  Undefined index: data in /home/manheim/public_html/admin/Editor/php/Editor/Editor.php on line 653
+[09-Aug-2016 21:48:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/manheim/public_html/admin/Editor/php/Editor/Editor.php on line 653
+[09-Aug-2016 21:48:00 America/Chicago] PHP Notice:  Undefined index: data in /home/manheim/public_html/admin/Editor/php/Editor/Editor.php on line 586
+[09-Aug-2016 21:48:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/manheim/public_html/admin/Editor/php/Editor/Editor.php on line 586
+[10-Aug-2016 03:24:24 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[30-Aug-2016 01:16:19 America/Chicago] PHP Warning:  Missing argument 4 for DataTables\Editor::leftJoin(), called in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 41 and defined in /home/manheim/public_html/admin/Editor/php/Editor/Editor.php on line 447
+[30-Aug-2016 01:16:19 America/Chicago] PHP Notice:  Undefined variable: field2 in /home/manheim/public_html/admin/Editor/php/Editor/Editor.php on line 452
+[30-Aug-2016 01:16:33 America/Chicago] PHP Warning:  Missing argument 4 for DataTables\Editor::leftJoin(), called in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 41 and defined in /home/manheim/public_html/admin/Editor/php/Editor/Editor.php on line 447
+[30-Aug-2016 01:16:33 America/Chicago] PHP Notice:  Undefined variable: field2 in /home/manheim/public_html/admin/Editor/php/Editor/Editor.php on line 452
+[30-Aug-2016 01:17:51 America/Chicago] PHP Notice:  Use of undefined constant i_charges - assumed 'i_charges' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:17:51 America/Chicago] PHP Notice:  Use of undefined constant ic_iid - assumed 'ic_iid' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:17:51 America/Chicago] PHP Notice:  Undefined variable: iid in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:18:10 America/Chicago] PHP Notice:  Use of undefined constant i_charges - assumed 'i_charges' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:18:10 America/Chicago] PHP Notice:  Use of undefined constant ic_iid - assumed 'ic_iid' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:18:10 America/Chicago] PHP Notice:  Undefined variable: iid in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:18:35 America/Chicago] PHP Notice:  Use of undefined constant i_charges - assumed 'i_charges' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:18:35 America/Chicago] PHP Notice:  Use of undefined constant ic_iid - assumed 'ic_iid' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:18:35 America/Chicago] PHP Notice:  Undefined variable: iid in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:21:35 America/Chicago] PHP Notice:  Use of undefined constant i_charges - assumed 'i_charges' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:21:35 America/Chicago] PHP Notice:  Use of undefined constant ic_iid - assumed 'ic_iid' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:21:35 America/Chicago] PHP Notice:  Undefined variable: iid in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:21:59 America/Chicago] PHP Notice:  Use of undefined constant i_charges - assumed 'i_charges' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:21:59 America/Chicago] PHP Notice:  Use of undefined constant ic_iid - assumed 'ic_iid' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:21:59 America/Chicago] PHP Notice:  Use of undefined constant invoices - assumed 'invoices' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:21:59 America/Chicago] PHP Notice:  Use of undefined constant iid - assumed 'iid' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:23:20 America/Chicago] PHP Notice:  Use of undefined constant i_charges - assumed 'i_charges' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:23:20 America/Chicago] PHP Notice:  Use of undefined constant ic_iid - assumed 'ic_iid' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:23:20 America/Chicago] PHP Notice:  Use of undefined constant invoices - assumed 'invoices' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:23:20 America/Chicago] PHP Notice:  Use of undefined constant iid - assumed 'iid' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:24:10 America/Chicago] PHP Notice:  Use of undefined constant i_charges - assumed 'i_charges' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:24:10 America/Chicago] PHP Notice:  Use of undefined constant ic_iid - assumed 'ic_iid' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:24:10 America/Chicago] PHP Notice:  Use of undefined constant invoices - assumed 'invoices' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:24:10 America/Chicago] PHP Notice:  Use of undefined constant iid - assumed 'iid' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:25:50 America/Chicago] PHP Notice:  Use of undefined constant i_charges - assumed 'i_charges' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:25:50 America/Chicago] PHP Notice:  Use of undefined constant ic_iid - assumed 'ic_iid' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:25:50 America/Chicago] PHP Notice:  Use of undefined constant invoices - assumed 'invoices' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:25:50 America/Chicago] PHP Notice:  Use of undefined constant iid - assumed 'iid' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:25:57 America/Chicago] PHP Notice:  Use of undefined constant i_charges - assumed 'i_charges' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:25:57 America/Chicago] PHP Notice:  Use of undefined constant ic_iid - assumed 'ic_iid' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:25:57 America/Chicago] PHP Notice:  Use of undefined constant invoices - assumed 'invoices' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:25:57 America/Chicago] PHP Notice:  Use of undefined constant iid - assumed 'iid' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 44
+[30-Aug-2016 01:48:02 America/Chicago] PHP Parse error:  syntax error, unexpected 'ajax' (T_STRING) in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 39
+[30-Aug-2016 01:48:08 America/Chicago] PHP Parse error:  syntax error, unexpected 'ajax' (T_STRING) in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 39
+[30-Aug-2016 16:30:47 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[30-Aug-2016 19:21:03 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 38
+[30-Aug-2016 19:22:15 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 35
+[30-Aug-2016 19:22:15 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 36
+[30-Aug-2016 19:22:15 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 37
+[30-Aug-2016 19:23:41 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 35
+[30-Aug-2016 19:23:41 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 36
+[30-Aug-2016 19:23:41 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 37
+[30-Aug-2016 19:26:36 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 35
+[30-Aug-2016 19:26:36 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 36
+[30-Aug-2016 19:26:36 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 37
+[30-Aug-2016 19:27:08 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 35
+[30-Aug-2016 19:27:08 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 36
+[30-Aug-2016 19:27:08 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 37
+[30-Aug-2016 19:32:19 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 35
+[30-Aug-2016 19:32:19 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 36
+[30-Aug-2016 19:32:19 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 37
+[30-Aug-2016 19:32:40 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 35
+[30-Aug-2016 19:32:40 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 36
+[30-Aug-2016 19:32:40 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 37
+[30-Aug-2016 19:38:16 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 35
+[30-Aug-2016 19:38:16 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 36
+[30-Aug-2016 19:38:16 America/Chicago] PHP Notice:  Undefined variable: registered in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 37
+[30-Aug-2016 20:17:54 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 35
+[30-Aug-2016 20:17:54 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 36
+[30-Aug-2016 20:17:54 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 37
+[30-Aug-2016 20:18:16 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 35
+[30-Aug-2016 20:18:16 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 36
+[30-Aug-2016 20:18:16 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 37
+[30-Aug-2016 20:20:03 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 36
+[30-Aug-2016 20:20:03 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 37
+[30-Aug-2016 20:20:03 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 38
+[30-Aug-2016 20:21:24 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 36
+[30-Aug-2016 20:21:24 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 37
+[30-Aug-2016 20:21:24 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 38
+[30-Aug-2016 20:23:36 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 36
+[30-Aug-2016 20:23:36 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 37
+[30-Aug-2016 20:23:36 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 38
+[30-Aug-2016 20:23:49 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 36
+[30-Aug-2016 20:23:49 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 37
+[30-Aug-2016 20:23:49 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 38
+[30-Aug-2016 20:24:05 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 36
+[30-Aug-2016 20:24:05 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 37
+[30-Aug-2016 20:24:05 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 38
+[30-Aug-2016 20:24:12 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 36
+[30-Aug-2016 20:24:12 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 37
+[30-Aug-2016 20:24:12 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 38
+[30-Aug-2016 20:24:33 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 36
+[30-Aug-2016 20:24:33 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 37
+[30-Aug-2016 20:24:33 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 38
+[30-Aug-2016 20:24:49 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 36
+[30-Aug-2016 20:24:49 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 37
+[30-Aug-2016 20:24:49 America/Chicago] PHP Notice:  Undefined variable: update in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 38
+[30-Aug-2016 20:29:46 America/Chicago] PHP Notice:  Undefined variable: ic_solddate in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 32
+[30-Aug-2016 20:29:46 America/Chicago] PHP Notice:  Undefined variable: ic_solddate in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 33
+[30-Aug-2016 20:29:46 America/Chicago] PHP Notice:  Undefined variable: ic_solddate in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 34
+[30-Aug-2016 20:34:23 America/Chicago] PHP Fatal error:  Class 'Format' not found in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 9
+[30-Aug-2016 20:35:27 America/Chicago] PHP Fatal error:  Class 'Format' not found in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 8
+[30-Aug-2016 20:36:26 America/Chicago] PHP Fatal error:  Class 'Format' not found in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 8
+[30-Aug-2016 20:39:45 America/Chicago] PHP Fatal error:  Class 'Format' not found in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 8
+[30-Aug-2016 20:39:58 America/Chicago] PHP Fatal error:  Class 'Format' not found in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 8
+[31-Aug-2016 01:22:12 America/Chicago] PHP Fatal error:  Class 'Format' not found in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 8
+[31-Aug-2016 01:22:35 America/Chicago] PHP Fatal error:  Class 'Format' not found in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 8
+[31-Aug-2016 01:22:54 America/Chicago] PHP Fatal error:  Class 'Format' not found in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 8
+[31-Aug-2016 01:32:06 America/Chicago] PHP Fatal error:  Class 'Format' not found in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 8
+[31-Aug-2016 01:35:32 America/Chicago] PHP Fatal error:  Class 'Format' not found in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 8
+[31-Aug-2016 01:38:20 America/Chicago] PHP Fatal error:  Class 'Format' not found in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 8
+[31-Aug-2016 01:38:37 America/Chicago] PHP Fatal error:  Class 'Format' not found in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 8
+[31-Aug-2016 01:40:04 America/Chicago] PHP Fatal error:  Class 'Format' not found in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 8
+[31-Aug-2016 01:41:31 America/Chicago] PHP Fatal error:  Class 'Format' not found in /home/manheim/public_html/admin/worldview/views/ichargesphp.php on line 8
+[22-Sep-2016 21:44:36 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[22-Sep-2016 21:48:02 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[28-Feb-2017 00:13:50 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[28-Feb-2017 00:16:12 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[28-Feb-2017 00:17:12 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[03-Mar-2017 20:04:59 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[03-Mar-2017 20:28:04 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[03-Mar-2017 20:28:50 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[03-Mar-2017 20:29:44 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[03-Mar-2017 20:30:28 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[04-Mar-2017 05:12:39 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[04-Mar-2017 05:16:34 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[04-Mar-2017 05:17:36 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[04-Mar-2017 05:18:27 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[04-Mar-2017 05:19:27 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[04-Mar-2017 05:24:12 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[04-Mar-2017 05:24:46 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[04-Mar-2017 05:25:20 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[04-Mar-2017 05:25:56 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[04-Mar-2017 05:35:50 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[04-Mar-2017 17:37:32 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[04-Mar-2017 17:47:38 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[24-Mar-2017 20:32:01 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[24-Mar-2017 20:35:22 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[04-Apr-2017 19:56:29 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/croftona/public_html/admin/worldview/views/soldphp.php on line 78
+[04-Apr-2017 20:00:12 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/croftona/public_html/admin/worldview/views/soldphp.php on line 78
+[04-Apr-2017 20:00:41 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/croftona/public_html/admin/worldview/views/soldphp.php on line 78
+[04-Apr-2017 20:02:05 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/croftona/public_html/admin/worldview/views/soldphp.php on line 78
+[04-Apr-2017 20:02:32 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/croftona/public_html/admin/worldview/views/soldphp.php on line 78
+[04-Apr-2017 20:03:23 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/croftona/public_html/admin/worldview/views/soldphp.php on line 78
+[04-Apr-2017 20:03:56 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/croftona/public_html/admin/worldview/views/soldphp.php on line 78
+[04-Apr-2017 20:04:13 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/croftona/public_html/admin/worldview/views/soldphp.php on line 78
+[04-Apr-2017 20:06:36 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/croftona/public_html/admin/worldview/views/soldphp.php on line 78
+[04-Apr-2017 20:07:42 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/croftona/public_html/admin/worldview/views/soldphp.php on line 78
+[04-Apr-2017 20:11:02 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/croftona/public_html/admin/worldview/views/soldphp.php on line 78
+[04-Apr-2017 20:19:29 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/croftona/public_html/admin/worldview/views/soldphp.php on line 78
+[04-Apr-2017 20:21:17 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/croftona/public_html/admin/worldview/views/soldphp.php on line 78
+[04-Apr-2017 20:22:51 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/croftona/public_html/admin/worldview/views/soldphp.php on line 78
+[04-Apr-2017 21:53:17 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[04-Apr-2017 21:54:46 America/Chicago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[18-Apr-2017 22:57:03 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/croftona/public_html/admin/worldview/views/dealersphp.php on line 39

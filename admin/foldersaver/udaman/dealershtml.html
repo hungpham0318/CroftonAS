@@ -1,0 +1,200 @@
+<div class="tablewrapper">	
+<table id="example" class="display nowrap" cellspacing="0" width="100%">
+    <thead>
+    <tr>
+<th></th>
+	<th>did</th>
+<th>dnumber</th>
+<th>dname</th>
+<th>dphone</th>
+<th>dcontact</th>
+<th>dsdphone</th>
+<th>dmailAcctNum</th>
+<th>dnotes</th>
+<th>daddress</th>
+<th>dcity</th>
+<th>dstate</th>
+<th>dzip</th>
+	
+    </tr>
+</thead>
+<tfoot> <tr>
+<th></th>
+	<th>did</th>
+<th>dnumber</th>
+<th>dname</th>
+<th>dphone</th>
+<th>dcontact</th>
+<th>dsdphone</th>
+<th>dmailAcctNum</th>
+<th>dnotes</th>
+<th>daddress</th>
+<th>dcity</th>
+<th>dstate</th>
+<th>dzip</th>
+	
+    </tr>
+</tfoot>
+</table>
+          </div>
+</div>
+</div>
+
+<script>
+var editor; // use a global for the submit and return data rendering in the examples
+ 
+$(document).ready(function() {
+    editor = new $.fn.dataTable.Editor( {
+        ajax: "dealersphp.php",
+        table: "#example",
+        //deferRender:    true,
+    //scroller:       true,
+        fields: [ 
+{"label": "did","name": "dealers.did"},
+{"label": "dnumber","name": "dealers.dnumber"},
+{"label": "dname","name": "dealers.dname"},
+{"label": "dphone","name": "dealers.dphone"},
+{"label": "dcontact","name": "dealers.dcontact"},
+{"label": "dsdphone","name": "dealers.dsdphone"},
+{"label": "dmailAcctNum","name": "dealers.dmailAcctNum"},
+{"label": "dnotes","name": "dealers.dnotes"},
+{"label": "daddress","name": "dealers.daddress"},
+{"label": "dcity","name": "dealers.dcity"},
+{"label": "dstate","name": "dealers.dstate"},
+{"label": "dzip","name": "dealers.dzip"}
+
+        ]
+ });
+ 
+// $('#example').on( 'click', 'tbody td, tbody span.dtr-data', function (e) {
+        // Ignore the Responsive control and checkbox columns
+//        if ( $(this).hasClass( 'control' ) || $(this).hasClass('select-checkbox') ) {
+//            return;
+//        }
+ 
+        //editor.inline( this );
+//  } );
+  $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder=" '+title+'" />' );
+    } );
+// Activate an inline edit on click of a table cell
+    // or a DataTables Responsive data cell
+    
+ 
+    var table = $('#example').DataTable( {
+   "scrollY": 500,
+   // responsive: true,
+    scrollX: "true",    
+    dom: "lBfrtip",
+    colReorder: true,
+    	    
+       
+ 	iDisplayLength: "50",
+	lengthMenu: [[10, 100, 500, -1], [10, 100, 500, "All"]], 
+  	ajax: "dealersphp.php",
+        columns: [
+       // {   // Responsive control column
+       //         data: null,
+       //         defaultContent: '',
+       //         className: 'control',
+       //         orderable: false
+       //     },
+ {   // Checkbox select column
+                data: null,
+                defaultContent: '',
+                className: 'select-checkbox',
+                orderable: false
+            },
+{ data: "dealers.did"},
+{ data: "dealers.dnumber"},
+{ data: "dealers.dname"},
+{ data: "dealers.dphone"},
+{ data: "dealers.dcontact"},
+{ data: "dealers.dsdphone"},
+{ data: "dealers.dmailAcctNum"},
+{ data: "dealers.dnotes"},
+{ data: "dealers.daddress"},
+{ data: "dealers.dcity"},
+{ data: "dealers.dstate"},
+{ data: "dealers.dzip"}
+
+	 ],
+	 
+//	 order: [ 2, 'asc' ],
+//        select: {
+ //           style:    'os',
+//            selector: 'td.select-checkbox'
+//        },
+	 
+	 
+        autoFill: {
+            columns: ':not(:first-child)',
+            editor:  editor
+        },
+        keys: {
+            columns: ':not(:first-child)',
+            editor:  editor
+        },
+        select: {
+            style:    'os',
+            selector: 'td:nth-child(1)',
+            blurable: true
+        },
+         
+        buttons: [
+        
+            { extend: "create", editor: editor },
+            { extend: "edit",   editor: editor },
+            { extend: "remove", editor: editor },
+            'excelHtml5',
+            //'csvHtml5',
+            'pdfHtml5',
+            'colvis'
+        ],
+           
+
+//"rowCallback": function ( row, data ) { 
+//$('td', row).attr('nowrap','nowrap');
+//$('td', row).css('text-transform', 'Uppercase','white-space','nowrap','font-family','monospace');
+  // if ( data.newmaster.msubstatus == "recon-green" ){ $('td', row).css('background-color', '#00FF66');}
+  // else if ( data.newmaster.msubstatus == "recon-red" ){ $('td', row).css('background-color', '#FCA38B');}
+  // else if ( data.newmaster.msubstatus == "recon-blue" ){ $('td', row).css('background-color', '#00CCFF');}
+  // else if ( data.newmaster.msubstatus == "recon-yellow" ){ $('td', row).css('background-color', '#FFFF66');}
+  // else if ( data.newmaster.msubstatus == "arbit-m" ){ $('td', row).css('background-color', '#99FF66');}
+  // else if ( data.newmaster.msubstatus == "arbit-z" ){ $('td', row).css('background-color', '#CCFF66');}
+  // else if ( data.newmaster.msubstatus == "Inv-No" ){ $('td', row).css('background-color', 'Orange');}
+ // else if ( data.newmaster.msubstatus == "Inv-Sent" ){ $('td', row).css('background-color', '#ffffff');}
+  // else if ( data.newmaster.msubstatus == "Inv-Paid" ){ $('td', row).css('background-color', 'Transparent');}
+//}
+           
+       
+     });
+ 
+
+// Disable KeyTable while the main editing form is open
+ editor
+        .on( 'open', function ( e, mode, action ) {
+            if ( mode === 'main' ) {
+                table.keys.disable();
+            }
+        } )
+        .on( 'close', function () {
+            table.keys.enable();
+        } );
+        
+
+     table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );    
+} );
+</script>
+</body></html>

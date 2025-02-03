@@ -1,0 +1,230 @@
+<?php session_start();
+$title="StepOne";
+$report1="Dealers";
+if(!isset($_SESSION['ausername']) || $_SESSION['ausername']==""){header('Location: ../worldview/index.php?msg=Please_Log_In_to_continue!');}else{
+		$ausername=$_SESSION['ausername'];
+		$apassword=$_SESSION['apassword'];
+		}?>
+<html>
+<?php include"stylehead.html";?>
+<body>
+<div class="tablewrapper">	
+<table id="example" class="display nowrap" style="width:100%;">
+    <thead>
+    <tr>
+
+<!-- <th></th>-->
+<th></th>
+<th></th>
+<th>Dealership</th>
+<th>Auction Access #</th>
+<th>Sale Day Contact</th>
+<th>Sale Day Phone</th>
+<th>Id</th>
+<th>Dealer Phone</th>
+
+<th>Address</th>
+<th>City</th>
+<th>State</th>
+<th>Zip</th>
+
+<th>Mail Acct.</th>
+<th>EmailInvoices</th>
+<th>Fee Default</th>
+<th>Fee Description</th>
+<th>Dealer Notes</th>
+ </tr>
+
+
+
+    </thead>
+      <tfoot>
+        <tr>
+
+<!--<th></th>-->
+<th></th>
+<th></th>
+<th>Dealership</th>
+<th>Auction Access #</th>
+<th>Sale Day Contact</th>
+<th>Sale Day Phone</th>
+<th>Id</th>
+<th>Dealer Phone</th>
+
+<th>Address</th>
+<th>City</th>
+<th>State</th>
+<th>Zip</th>
+
+<th>Mail Acct.</th>
+<th>EmailInvoices</th>
+<th>Fee Default</th>
+<th>Fee Description</th>
+<th>Dealer Notes</th>
+ </tr>
+    </tfoot>
+<tbody>
+</table>
+</div><!--should close tablewrapper-->
+</div><!--should close section1-->
+</div><!--should close container-->
+<?php include "jsscripts.html";?>
+<script>
+var editor; // use a global for the submit and return data rendering in the examples
+ 
+$(document).ready(function() {
+    editor = new $.fn.dataTable.Editor( {
+        ajax: "steponephp.php",
+        table: "#example",
+       deferRender:    false,
+    //scroller:       true,
+        fields: [ 
+
+{"label": "dname","name": "dealers.dname"},      
+{"label": "dnumber","name": "dealers.dnumber"},
+
+
+{"label": "dcontact","name": "dealers.dcontact"},
+{"label": "dsdphone","name": "dealers.dsdphone"},
+{"label": "did","name": "dealers.did"},
+{"label": "dphone","name": "dealers.dphone"},
+
+{"label": "daddress","name": "dealers.daddress"},
+{"label": "dcity","name": "dealers.dcity"},
+{"label": "dstate","name": "dealers.dstate"},
+{"label": "dzip","name": "dealers.dzip"},
+{"label": "dmailAcctNum","name": "dealers.dmailAcctNum"},
+{"label": "dinvoiceemail","name": "dealers.dinvoiceemail"},
+{"label": "drepfee","name": "dealers.drepfee"},
+{"label": "drepfeedesc","name": "dealers.drepfeedesc"},
+{"label": "dnotes","name": "dealers.dnotes"}
+
+
+
+        ]
+ });
+ 
+// $('#example').on( 'click', 'tbody td, tbody span.dtr-data', function (e) {
+        // Ignore the Responsive control and checkbox columns
+//        if ( $(this).hasClass( 'control' ) || $(this).hasClass('select-checkbox') ) {
+//            return;
+//        }
+ 
+        //editor.inline( this );
+//  } );
+  $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder=" '+title+'" />' );
+    } );
+// Activate an inline edit on click of a table cell
+    // or a DataTables Responsive data cell
+    
+ 
+    var table = $('#example').DataTable( {
+   "scrollY": 500,
+   // responsive: true,
+    scrollX: "true",    
+    dom: "frtlip",
+    colReorder: true,
+    	    
+       
+ 	iDisplayLength: "500",
+	lengthMenu: [[10, 100, 500, -1], [10, 100, 500, "All"]], 
+  	ajax: "steponephp.php",
+        columns: [
+
+            { 
+// Checkbox select column
+                data: null,
+                defaultContent: '',
+                className: 'select-checkbox',
+                orderable: false
+            },
+{ "data": function (data, type, row, meta) {rowId: 'dealers.did'
+return '<a href="/admin/sales/createinvoicehtmljs.php?did=' + data.dealers.did+ '">Invoice</a>'; }},
+
+{ data: "dealers.dname"},
+{ data: "dealers.dnumber"},
+
+
+{ data: "dealers.dcontact"},
+{ data: "dealers.dsdphone"},
+{ data: "dealers.did"},
+{ data: "dealers.dphone"},
+{ data: "dealers.daddress"},
+{ data: "dealers.dcity"},
+{ data: "dealers.dstate"},
+{ data: "dealers.dzip"},
+{ data: "dealers.dmailAcctNum"},
+{ data: "dealers.dinvoiceemail"},
+{ data: "dealers.drepfee"},
+{ data: "dealers.drepfeedesc"},
+{ data: "dealers.dnotes"}
+	 
+	 	 ],
+      columnDefs: [ {
+            orderable: false,
+            className: 'select-checkbox',
+            targets:   0
+        } ],
+        select: {
+            style:    'os',
+           selector: 'td:nth-child(1)'
+        },
+        order: [[ 1, 'asc' ]],
+
+         
+        buttons: [
+        
+            { extend: "create", editor: editor },
+            { extend: "edit",   editor: editor },
+            //{ extend: "remove", editor: editor },
+            //'excelHtml5',
+            //'csvHtml5',
+            //'pdfHtml5',
+            'colvis',
+       { id:"myBtn",
+ 	text:   'Status Key' , 
+ 	titleAttr: '',
+                action: function() {
+    modal.style.display = "block";
+}}
+        ],
+           
+
+
+             
+       
+     });
+     
+     
+//dom toolbar
+ 
+ 
+ 
+// Disable KeyTable while the main editing form is open
+ editor
+        .on( 'open', function ( e, mode, action ) {
+            if ( mode === 'main' ) {
+                table.keys.disable();
+            }
+        } )
+        .on( 'close', function () {
+            table.keys.enable();
+        } );
+        
+
+     table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );  
+    
+} );
+</script>/body></html>

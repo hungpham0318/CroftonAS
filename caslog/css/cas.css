@@ -1,0 +1,162 @@
+
+.whowrap60 {
+width:60em;
+min-height:40em;
+background-color:#ffffff;
+display:block;
+    background-color: #ffffff;
+    border-radius: .25em;
+    padding: 1.4em;
+    margin: auto;
+    
+   }
+h2.whowrap60{font-size:1em;font-weight:500;line-height: 1.1em;}
+
+div.whowrap60-flex {
+  min-height: 40em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background-color: #ffffff;
+    border-radius: .25em;
+    padding: 1.4em;
+ }
+
+div.whowrap60-flex p {
+  margin: 0 }
+
+.whofoot60 {
+    background-color: #ffffff;
+padding: 1.5em;
+    border-radius:.25em .25em .25em .25em;
+    border: 0px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05) ;
+    margin: auto;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #660000;
+    display: block;
+ }
+
+.mymiddle55ems{
+display:block;
+text-align: center;
+margin: auto;
+width: 55em;}
+
+.mymiddle50ems{
+display:block;
+text-align: center;
+margin: auto;
+width: 50em;}
+
+.mymiddle40ems{
+display:block;
+background:#ffffff;
+text-align: center;
+margin: auto;
+width: 66%;}
+
+.mymiddle30ems{
+display:block;
+text-align: center;
+margin: auto;
+width: 30em;}
+
+.mymiddleboth{
+    height: 30em;
+    position: relative}
+
+div.mymiddleboth p {
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+
+.mymiddlebothflex{
+
+    height: 20em;
+    position: relative }
+.mymiddlebothflex p {
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+
+div.mymiddleboth60-40 {
+    height: 40em;
+    position: relative }
+div.mymiddleboth60-40 p {
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+/*...
+<IMG class="displayed" src="..." alt="...">*/
+
+P.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em
+}
+/*...
+<P class="blocktext">This rather...*/
+
+
+
+input, select { 
+	-webkit-appearance:none;
+	color: #660000;
+	font-size: 1em;
+	padding: 10px 10px 10px 10px;
+	margin: 0 0 0 0;
+	width: 300px; /* 150 + 2 + 45 = 197 */
+	border: 1px solid #660000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+	-webkit-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+	box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+}
+
+#password {
+    background: #f1f1f1 url(/images/login-sprite.png) no-repeat;
+    background-position: 5px -52px !important;
+    padding: 10px 10px 10px 30px;
+}
+#username {
+    background: #f1f1f1 url(http://manheimas.com/images/login-sprite.png) no-repeat;
+    background-position: 5px -2px !important;
+    padding: 10px 10px 10px 30px;
+}
+
+
+
+
+@media screen and (min-width:320px) {
+
+.whofoot60{width:100%;}
+.whowrap60{width:100%;}
+
+}
+@media screen and (min-width:960px) {
+.whofoot60{width:60em;}
+.whowrap60{width:60em;}
+}
+

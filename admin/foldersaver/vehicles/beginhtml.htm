@@ -1,0 +1,312 @@
+	
+<div class="tablewrapper">	
+<table id="example" class="display" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th></th>
+            <th>ID</th>
+            
+            <th>VIN</th>
+            <th>Year</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Color</th>
+            <th>Mileage</th>
+            <th>Stock#</th>
+            <th>Detail</th>
+            <th>Transport</th>
+            <th>Floor</th>
+            <th>Status</th>
+            <th>Subtatus</th>
+           
+            
+            
+            <th>Dealership</th>
+            <th>AAnum</th>
+            <th>Useremail</th>
+            <th>iSD</th>
+            <th>SD</th>
+            <th>User</th>
+            <th>Contact</th>
+            <th>Phone</th>
+            <th>UserPhone</th>
+            <th>auction</th>
+ <th>Announcement</th>
+            
+        </tr>
+    </thead>
+      <tfoot>
+        <tr>
+           <th></th>
+            <th>VehicleId</th>
+            
+            <th>VIN</th>
+            <th>Year</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Color</th>
+            <th>Mileage</th>
+            <th>Stock #</th>
+            <th>Detail</th>
+            <th>Transport</th>
+            <th>Floor</th>
+            <th>Status</th>
+            <th>Subtatus</th>
+            
+            
+            
+            <th>Dealership</th>
+            <th>AAnum</th>
+            <th>Useremail</th>
+            <th>inpSaleDate</th>
+            <th>SaleDate</th>
+            <th>Registrant</th>
+            <th>SaleDayContact</th>
+            <th>SDContactPhone</th>
+            <th>UserPhone</th>
+            <th>auction</th>
+            <th>Announcement</th>
+        </tr>
+    </tfoot>
+</table>
+</div>
+</div>
+
+<script>
+var editor; // use a global for the submit and return data rendering in the examples
+ 
+$(document).ready(function() {
+    editor = new $.fn.dataTable.Editor( {
+        ajax: "begin.php",
+        table: "#example",
+        fields: [ {
+                label: "VehicleId:",
+                name: "v_record.v_id"
+            }, {
+               
+              label: "VIN:",
+                name: "v_record.txtVIN"
+            }, {
+              label: "Year:",
+                name: "v_record.txtYear"
+            }, {
+              label: "Make:",
+                name: "v_record.txtMake"
+            }, {
+              label: "Model:",
+                name: "v_record.txtModel"
+            }, {
+              label: "Color:",
+                name: "v_record.txtColor"
+            }, {
+                label: "Mileage:",
+                name: "v_record.txtMileage"
+            }, {
+                label: "StockNo:",
+                name: "v_record.inpvehStock"
+            }, {
+            label: "Detail:",
+                name: "v_record.popDetail"
+            }, {
+            label: "Transport:",
+                name: "v_record.txtTrans"
+            }, {
+             label: "Floor:",
+                name: "v_record.txtPrice"
+            }, {
+                type: "select",
+               label: "Status:",
+                name: "v_record.v_status",
+               options: [
+               "I",
+               "A",
+               "S",
+               "Z",
+               "R",
+               "X"
+                       ]
+
+           }, {
+                type:  "select",  
+               label: "Substatus:",
+                name: "v_record.v_substatus",
+                 options: [
+        "recon-red",
+        "recon-yellow",
+        "recon-green",
+        "recon-blue",
+        "arbit-m",
+        "inv-no",
+        "inv-yes",
+        "inv-paid"
+    ]
+    
+           }, {
+                
+                label: "RegRecordID:",
+                name: "r_record.r_id"
+            }, {
+                label: "UserId:",
+                name: "r_record.r_uid"
+            }, {
+                label: "DealerId:",
+                name: "r_record.r_did"
+            }, {
+                label: "DealerName:",
+                name: "r_record.dname"
+            }, {
+                label: "AANum:",
+                name: "r_record.inpFiveMilNum"
+            }, {
+                label: "UserEmail:",
+                name: "r_record.inpYourEmail"
+             }, {
+                label: "inpSaleDate:",
+                name: "r_record.inpSaleDate"
+            }, {
+                label: "RegSaleDate:",
+                name: "r_record.SaleDate"
+            }, {
+                label: "UserName:",
+                name: "r_record.inpYourName"
+           }, {
+                label: "SaleDayContact:",
+                name: "r_record.inpSDContact"
+                }, {
+                label: "SaleDayPhone:",
+                name: "r_record.inpDPhone"
+                }, {
+                label: "UserPhone:",
+                name: "r_record.inpYourPhone"
+                }, {
+                label: "Auction:",
+                name: "r_record.auction"
+                 }, {
+                label: "Announcement:",
+                name: "v_record.txtAnon"
+          
+           	
+                }
+        ]
+ });
+ 
+ 
+  $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder=" '+title+'" />' );
+    } );
+ 
+    var table = $('#example').DataTable( {
+     "scrollY": 400,
+    
+    scrollX: "true",    
+    dom: "lBfrtip",
+    	    
+       
+ 	iDisplayLength: "50",
+	lengthMenu: [[10, 50, 100, -1], [10, 50, 100, "All"]], 
+  	ajax: "begin.php",
+        columns: [
+            {
+                data: null,
+                defaultContent: '',
+                className: 'select-checkbox',
+                orderable: false
+            },
+            
+            { data: "v_record.v_id" },
+            
+            { data: "v_record.txtVIN" },
+            { data: "v_record.txtYear" },
+            { data: "v_record.txtMake" },
+            { data: "v_record.txtModel" },
+            { data: "v_record.txtColor" },
+            { data: "v_record.txtMileage" },       
+            { data: "v_record.inpvehStock" },
+            { data: "v_record.popDetail" },
+            { data: "v_record.txtTrans" },
+            { data: "v_record.txtPrice" },
+            { data: "v_record.v_status" },
+            { data: "v_record.v_substatus" },
+           
+           
+     
+            { data: "r_record.dname" },
+            { data: "r_record.inpFiveMilNum" },
+            { data: "r_record.inpYourEmail" },
+            { data: "r_record.inpSaleDate" },
+            { data: "r_record.SaleDate" },
+            { data: "r_record.inpYourName" },
+            { data: "r_record.inpSDContact" },
+            { data: "r_record.inpDPhone" },
+            { data: "r_record.inpYourPhone" },
+            { data: "r_record.auction" },
+          { data: "v_record.txtAnon" }
+	 ],
+        autoFill: {
+            columns: ':not(:first-child)',
+            editor:  editor
+        },
+        keys: {
+            columns: ':not(:first-child)',
+            editor:  editor
+        },
+        select: {
+            style:    'os',
+            selector: 'td:first-child',
+            blurable: true
+        },
+        buttons: [
+            { extend: "create", editor: editor },
+            { extend: "edit",   editor: editor },
+            { extend: "remove", editor: editor },
+            'excelHtml5',
+            'csvHtml5',
+            'pdfHtml5'
+        ],
+           
+
+"rowCallback": function ( row, data ) { 
+$('td', row).attr('nowrap','nowrap');
+$('td', row).css('text-transform', 'Uppercase','white-space','nowrap','font-family','monospace');
+   if ( data.v_record.v_substatus == "recon-green" ){ $('td', row).css('background-color', '#00FF66');}
+   else if ( data.v_record.v_substatus == "recon-red" ){ $('td', row).css('background-color', '#FCA38B');}
+   else if ( data.v_record.v_substatus == "recon-blue" ){ $('td', row).css('background-color', '#00CCFF');}
+   else if ( data.v_record.v_substatus == "recon-yellow" ){ $('td', row).css('background-color', '#FFFF66');}
+   else if ( data.v_record.v_substatus == "arbit-m" ){ $('td', row).css('background-color', '#99FF66');}
+   else if ( data.v_record.v_substatus == "arbit-z" ){ $('td', row).css('background-color', '#CCFF66');}
+   else if ( data.v_record.v_substatus == "inv-no" ){ $('td', row).css('background-color', 'Orange');}
+  else if ( data.v_record.v_substatus == "inv-yes" ){ $('td', row).css('background-color', 'purple');}
+   else if ( data.v_record.v_substatus == "inv-paid" ){ $('td', row).css('background-color', 'Transparent');}
+}
+           
+       
+     });
+ 
+
+// Disable KeyTable while the main editing form is open
+ editor
+        .on( 'open', function ( e, mode, action ) {
+            if ( mode === 'main' ) {
+                table.keys.disable();
+            }
+        } )
+        .on( 'close', function () {
+            table.keys.enable();
+        } );
+        
+
+     table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );    
+} );
+</script>
+</body></html>

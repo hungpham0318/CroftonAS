@@ -1,0 +1,108 @@
+/*
+bird-key
+***************************/
+
+#key_wrapper{
+	float:left;
+	text-align:center;
+	border-radius:.2em .2em .2em .2em;
+	border:1px solid #660000;
+        margin:0 auto;
+font-size: .82em;
+margin-left:1em;
+	
+	}
+#key{
+	width:100%;
+min-width:19em;
+        margin:0 auto;
+	background: transparent;
+	color:#111;
+	
+	
+	}
+#key.bird-key_substatus{
+	width:100%;
+        margin:0 auto;
+	background: transparent;
+	color:#111;
+	
+	
+	}
+#key .bird-key_title{
+	color:#FFF;
+	}
+#key ul{
+	text-align:left;
+	}
+#key ul li{
+	float:none;
+	}
+#key ul li span{
+	margin-left:22px;
+	width:17em;
+	text-align:left;
+	display:block;
+	}
+#key #footer_data{
+	font-size:0.7em;
+	clear:both;
+	
+	}
+
+#bird-key_wrapper{
+	font: 11px/1.6 Arial, sans-serif;
+	color: #444;
+	width:670px;
+	margin:20px auto;
+	overflow: hidden;
+	
+	}
+
+#key .bird-key_title,
+.bird-key_substatus .bird-key_title{
+	border-bottom: 1px solid #CCC;
+	background:#660000;
+	padding:2px;
+	text-align:center;
+	color:#FFF;
+	
+	}	
+.bird-key_substatus ul{
+	clear:both;
+	list-style:none;
+	margin:0px;
+	padding:4px;
+	margin:auto;
+	width:19em;
+	color:#FFF;
+	}
+.bird-key_substatus ul li{
+	float:left;
+	width:20px;
+	height:20px;
+	
+	margin-right:1px;
+	margin-bottom:1px;
+	text-align:center;
+	background-color:transparent;
+	color:#000;
+	font-size:90%;
+	
+	}
+
+
+
+
+.bird-key_substatus ul li.recon-red{	
+	background-color: #FF6666;	
+}		/* complete day booked */
+.bird-key_substatus ul li.recon-yellow{background-color: #FFFF66;}		
+.bird-key_substatus ul li.recon-blue{background-color: #6699FF;}		
+.bird-key_substatus ul li.recon-green{background-color: #66FF66;}	
+
+.bird-key_substatus ul li.arb-m{background-color: #CCCC99;}	
+.bird-key_substatus ul li.recon-anything{background-color: #CC99CC;}		
+.bird-key_substatus ul li.recon-tbd{background-color: #FFCCCC;}	
+
+#footer_data{background-color:#660000; color:#ffffff; }

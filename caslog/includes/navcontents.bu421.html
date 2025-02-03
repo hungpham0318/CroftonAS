@@ -1,0 +1,23 @@
+	<?php if(!$user->is_logged_in()){ 
+	echo '<div class="btn-toolbar" role="toolbar" aria-label="...">';
+	echo '<div class="btn-group"><a href="/home.php" id="home" class="btn btn-primary">Home</a></div>';
+echo '<div class="btn-group"><a class="btn btn-primary" href="/caslog/index.php" title="Sign me up!">Sign Me Up!</a></div>';
+	echo '<div class="btn-group"><a class="btn btn-primary" href="/contactus.php" title="Users may log in for User Contact Form which has name, email, and phone pre-filled">Contact Us</a></div>';
+        
+          //echo '<div class="btn-group"><a class="btn btn-primary" href="/caslog/sign-up.php" title="Sign me up!">Sign Me Up!</a></div>';-->
+echo '<div id="textalignright" class="btn-group"><a class="btn btn-primary" href="/caslog/login.php" title="Users may log in">Log In</a></div>';
+        }
+
+if($user->is_logged_in()){
+	echo '<div class="btn-toolbar" role="toolbar" aria-label="...">';
+	//echo '<div class="btn-group"><a href="/home.php" id="home" class="btn btn-primary">Home</a></div>';
+	echo '<div class="btn-group"><a class="btn btn-primary" href="/caslog/userlanding.php">Home</a></div>';
+	echo '<div class="btn-group"><a class="btn btn-primary" href="/caslog/myinventory.php">My Inventory</a></div>';
+	echo '<div class="btn-group"><a class="btn btn-primary" href="/areg/stepone.php">Register Vehicles</a></div>';
+	
+	echo '<div class="btn-group"><a a class="btn btn-primary" href="/caslog/edituser.php">Profile</a></div>';
+	echo '<div class="btn-group"><a class="btn btn-primary" href="/contactcas.php">Contact/Change</a></div>';
+	echo '<div id="textalignright" class="btn-group"><a class="btn btn-primary" href="/caslog/logout.php" title="">Log Out</a></div>';
+	}
+echo '</div>';
+?>

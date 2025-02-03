@@ -1,0 +1,12 @@
+[17-Jun-2016 00:37:44 America/Chicago] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'peter'@'localhost' (using password: YES) in /home/manheim/public_html/admin/accnts/getuser.php on line 23
+[17-Jun-2016 00:37:44 America/Chicago] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/manheim/public_html/admin/accnts/getuser.php on line 25
+[17-Jun-2016 00:38:32 America/Chicago] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'peter'@'localhost' (using password: YES) in /home/manheim/public_html/admin/accnts/getuser.php on line 23
+[17-Jun-2016 00:38:32 America/Chicago] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/manheim/public_html/admin/accnts/getuser.php on line 25
+[17-Jun-2016 04:13:43 America/Chicago] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'peter'@'localhost' (using password: YES) in /home/manheim/public_html/admin/accnts/getuser.php on line 23
+[17-Jun-2016 04:13:43 America/Chicago] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/manheim/public_html/admin/accnts/getuser.php on line 25
+[21-Jul-2016 06:42:46 America/Chicago] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'peter'@'localhost' (using password: YES) in /home/manheim/public_html/admin/accnts/getuser.php on line 23
+[21-Jul-2016 06:42:46 America/Chicago] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/manheim/public_html/admin/accnts/getuser.php on line 25
+[21-Jul-2016 06:42:55 America/Chicago] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'peter'@'localhost' (using password: YES) in /home/manheim/public_html/admin/accnts/getuser.php on line 23
+[21-Jul-2016 06:42:55 America/Chicago] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/manheim/public_html/admin/accnts/getuser.php on line 25
+[21-Jul-2016 06:43:08 America/Chicago] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'peter'@'localhost' (using password: YES) in /home/manheim/public_html/admin/accnts/getuser.php on line 23
+[21-Jul-2016 06:43:08 America/Chicago] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/manheim/public_html/admin/accnts/getuser.php on line 25

@@ -1,0 +1,43 @@
+#  GNU nano 2.3.1                               File: .htaccess
+
+#RewriteEngine On
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^/(.*) https://%{SERVER_NAME}/$1 [R,L]
+
+RewriteEngine On
+# This will enable the Rewrite capabilities
+
+RewriteCond %{SERVER_PORT} 80
+# This checks to make sure the connection is not already HTTPS – port 80 indicates a non-secured HTTP conection.
+
+#RewriteRule ^(.*)$ https://www.croftonas.com/$1 [R=301,L]
+Redirect 302 / https://www.croftonauctionservices.com/
+
+
+#Alternate default index page
+DirectoryIndex index.php home.php
+#DirectoryIndex home.php
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 178.159.37.39
+deny from 141.8.143.190
+deny from 146.185.223.201
+deny from 146.185.0.0/16
+deny from 180.0.0.0/8
+deny from 178.0.0.0/8
+deny from 180.76.15.137
+deny from 141.0.0.0/8
+deny from 45.32.0.0/16
+deny from 68.232.160.0/19
+deny from 173.245.48.0/20
+deny from 46.0.0.0/8
+deny from 202.0.0.0/8
+deny from 77.0.0.0/8
+deny from 199.58.164.128/28
+deny from 199.58.160.0/21
+deny from 104.193.88.0/22
+

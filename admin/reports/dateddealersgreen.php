@@ -1,0 +1,171 @@
+<?php session_start();
+$title="Sortable Dealer Status";
+if(!isset($_SESSION['ausername']) || $_SESSION['ausername']==""){header('Location: ../worldview/index.php?msg=Please_Log_In_to_continue!');}else{
+		$ausername=$_SESSION['ausername'];
+		$apassword=$_SESSION['apassword'];
+		}?>
+
+<html>
+<head>
+<?php include "../sales/stylehead-begin.html";?>
+input:disabled{color:black;}
+.sorting{background-image:none!important;font-size: .8em;}
+.sorting_asc, .sorting_desc {background-image:none!important;font-size: 1em;font-weight:bold;}
+
+<?php include "../sales/stylehead-end.html";?>
+
+<body>
+<div style="font-size:.8em!important"><?php include "../worldview/css/snow-admin-nav.html";?></div>
+ <?php include "../sales/jsscripts.html"?>
+<script type="text/javascript" src="https://cdn.datatables.net/plug-ins/1.10.15/api/sum().js""></script>
+
+<div style="width:97%;margin: 0 auto; ">
+<table id="example" class="display compact" cellspacing="0" width="100%" style = "font-size: 12px!important;">
+
+<!--
+<thead><tr style ="padding-left:4px; padding-right:2px;"><th style ="width: 7em;">Invoice</th><th>Payments</th><th>Invoice Date</th><th>Total</th><th>Outstanding</th><th>Location</th><th>Id</th><th>Dealership Name</th><th>Emailed To</th><th>Paid</th><th>Email</th></tr></thead>
+-->
+
+<thead><tr style ="padding-left:4px; padding-right:2px;"><th>ID</th><th>Dealership</th><th>Location</th><th>SD Contact #</th><th>SD Contact Name</th><th>AA#</th><th>Date of Last Reg</th></tr></thead>
+
+
+<tbody>
+<?php 
+//include "iclosedarrcreate.php";
+
+include "../process/connecti.php";
+//$result = mysqli_query($con, "SELECT invoices.iid, invoices.idate, invoices.itotal, invoices.ipdfurl, invoices.iaid, invoices.idid, invoices.idname, invoices.idattn, invoices.idaddress, invoices.idcitystatezip, invoices.idinvoiceemail, invoices.iclosed, sum(i_payments.ip_amount) as pmtsum FROM invoices LEFT JOIN i_payments on invoices.iid = i_payments.ip_iid GROUP BY invoices.iid");
+
+$result=mysqli_query($con, " SELECT * FROM (SELECT mdid, mrtime FROM master ORDER BY mdid, mrtime DESC) a LEFT JOIN dealers on mdid = dealers.did WHERE dealers.dactive = 1 
+GROUP BY mdid ORDER BY `a`.`mdid` ASC");
+
+$x = 0;
+
+foreach($result as $row){
+/*echo'<tr style="border:2px solid green;"><td style="border:2px solid green;">'.$row['did'].'</td>'.'<td style="border:2px solid green;">'.$row['dname'].'</td>'.'<td style="border:2px solid green;">'.$row['dcity'].'</td>'.'<td style="border:2px solid green;">'.$row['dsdphone'].'</td>'.'<td style="border:2px solid green;">'.$row['dcontact'].'</td>'.'<td style="border:2px solid green;">'.$row['dnumber'].'</td>'.'<td style="border:2px solid green;">'.date("m-d-y", strtotime($row['mrtime'])).'</td>'.'</tr>';  */
+
+ $today = date("Y-m-d H:i:s");
+  // echo $today ."<br>";
+ $testdate = $row['mrtime'];
+// echo $testdate ."<br>";
+ $testdate = date('Y-m-d', strtotime("+3 months", strtotime($testdate)));
+
+if ($testdate  <= $today) {/*
+   echo'<tr style="white-space: nowrap;border:2px solid red;"><td style="border:2px solid red;">'.$row['did'].'</td>'.'<td style="border:2px solid red;">'.$row['dname'].'</td>'.'<td style="border:2px solid red;">'.$row['dcity'].'</td>'.'<td style="border:2px solid red;">'.$row['dsdphone'].'</td>'.'<td style="border:2px solid red;">'.$row['dcontact'].'</td>'.'<td style="border:2px solid red;">'.$row['dnumber'].'</td>'.'<td style="border:2px solid red;">'
+  .date("m-d-y", strtotime($row['mrtime'])).'</td>'.'</tr>';
+   */ }else{ echo'<tr style="border:1px solid green;"><td style="border:1px solid green;">'.$row['did'].'</td>'.'<td style="border:1px solid green;">'.$row['dname'].'</td>'.'<td style="border:1px solid green;">'.$row['dcity'].'</td>'.'<td style="border:1px solid green;">'.$row['dsdphone'].'</td>'.'<td style="border:1px solid green;">'.$row['dcontact'].'</td>'.'<td style="border:1px solid green;">'.$row['dnumber'].'</td>'.'<td style="border:1px solid green;">'.date("m-d-y", strtotime($row['mrtime'])).'</td>'.'</tr>';}}
+    
+    //.date("Y-M-D,$row['mrtime']).'</td>'.'</tr>';}}
+    echo "</table>";
+
+
+
+
+
+
+?>
+
+
+</tbody>
+</table></div>
+
+
+
+	 
+
+<script>
+
+$(document).ready(function() {
+
+
+
+
+	 
+var table = $('#example').DataTable({
+      dom: 'ifrt',
+      iDisplayLength: -1,
+      	"scrollY": 700,
+      	stateSave: true,
+        "columns": [ 
+	 
+            { "data": "dealers.did" },
+            { "data": "dealers.dname" },
+            { "data": "dealers.dcity" },
+            //	 {
+          //  "data": "pmtsum",
+          //  "render": function ( data, type, full, meta ) {
+           //   return data;
+         //   }              
+      //  },
+            { "data": "dealers.dsdphone" },
+            { "data": "dealers.dcontact`" },
+			{ "data": "dealers.dnumber" },
+			{ "data": "master.mrtime" },
+			
+		//	{ "data": "invoices.idinvoiceemail" },
+		//	{ "data": "invoices.iclosed" },
+		//	  	 {
+         //   "data": "email",
+        //    "render": function ( data, type, full, meta ) {
+        //      return data;
+          //  }              
+     //   },
+		     
+	 ],
+	
+	"rowCallback": function ( row, data ) { 
+	$('td', row).attr('nowrap','nowrap');
+	$('td', row).css('padding-right', '10px');
+	$('td', row).css('padding-left', '10px');
+//	if(data.invoices.pmtsum = 0 ){ 
+//		$('td', row).css('color', 'darkgreen');
+//	   		//$('td', row).css('border-color-top', 'darkgreen');
+	//$('input.editor-active', row).prop( 'checked', data.invoices.iclosed == 1 );
+//		}	        
+				// $('td', row).css('text-transform', 'uppercase');
+				//$('td', row).css('font-family','monospace');
+				//$('td', row).css('white-space','nowrap');
+				//$('td', row).css('font-size','1.25em');
+				//$('td', row).attr('title','The information in Auction, Registrant, and Dealership columns is only editable when using the checkbox selector and the Edit button.');			
+		},
+				//if ( data.master.msubstatus =='Inv-No' ){ 
+				// $('td', row).css('color', 'darkgreen');
+				//    $('td', row).css('border-color-top', 'darkgreen');
+				//}	
+				
+
+     drawCallback: function() {
+  //// var api = this.api();
+
+   // Total over all pages
+  //// var total = api.column(3).data().sum();
+
+   // Total over this page
+  //// var pageTotal = api.column(3, {page:'current'}).data().sum();
+ ////  var acctRecv = api.column(4, {page: 'current'}).data().sum();
+   //var invTotal = api.column(9, {page:'current'}).data().sum();
+  // var cntTotal = api.column(9, {page:'current'}).data().count();
+  // var divTotal = invTotal/cntTotal;
+//   var stillDue = divTotal - pageTotal;
+ // if (pageTotal <1 ){stillDue='No Payments';}
+ // if (pageTotal > 0){stillDue='$'.stillDue;}
+////  $(api.column(3).header()).html('$' + (pageTotal).formatMoney(2, '.', ',')   + '<br/>Billed');
+////   $(api.column(4).header()).html('$' + (acctRecv).formatMoney(2, '.', ',')   + '<br/>A / R');
+   //$(api.column(9).footer()).html(' Balance: $' + stillDue  );
+   
+}
+    
+    
+    
+    
+  } );
+          
+           // table.column( 2 ).data().sum();
+    });
+    
+
+
+</script>
+</body>
+</html>
+

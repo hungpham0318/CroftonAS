@@ -1,0 +1,459 @@
+<div class="tablewrapper">	
+<table id="example" class="display nowrap" style="width:100%;">
+    <thead>
+    <tr>
+        <th></th>
+	<th>Full Name</th>
+	<th>Email</th>
+	<th>Cell</th>
+	<th>UserId</th>
+	
+
+	<!--<th>Address Line</th>
+	<th>City</th>
+	<th>State</th>
+	<th>Zip</th>
+	<th>Company/Dealership</th>-->
+	
+	<th>Fax</th>
+	<th>Office Ph</th>
+	<th>User Notes</th>
+		<th>Username</th>
+	
+	<th>ucas</th>
+	<!--<th>pw</th>-->
+	<th>First</th>
+	<th>Last</th>
+	<th>Active</th>
+    </tr>
+</thead>
+<tfoot> 
+<tr>
+<th></th>
+	
+	<th>Full Name</th>
+	<th>Email</th>
+	<th>Cell</th>
+	<th>UserId</th>
+	
+	
+	<!--<th>Address Line</th>
+	<th>City</th>
+	<th>State</th>
+	<th>Zip</th>
+	<th>Company/Dealership</th>-->
+	
+	<th>Fax</th>
+	<th>Office Ph</th>
+	<th>User Notes</th>
+		<th>Username</th>
+	<th>ucas</th>
+		<!--<th>pw</th>-->
+		<th>First</th>
+	<th>Last</th>
+	<th>Active</th>
+    </tr>
+</tfoot>
+</table>
+</div><!--should close tablewrapper-->
+</div><!--should close section1-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--begin relative snip -->
+	
+	<div id="" class="container container-wrapper">
+		<span style ="font-size:.8em; line-height:.8em;">
+
+
+
+
+<?php if(!isset($_SESSION['ausername']) || $_SESSION['ausername']=="")
+	{echo "Please log in to see this page";}else{
+	
+	//begin insert
+echo'
+
+
+<table id="maintable" align="center">
+    <tr><td><table>
+    <tr>
+        <td width="400">
+            <table border="0" width="800" align="center">
+                    <tr>
+                        <td><form id = "adddeleteudrform"action="" method="post">
+                        <div id="headline">Add or Delete Dealer Relationship</br></div>
+                        <select id="uid" name="uid" tabindex="1" width="250px">
+ 			<div id="headline">Add or Delete Dealer Relationship</br></div>
+ 			</br>
+ 			<option value="">Select User</option>';
+       			include "../process/connecti.php";
+ $result = mysqli_query($con,"SELECT users.uname,  users.uid, users.ulast FROM  users ORDER BY users.ulast asc");
+ while($row = mysqli_fetch_array($result)) {
+ //while($row = mysql_fetch_array($result)){
+    echo "<option value='".$row['uid']."'>".$row['uname']."</option>";
+    }
+    echo "</select>";
+       //mysql_close(); 
+       echo' </br></td></tr>
+                    <tr><td></br>&nbsp;</td>
+    <tr>
+                               
+                        <td><select id="did" name="did" tabindex="1" width="250px">
+ 			<option value="">Select Dealership</option>';
+       			include "../process/connecti.php";
+ $result = mysqli_query($con,"SELECT dealers.dname, dealers.did FROM dealers ORDER BY dealers.dname asc");
+
+ while($row = mysqli_fetch_array($result))
+    {
+    echo "<option value='".$row['did']."'>".$row['dname']."</option>";
+    }
+    echo "</select>";
+      // mysql_close(); 
+       echo' </td></tr><tr><td></br>&nbsp;</td></tr><tr>
+                        <td>
+                        <button type="submit" name="add" class = "" formaction="/admin/process/addarelates.php">Add</button>&nbsp;&nbsp;&nbsp;
+<button type="submit" name="delete" class = "" formaction="/admin/process/delete-a-relate.php">Delete</button></td></tr><tr>
+<td></br>
+    <button type="submit" name="delete" target="_blank" class = "" formaction="/admin/UnderConstruction.php">See Current Relationships for selected User</button>                        
+                </form>        </td>
+                </tr>
+                <tr>
+                <td>
+               </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="headfoot">&nbsp;</td>
+    </tr>
+</table></td>
+<!-- SECOND SELECTION FOR AUCTION -->
+<td><table width="400">
+    <tr>
+        <td >
+           <form id = "adddeleteaform" action="" method="post">
+                  
+ 			<div id="headline">Add or Delete Auction Relationship</br></div>
+                       </br>
+                        <select id="auid" name="auid" tabindex="1" width="250px">
+ 			<option value="">Select User</option>';
+       			include "../process/connecti.php";
+ $result = mysqli_query($con,"SELECT users.uname,  users.uid, users.ulast FROM  users ORDER BY users.ulast asc");
+ while($row = mysqli_fetch_array($result)) {
+ //while($row = mysql_fetch_array($result)){
+    echo "<option value='".$row['uid']."'>".$row['uname']."</option>";
+    }
+    echo "</select>";
+       //mysql_close(); 
+       echo' </td></tr>
+                    <tr><td></br>&nbsp;</td>
+    <tr>
+                          
+                        <td><select id="a_id" name="a_id" tabindex="1" width="250px">
+ 			<option value="">Select Auction</option>';
+       			include "../process/connecti.php";
+ $result = mysqli_query($con,"SELECT * FROM auctions WHERE asort < 4 ORDER BY asort asc");
+
+ while($row = mysqli_fetch_array($result))
+    {
+    echo "<option value='".$row['a_id']."'>".$row['a_name']."</option>";
+    }
+    echo "</select>";
+      // mysql_close(); 
+       echo' </td></tr><tr><td></br>&nbsp;</td></tr><tr>
+       
+                    
+                    
+                        <td>
+                        <button type="submit" name="add" class = "" formaction="/admin/process/addarelates.php">Add</button>&nbsp;&nbsp;&nbsp;
+<button type="submit" name="delete" class = "" formaction="/admin/process/delete-a-relate.php">Delete</button></td></tr><tr>
+<td></br>
+    <button type="submit" name="delete" target="_blank" class = "" formaction="/admin/UnderConstruction.php">See Current Relationships for selected User</button>                        
+               </form>         </td>
+                </tr>
+                <tr>
+       
+                    
+                    
+                        <td>
+                       
+                            
+                        </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+
+
+
+</tr></table></div></div></br>';
+
+//echo '</html>';
+}
+//session_destroy();
+?>
+	
+	
+	<!--end relative snip -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--should close container-->
+
+</div><!--should close container-->
+
+<script src="http://code.jquery.com/jquery-1.12.3.js"></script>
+<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js "></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.2.1/js/dataTables.buttons.min.js"></script>
+<!--<script src="https://cdn.datatables.net/buttons/1.1.2/js/dataTables.buttons.min.js"></script>-->
+<script src="https://cdn.datatables.net/select/1.1.2/js/dataTables.select.min.js"></script>
+
+<script src="../../Editor/js/dataTables.editor.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+<script src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+<script src="https://cdn.datatables.net/colreorder/1.3.2/js/dataTables.colReorder.min.js"></script>
+ <script src="https://cdn.datatables.net/fixedcolumns/3.2.2/js/dataTables.fixedColumns.min.js">
+
+<script src="https://cdn.datatables.net/scroller/1.4.2/js/dataTables.scroller.min.js"></script>
+
+<script src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.1.2/js/buttons.html5.min.js"></script>
+
+<script src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.colVis.min.js"></script>
+<script>
+var editor; // use a global for the submit and return data rendering in the examples
+ 
+$(document).ready(function() {
+    editor = new $.fn.dataTable.Editor( {
+        ajax: "views/usersphp.php",
+        table: "#example",
+        fields: [ 
+{"label": "Id","name": "users.uid", type:  "readonly", def:   ""},
+{"label": "Full Name","name": "users.uname"},
+{"label": "Email","name": "users.email", type:  "readonly", def:   ""},
+{"label": "Mobile","name": "users.umobile"},
+
+
+
+//{"label": "Address","name": "users.uaddress"},
+//{"label": "City","name": "users.ucity"},
+//{"label": "State","name": "users.ustate"},
+//{"label": "Zip","name": "users.uzip"},
+//{"label": "Company","name": "users.ucompany"},
+
+{"label": "Fax","name": "users.ufax"},
+{"label": "Office Phone","name": "users.uofficeph"},
+{"label": "Notes","name": "users.unotes"},
+{"label": "Username","name": "users.username"},
+{"label": "Simple","name": "users.ucas",  type:  "readonly"},
+//{"label": "Encrypted Password","name": "users.password", type:  "readonly"},
+{"label": "First Name","name": "users.ufirst"},
+{"label": "Last Name","name": "users.ulast"},
+{"label": "Active","name": "users.active"}
+        ]
+ 
+ });
+        
+// $('#example').on( 'click', 'tbody td, tbody span.dtr-data', function (e) {
+        // Ignore the Responsive control and checkbox columns
+//        if ( $(this).hasClass( 'control' ) || $(this).hasClass('select-checkbox') ) {
+//            return;
+//        }
+ 
+        //editor.inline( this );
+//  } );
+ // $('#example tfoot th').each( function () {
+  //      var title = $(this).text();
+  //      $(this).html( '<input type="text" placeholder=" '+title+'" />' );
+ //   } );
+// Activate an inline edit on click of a table cell
+    // or a DataTables Responsive data cell
+      var table = $('#example').DataTable( {
+  //scrollX: "true",    
+    dom: "lBfrtip",
+    colReorder: true,
+ "order": [ 10, 'asc' ],
+
+   // lengthMenu: [ [ 10, -1,  25, 50, ],
+       // [  'Show 10', 'Show All','Show 25', 'Show 50' ]
+    //],
+   
+
+
+
+
+
+   scrollY:        500,
+        scrollX:        true,
+        scrollCollapse: true,
+        paging:         false,
+        fixedColumns:    {
+            leftColumns: 2
+        },
+      //iDisplayLength: "25",
+	//lengthMenu: [[10, 100, 500, -1], [10, 100, 500, "All"]],
+
+
+ 
+  	ajax: "views/usersphp.php",
+                 
+        
+        
+       columns: [ 
+{   // Checkbox select column
+                data: null,
+                defaultContent: '',
+                className: 'select-checkbox',
+                orderable: false
+            },
+{ data: "users.uname"},
+{ data: "users.email"},
+{ data: "users.umobile"},
+{ data: "users.uid"},
+
+
+//{ data: "users.uaddress"},
+//{ data: "users.ucity"},
+//{ data: "users.ustate"},
+//{ data: "users.uzip"},
+//{ data: "users.ucompany"},
+
+{ data: "users.ufax"},
+{ data: "users.uofficeph"},
+{ data: "users.unotes"},
+{ data: "users.username"},
+{ data: "users.ucas"},
+//{ data: "users.password"},
+{ data: "users.ufirst"},
+{ data: "users.ulast"},
+{ data: "users.active"}
+	 ],
+	  columnDefs: [ {
+            orderable: false,
+            className: 'select-checkbox',
+            targets:   0
+        } ],
+        select: {
+            style:    'os',
+           selector: 'td:nth-child(1)'
+        },
+        order: [[ 11, 'asc' ]],
+
+//	 order: [ 2, 'asc' ],
+//        select: {
+ //           style:    'os',
+//            selector: 'td.select-checkbox'
+//        },
+	 
+	 
+        autoFill: {
+            columns: ':not(:first-child)',
+            editor:  editor
+        },
+        keys: {
+            columns: ':not(:first-child)',
+            editor:  editor
+        },
+     //   select: {
+      //      style:    'os',
+        //    selector: 'td:nth-child(1)',
+        //    blurable: true
+     //   },
+         
+        buttons: [
+        //'pageLength',
+            { extend: "create", editor: editor },
+            { extend: "edit",   editor: editor },
+           // { extend: "remove", editor: editor },
+{
+            text: 'Reload',
+            action: function ( e, dt, node, config ) {
+                dt.ajax.reload();
+            }
+        },
+
+            //'excelHtml5',
+            //'csvHtml5',
+           // 'pdfHtml5',
+           'colvis'
+        ],
+           
+
+//"rowCallback": function ( row, data ) { 
+//$('td', row).attr('nowrap','nowrap');
+//$('td', row).css('text-transform', 'Uppercase','white-space','nowrap','font-family','monospace');
+  // if ( data.newmaster.msubstatus == "recon-green" ){ $('td', row).css('background-color', '#00FF66');}
+  // else if ( data.newmaster.msubstatus == "recon-red" ){ $('td', row).css('background-color', '#FCA38B');}
+  // else if ( data.newmaster.msubstatus == "recon-blue" ){ $('td', row).css('background-color', '#00CCFF');}
+  // else if ( data.newmaster.msubstatus == "recon-yellow" ){ $('td', row).css('background-color', '#FFFF66');}
+  // else if ( data.newmaster.msubstatus == "arbit-m" ){ $('td', row).css('background-color', '#99FF66');}
+  // else if ( data.newmaster.msubstatus == "arbit-z" ){ $('td', row).css('background-color', '#CCFF66');}
+  // else if ( data.newmaster.msubstatus == "Inv-No" ){ $('td', row).css('background-color', 'Orange');}
+ // else if ( data.newmaster.msubstatus == "Inv-Sent" ){ $('td', row).css('background-color', '#ffffff');}
+  // else if ( data.newmaster.msubstatus == "Inv-Paid" ){ $('td', row).css('background-color', 'Transparent');}
+//}
+           
+       
+     });
+
+
+// Disable KeyTable while the main editing form is open
+ editor
+        .on( 'open', function ( e, mode, action ) {
+            if ( mode === 'main' ) {
+                table.keys.disable();
+            }
+        } )
+        .on( 'close', function () {
+            table.keys.enable();
+        } );
+        
+
+  //   table.columns().every( function () {
+  //      var that = this;
+ 
+  //    $( 'input', this.footer() ).on( 'keyup change', function () {
+    //        if ( that.search() !== this.value ) {
+      //          that
+        //            .search( this.value )
+          //          .draw();
+            //}
+        //} );
+    //} );    
+} );

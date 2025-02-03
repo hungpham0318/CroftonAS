@@ -1,0 +1,102 @@
+______________________________________________
+
+//users/ud_relate/dealers
+
+
+Editor::inst( $db, 'dealers', 'did' )
+    ->field(
+        Field::inst( 'dealers.dname' ),
+        Field::inst( 'dealers.dnumber' )
+    )
+    ->join(
+        Mjoin::inst( 'users', 'uid' )
+            ->link( 'users.uid', 'ud_relate.u_id' )
+            ->link( 'dealers.did', 'ud_relate.d_id' )
+            ->order( 'users.uname asc' )
+            ->fields(
+                Field::inst( 'uid' )
+                    ->options( 'users', 'uid', 'uname' )
+                    ->validator( 'Validate::notEmpty' ),
+                Field::inst( 'uname' )
+            )
+    )
+    ->process($_POST)
+    ->json();
+
+
+
+
+	______________________________________________
+	
+	//users/ud_relate/dealers
+	
+	Editor::inst( $db, 'users', 'uid' )
+    ->field(
+        Field::inst( 'users.uname' ),
+		Field::inst( 'users.umobile' ),
+		Field::inst( 'users.fax' ),
+        Field::inst( 'users.email' ),
+		Field::inst( 'users.uid' ),
+		
+		Field::inst( 'dealers.dnumber' ),
+		 Field::inst( 'dealers.did' ),
+		Field::inst( 'dealers.dcontact' ),
+		Field::inst( 'dealers.dsdphone' )
+		
+		
+    )
+    ->join(
+        Mjoin::inst( 'dealers' )
+            ->link( 'users.uid', 'ud_relate.u_uid' )
+            ->link( 'dealers.did', 'ud_relate.u_did' )
+            ->order( 'dealer.dname asc' )
+            ->fields( 
+                
+		//->options( 'dealers', 'did', 'dname' )
+                    ->options( 'dealers', 'did', 'dname' )
+                    ->validator( 'Validate::notEmpty' ),
+               
+				Field::inst( 'dealers.dname' ),
+		
+            )
+    )
+    ->process($_POST)
+    ->json();
+	______________________________________________
+	
+	//dealers/ud_relate/users
+	
+	Editor::inst( $db, 'dealers','did' )
+    ->field(
+        Field::inst( 'dealers.did' ),
+				Field::inst( 'dealers.dname' ),
+		Field::inst( 'dealers.dnumber' ),
+		Field::inst( 'dealers.dcontact' ),
+		Field::inst( 'dealers.dsdphone' ),
+		
+		Field::inst( 'users.umobile' ),
+		Field::inst( 'users.fax' ),
+        Field::inst( 'users.email' ),
+		Field::inst( 'users.uid' ),
+		
+		
+    )
+    ->join(
+        Mjoin::inst( 'users' )
+            ->link( 'users.uid', 'ud_relate.u_uid' )
+            ->link( 'dealers.did', 'ud_relate.u_did' )
+            ->order( 'dealer.name asc' )
+            ->fields(
+			Field::inst( 'users.uname' ),
+		
+                
+		//->options( 'dealers', 'did', 'dname' )
+                    ->options( 'dealers', 'did', 'dname' )
+                    ->validator( 'Validate::notEmpty' ),
+                Field::inst( 'name' )
+				
+				
+            )
+    )
+    ->process($_POST)
+    ->json();

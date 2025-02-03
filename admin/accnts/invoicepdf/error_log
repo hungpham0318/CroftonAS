@@ -1,0 +1,706 @@
+[17-Jul-2016 02:25:19 America/Chicago] PHP Warning:  require_once(fpdf/fpdf.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/examplepdf.php on line 11
+[17-Jul-2016 02:25:19 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'fpdf/fpdf.php' (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/accnts/invoicepdf/examplepdf.php on line 11
+[17-Jul-2016 02:28:03 America/Chicago] PHP Warning:  fopen(widget-company-logo.png): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 1259
+[17-Jul-2016 02:28:03 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Can't open image file: widget-company-logo.png' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(1261): FPDF->Error('Can't open imag...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(885): FPDF->_parsepng('widget-company-...')
+#2 /home/manheim/public_html/admin/accnts/invoicepdf/examplepdf.php(67): FPDF->Image('widget-company-...', 50, 108, 110)
+#3 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[17-Jul-2016 02:42:00 America/Chicago] PHP Warning:  fopen(widget-company-logo.png): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 1259
+[17-Jul-2016 02:42:00 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Can't open image file: widget-company-logo.png' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(1261): FPDF->Error('Can't open imag...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(885): FPDF->_parsepng('widget-company-...')
+#2 /home/manheim/public_html/admin/accnts/invoicepdf/examplepdf.php(67): FPDF->Image('widget-company-...', 50, 108, 110)
+#3 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[17-Jul-2016 02:43:12 America/Chicago] PHP Warning:  fopen(widget-company-logo.png): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 1259
+[17-Jul-2016 02:43:12 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Can't open image file: widget-company-logo.png' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(1261): FPDF->Error('Can't open imag...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(885): FPDF->_parsepng('widget-company-...')
+#2 /home/manheim/public_html/admin/accnts/invoicepdf/examplepdf.php(67): FPDF->Image('widget-company-...', 50, 108, 110)
+#3 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[17-Jul-2016 02:43:14 America/Chicago] PHP Warning:  fopen(widget-company-logo.png): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 1259
+[17-Jul-2016 02:43:14 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Can't open image file: widget-company-logo.png' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(1261): FPDF->Error('Can't open imag...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(885): FPDF->_parsepng('widget-company-...')
+#2 /home/manheim/public_html/admin/accnts/invoicepdf/examplepdf.php(67): FPDF->Image('widget-company-...', 50, 108, 110)
+#3 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[17-Jul-2016 02:44:44 America/Chicago] PHP Warning:  fopen(widget-company-logo.png): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 1259
+[17-Jul-2016 02:44:44 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Can't open image file: widget-company-logo.png' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(1261): FPDF->Error('Can't open imag...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(885): FPDF->_parsepng('widget-company-...')
+#2 /home/manheim/public_html/admin/accnts/invoicepdf/examplepdf.php(67): FPDF->Image('widget-company-...', 50, 108, 110)
+#3 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[17-Jul-2016 02:45:49 America/Chicago] PHP Warning:  fopen(/admin/accnts/invoicepdf/u/widget-company-logo.png): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 1259
+[17-Jul-2016 02:45:49 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Can't open image file: /admin/accnts/invoicepdf/u/widget-company-logo.png' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(1261): FPDF->Error('Can't open imag...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(885): FPDF->_parsepng('/admin/accnts/i...')
+#2 /home/manheim/public_html/admin/accnts/invoicepdf/examplepdf.php(67): FPDF->Image('/admin/accnts/i...', 50, 108, 110)
+#3 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[17-Jul-2016 02:46:41 America/Chicago] PHP Warning:  fopen(/admin/accnts/invoicepdf/u/widget-company-logo.png): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 1259
+[17-Jul-2016 02:46:41 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Can't open image file: /admin/accnts/invoicepdf/u/widget-company-logo.png' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(1261): FPDF->Error('Can't open imag...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(885): FPDF->_parsepng('/admin/accnts/i...')
+#2 /home/manheim/public_html/admin/accnts/invoicepdf/examplepdf.php(67): FPDF->Image('/admin/accnts/i...', 50, 108, 110)
+#3 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[17-Jul-2016 02:46:44 America/Chicago] PHP Warning:  fopen(/admin/accnts/invoicepdf/u/widget-company-logo.png): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 1259
+[17-Jul-2016 02:46:44 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Can't open image file: /admin/accnts/invoicepdf/u/widget-company-logo.png' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(1261): FPDF->Error('Can't open imag...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(885): FPDF->_parsepng('/admin/accnts/i...')
+#2 /home/manheim/public_html/admin/accnts/invoicepdf/examplepdf.php(67): FPDF->Image('/admin/accnts/i...', 50, 108, 110)
+#3 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[17-Jul-2016 02:46:46 America/Chicago] PHP Warning:  fopen(/admin/accnts/invoicepdf/u/widget-company-logo.png): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 1259
+[17-Jul-2016 02:46:46 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Can't open image file: /admin/accnts/invoicepdf/u/widget-company-logo.png' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(1261): FPDF->Error('Can't open imag...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(885): FPDF->_parsepng('/admin/accnts/i...')
+#2 /home/manheim/public_html/admin/accnts/invoicepdf/examplepdf.php(67): FPDF->Image('/admin/accnts/i...', 50, 108, 110)
+#3 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[21-Jul-2016 09:27:54 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Image file has no extension and no type was specified: logo/92' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(876): FPDF->Error('Image file has ...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/index.php(45): FPDF->Image('logo/92', 10, 10, 20)
+#2 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(334): PDF->Header()
+#3 /home/manheim/public_html/admin/accnts/invoicepdf/index.php(75): FPDF->AddPage()
+#4 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[21-Jul-2016 10:43:47 America/Chicago] PHP Parse error:  syntax error, unexpected '" type="' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 207
+[21-Jul-2016 10:45:02 America/Chicago] PHP Parse error:  syntax error, unexpected '" type="' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 207
+[21-Jul-2016 10:46:03 America/Chicago] PHP Parse error:  syntax error, unexpected 'type' (T_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 207
+[21-Jul-2016 12:00:08 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 78
+[21-Jul-2016 12:09:59 America/Chicago] PHP Warning:  include(/home/manheim/public_html/admin/accnts/invoicepdf/u/font/helveticabold.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 1143
+[21-Jul-2016 12:09:59 America/Chicago] PHP Warning:  include(): Failed opening '/home/manheim/public_html/admin/accnts/invoicepdf/u/font/helveticabold.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 1143
+[21-Jul-2016 12:09:59 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Could not include font definition file' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(1145): FPDF->Error('Could not inclu...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(459): FPDF->_loadfont('helveticabold.p...')
+#2 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(507): FPDF->AddFont('helvetica', 'BOLD')
+#3 /home/manheim/public_html/admin/accnts/invoicepdf/index.php(76): FPDF->SetFont('Arial', 'bold', 16)
+#4 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[23-Jul-2016 01:36:47 America/Chicago] PHP Parse error:  syntax error, unexpected 'newmaster' (T_STRING) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 7
+[23-Jul-2016 09:56:30 America/Chicago] PHP Parse error:  syntax error, unexpected '$myear' (T_VARIABLE) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 32
+[23-Jul-2016 09:56:34 America/Chicago] PHP Parse error:  syntax error, unexpected '$myear' (T_VARIABLE) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 32
+[23-Jul-2016 09:57:15 America/Chicago] PHP Parse error:  syntax error, unexpected '$ic_iid' (T_VARIABLE) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 70
+[23-Jul-2016 10:01:20 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:01:20 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:01:20 America/Chicago] PHP Warning:  include(process/connect.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:01:20 America/Chicago] PHP Warning:  include(process/connect.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:01:20 America/Chicago] PHP Warning:  include(): Failed opening 'process/connect.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:01:20 America/Chicago] PHP Warning:  mysql_query(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 12
+[23-Jul-2016 10:01:20 America/Chicago] PHP Warning:  mysql_query(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 12
+[23-Jul-2016 10:01:20 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:02:04 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:02:04 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:02:04 America/Chicago] PHP Warning:  include(process/connect.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:02:04 America/Chicago] PHP Warning:  include(process/connect.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:02:04 America/Chicago] PHP Warning:  include(): Failed opening 'process/connect.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:02:04 America/Chicago] PHP Warning:  mysql_query(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 12
+[23-Jul-2016 10:02:04 America/Chicago] PHP Warning:  mysql_query(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 12
+[23-Jul-2016 10:02:04 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:02:35 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:02:35 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:02:35 America/Chicago] PHP Warning:  include(process/connect.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:02:35 America/Chicago] PHP Warning:  include(process/connect.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:02:35 America/Chicago] PHP Warning:  include(): Failed opening 'process/connect.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:02:35 America/Chicago] PHP Warning:  mysql_query(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 12
+[23-Jul-2016 10:02:35 America/Chicago] PHP Warning:  mysql_query(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 12
+[23-Jul-2016 10:02:35 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:03:00 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:03:00 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:03:00 America/Chicago] PHP Warning:  include(process/connect.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:03:00 America/Chicago] PHP Warning:  include(process/connect.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:03:00 America/Chicago] PHP Warning:  include(): Failed opening 'process/connect.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:03:00 America/Chicago] PHP Warning:  mysql_query(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 12
+[23-Jul-2016 10:03:00 America/Chicago] PHP Warning:  mysql_query(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 12
+[23-Jul-2016 10:03:00 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:03:03 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:03:03 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:03:03 America/Chicago] PHP Warning:  include(process/connect.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:03:03 America/Chicago] PHP Warning:  include(process/connect.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:03:03 America/Chicago] PHP Warning:  include(): Failed opening 'process/connect.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:03:03 America/Chicago] PHP Warning:  mysql_query(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 12
+[23-Jul-2016 10:03:03 America/Chicago] PHP Warning:  mysql_query(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 12
+[23-Jul-2016 10:03:03 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:04:35 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:04:35 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:04:35 America/Chicago] PHP Warning:  include(../process/connect.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:04:35 America/Chicago] PHP Warning:  include(../process/connect.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:04:35 America/Chicago] PHP Warning:  include(): Failed opening '../process/connect.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:04:35 America/Chicago] PHP Warning:  mysql_query(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 12
+[23-Jul-2016 10:04:35 America/Chicago] PHP Warning:  mysql_query(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 12
+[23-Jul-2016 10:04:35 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:04:38 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:04:38 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:04:38 America/Chicago] PHP Warning:  include(../process/connect.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:04:38 America/Chicago] PHP Warning:  include(../process/connect.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:04:38 America/Chicago] PHP Warning:  include(): Failed opening '../process/connect.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:04:38 America/Chicago] PHP Warning:  mysql_query(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 12
+[23-Jul-2016 10:04:38 America/Chicago] PHP Warning:  mysql_query(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 12
+[23-Jul-2016 10:04:38 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:04:41 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:04:41 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:04:41 America/Chicago] PHP Warning:  include(../process/connect.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:04:41 America/Chicago] PHP Warning:  include(../process/connect.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:04:41 America/Chicago] PHP Warning:  include(): Failed opening '../process/connect.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 10:04:41 America/Chicago] PHP Warning:  mysql_query(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 12
+[23-Jul-2016 10:04:41 America/Chicago] PHP Warning:  mysql_query(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 12
+[23-Jul-2016 10:04:41 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:05:33 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:05:33 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:05:33 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:08:21 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:21 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:21 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:08:25 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:25 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:25 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:08:30 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:30 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:30 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:08:37 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:37 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:37 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:08:42 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:42 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:42 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:50 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:08:51 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:51 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 5
+[23-Jul-2016 10:08:51 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:09:40 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:09:45 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:09:48 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:10:03 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:10:06 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:10:30 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:10:32 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:10:36 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:10:40 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:10:40 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:11:18 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:11:23 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:11:31 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:12:17 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:12:48 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:12:51 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:12:54 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:13:28 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:13:30 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:13:33 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:13:40 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:15:04 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:15:08 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:15:11 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:16:43 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:16:49 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:16:56 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:16:57 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:16:57 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:16:57 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:16:57 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:16:57 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:16:57 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:16:57 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:16:57 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:16:57 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:16:57 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:16:57 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:16:58 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:16:58 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:16:58 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:17:27 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:17:28 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:19:00 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:19:00 America/Chicago] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 70
+[23-Jul-2016 10:19:13 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:19:13 America/Chicago] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 70
+[23-Jul-2016 10:42:57 America/Chicago] PHP Parse error:  syntax error, unexpected '/' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 69
+[23-Jul-2016 10:43:58 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:44:27 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:44:29 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:44:34 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:44:37 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:45:07 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:45:09 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:45:19 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:47:10 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:47:17 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:47:17 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:47:18 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:47:18 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:47:18 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:47:18 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:47:18 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:47:18 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:47:18 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:47:18 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:47:18 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:48:03 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:48:04 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:48:39 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:48:41 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 10:48:43 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 14
+[23-Jul-2016 11:47:44 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 346
+[23-Jul-2016 11:54:08 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 346
+[23-Jul-2016 12:12:54 America/Chicago] PHP Warning:  include(process/connecti.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 12:12:54 America/Chicago] PHP Warning:  include(process/connecti.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 12:12:54 America/Chicago] PHP Warning:  include(): Failed opening 'process/connecti.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 8
+[23-Jul-2016 12:12:54 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 9
+[23-Jul-2016 12:12:54 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 10
+[23-Jul-2016 12:12:54 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 13
+[23-Jul-2016 12:12:54 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 21
+[23-Jul-2016 12:13:24 America/Chicago] PHP Fatal error:  Call to undefined function yourErrorHandler() in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 17
+[23-Jul-2016 12:14:06 America/Chicago] PHP Fatal error:  Call to undefined function yourErrorHandler() in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 17
+[23-Jul-2016 12:14:08 America/Chicago] PHP Fatal error:  Call to undefined function yourErrorHandler() in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 17
+[23-Jul-2016 12:14:52 America/Chicago] PHP Fatal error:  Call to undefined function ErrorHandler() in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 17
+[23-Jul-2016 12:15:06 America/Chicago] PHP Fatal error:  Call to undefined function ErrorHandler() in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 17
+[23-Jul-2016 12:15:09 America/Chicago] PHP Fatal error:  Call to undefined function ErrorHandler() in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 17
+[23-Jul-2016 12:20:55 America/Chicago] PHP Parse error:  syntax error, unexpected 'or' (T_LOGICAL_OR) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 17
+[23-Jul-2016 12:21:23 America/Chicago] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 17
+[23-Jul-2016 12:31:22 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 12
+[23-Jul-2016 16:45:53 America/Chicago] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 90
+[23-Jul-2016 16:49:16 America/Chicago] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 90
+[23-Jul-2016 16:49:36 America/Chicago] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 90
+[24-Jul-2016 10:50:48 America/Chicago] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 90
+[24-Jul-2016 11:15:22 America/Chicago] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 90
+[24-Jul-2016 11:15:26 America/Chicago] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 90
+[24-Jul-2016 11:16:20 America/Chicago] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 90
+[24-Jul-2016 11:16:42 America/Chicago] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 90
+[24-Jul-2016 11:26:02 America/Chicago] PHP Parse error:  syntax error, unexpected '$company' (T_VARIABLE) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 113
+[24-Jul-2016 11:26:10 America/Chicago] PHP Parse error:  syntax error, unexpected '$company' (T_VARIABLE) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 113
+[24-Jul-2016 11:26:20 America/Chicago] PHP Parse error:  syntax error, unexpected '$company' (T_VARIABLE) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 113
+[24-Jul-2016 11:28:42 America/Chicago] PHP Parse error:  syntax error, unexpected '$company' (T_VARIABLE) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 113
+[24-Jul-2016 11:30:39 America/Chicago] PHP Parse error:  syntax error, unexpected '$company' (T_VARIABLE) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 113
+[24-Jul-2016 11:30:45 America/Chicago] PHP Parse error:  syntax error, unexpected '$company' (T_VARIABLE) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 113
+[24-Jul-2016 11:32:06 America/Chicago] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 90
+[24-Jul-2016 11:32:10 America/Chicago] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 90
+[24-Jul-2016 14:01:49 America/Chicago] PHP Parse error:  syntax error, unexpected ''D'' (T_CONSTANT_ENCAPSED_STRING) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 26
+[24-Jul-2016 18:20:15 America/Chicago] PHP Parse error:  syntax error, unexpected '$dstate' (T_VARIABLE), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 348
+[24-Jul-2016 20:24:26 America/Chicago] PHP Parse error:  syntax error, unexpected '[' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 353
+[24-Jul-2016 20:25:24 America/Chicago] PHP Warning:  date() expects parameter 2 to be long, string given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 353
+[24-Jul-2016 20:42:47 America/Chicago] PHP Parse error:  syntax error, unexpected '$dattn' (T_VARIABLE), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 345
+[24-Jul-2016 20:43:20 America/Chicago] PHP Parse error:  syntax error, unexpected ''.$dstate.'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 360
+[24-Jul-2016 20:46:21 America/Chicago] PHP Parse error:  syntax error, unexpected ''.$dstate.'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 360
+[24-Jul-2016 20:46:23 America/Chicago] PHP Parse error:  syntax error, unexpected ''.$dstate.'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 360
+[24-Jul-2016 20:49:42 America/Chicago] PHP Parse error:  syntax error, unexpected ''.$dzip;?>" type="text" value=' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 360
+[24-Jul-2016 20:51:13 America/Chicago] PHP Parse error:  syntax error, unexpected 'href' (T_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 374
+[24-Jul-2016 20:54:26 America/Chicago] PHP Parse error:  syntax error, unexpected '$dattn' (T_VARIABLE), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 345
+[24-Jul-2016 20:55:30 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 356
+[24-Jul-2016 20:56:48 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 356
+[24-Jul-2016 20:58:18 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 356
+[24-Jul-2016 20:58:20 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 356
+[24-Jul-2016 20:58:51 America/Chicago] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 364
+[24-Jul-2016 20:59:41 America/Chicago] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 364
+[24-Jul-2016 20:59:45 America/Chicago] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 364
+[24-Jul-2016 22:01:51 America/Chicago] PHP Parse error:  syntax error, unexpected '>' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 352
+[24-Jul-2016 22:02:17 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 357
+[24-Jul-2016 22:05:09 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 357
+[24-Jul-2016 22:05:12 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 357
+[24-Jul-2016 23:15:05 America/Chicago] PHP Warning:  Missing argument 2 for PDF::ChapterTitle(), called in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 234 and defined in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 186
+[24-Jul-2016 23:36:23 America/Chicago] PHP Parse error:  syntax error, unexpected '$dattn' (T_VARIABLE) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 120
+[25-Jul-2016 01:27:15 America/Chicago] PHP Warning:  strtoupper() expects exactly 1 parameter, 4 given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 231
+[25-Jul-2016 01:27:23 America/Chicago] PHP Warning:  strtoupper() expects exactly 1 parameter, 4 given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 231
+[25-Jul-2016 01:39:24 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 401
+[25-Jul-2016 01:40:21 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 401
+[25-Jul-2016 01:40:24 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 401
+[25-Jul-2016 01:40:28 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 401
+[25-Jul-2016 01:41:22 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 401
+[25-Jul-2016 01:42:50 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 401
+[25-Jul-2016 01:43:16 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 401
+[25-Jul-2016 01:44:11 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 401
+[25-Jul-2016 01:46:25 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 401
+[25-Jul-2016 01:46:27 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 401
+[25-Jul-2016 01:52:07 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 406
+[25-Jul-2016 02:37:29 America/Chicago] PHP Parse error:  syntax error, unexpected 'invoice' (T_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 429
+[25-Jul-2016 02:41:34 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 432
+[27-Jul-2016 06:17:50 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 540
+[27-Jul-2016 06:49:00 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 540
+[27-Jul-2016 06:49:13 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 540
+[27-Jul-2016 07:14:23 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 100
+[27-Jul-2016 10:02:32 America/Chicago] PHP Parse error:  syntax error, unexpected '$j' (T_VARIABLE), expecting '(' in /home/manheim/public_html/admin/accnts/invoicepdf/tests.php on line 3
+[27-Jul-2016 10:36:05 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/tests.php on line 35
+[27-Jul-2016 10:51:29 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/manheim/public_html/admin/accnts/invoicepdf/tests.php on line 5
+[27-Jul-2016 10:51:52 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/manheim/public_html/admin/accnts/invoicepdf/tests.php on line 5
+[27-Jul-2016 12:48:28 America/Chicago] PHP Parse error:  syntax error, unexpected '=' in /home/manheim/public_html/admin/accnts/invoicepdf/tests.php on line 3
+[27-Jul-2016 12:55:21 America/Chicago] PHP Parse error:  syntax error, unexpected '/' in /home/manheim/public_html/admin/accnts/invoicepdf/tests.php on line 10
+[27-Jul-2016 12:56:21 America/Chicago] PHP Parse error:  syntax error, unexpected '/' in /home/manheim/public_html/admin/accnts/invoicepdf/tests.php on line 10
+[27-Jul-2016 12:56:49 America/Chicago] PHP Parse error:  syntax error, unexpected '/' in /home/manheim/public_html/admin/accnts/invoicepdf/tests.php on line 10
+[27-Jul-2016 12:56:51 America/Chicago] PHP Parse error:  syntax error, unexpected '/' in /home/manheim/public_html/admin/accnts/invoicepdf/tests.php on line 10
+[27-Jul-2016 12:57:41 America/Chicago] PHP Parse error:  syntax error, unexpected '/' in /home/manheim/public_html/admin/accnts/invoicepdf/tests.php on line 10
+[27-Jul-2016 12:58:08 America/Chicago] PHP Parse error:  syntax error, unexpected '/' in /home/manheim/public_html/admin/accnts/invoicepdf/tests.php on line 10
+[27-Jul-2016 12:58:10 America/Chicago] PHP Parse error:  syntax error, unexpected '/' in /home/manheim/public_html/admin/accnts/invoicepdf/tests.php on line 10
+[27-Jul-2016 12:58:16 America/Chicago] PHP Parse error:  syntax error, unexpected '/' in /home/manheim/public_html/admin/accnts/invoicepdf/tests.php on line 10
+[27-Jul-2016 12:58:18 America/Chicago] PHP Parse error:  syntax error, unexpected '/' in /home/manheim/public_html/admin/accnts/invoicepdf/tests.php on line 10
+[27-Jul-2016 12:59:26 America/Chicago] PHP Parse error:  syntax error, unexpected '3201.' (T_DNUMBER), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/tests.php on line 12
+[27-Jul-2016 13:00:46 America/Chicago] PHP Parse error:  syntax error, unexpected '=' in /home/manheim/public_html/admin/accnts/invoicepdf/tests.php on line 12
+[28-Jul-2016 00:23:07 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/tests.php on line 65
+[28-Jul-2016 00:26:45 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/manheim/public_html/admin/accnts/invoicepdf/tests.php on line 33
+[28-Jul-2016 00:35:13 America/Chicago] PHP Parse error:  syntax error, unexpected 'while' (T_WHILE) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 154
+[28-Jul-2016 00:36:16 America/Chicago] PHP Parse error:  syntax error, unexpected 'while' (T_WHILE) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 154
+[28-Jul-2016 00:37:01 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 202
+[28-Jul-2016 00:37:31 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 202
+[28-Jul-2016 00:37:33 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 202
+[28-Jul-2016 02:15:50 America/Chicago] PHP Parse error:  syntax error, unexpected '.' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 161
+[28-Jul-2016 02:33:37 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 164
+[28-Jul-2016 02:33:38 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 164
+[28-Jul-2016 02:58:06 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 595
+[28-Jul-2016 03:36:55 America/Chicago] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 201326592 bytes) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 165
+[28-Jul-2016 03:41:58 America/Chicago] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 201326592 bytes) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 165
+[28-Jul-2016 05:08:07 America/Chicago] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 37
+[28-Jul-2016 05:52:01 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 566
+[28-Jul-2016 06:02:53 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 566
+[28-Jul-2016 06:24:37 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 566
+[28-Jul-2016 06:26:12 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 566
+[28-Jul-2016 06:38:32 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 566
+[28-Jul-2016 12:18:39 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 570
+[28-Jul-2016 12:34:03 America/Chicago] PHP Parse error:  syntax error, unexpected '"' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 69
+[28-Jul-2016 12:35:59 America/Chicago] PHP Parse error:  syntax error, unexpected '"' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 69
+[28-Jul-2016 12:39:56 America/Chicago] PHP Parse error:  syntax error, unexpected '"' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 70
+[28-Jul-2016 12:39:57 America/Chicago] PHP Parse error:  syntax error, unexpected '"' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 70
+[28-Jul-2016 12:39:59 America/Chicago] PHP Parse error:  syntax error, unexpected '"' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 70
+[29-Jul-2016 03:16:19 America/Chicago] PHP Fatal error:  Call to a member function query() on a non-object in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 16
+[29-Jul-2016 03:16:55 America/Chicago] PHP Fatal error:  Call to a member function query() on a non-object in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 19
+[29-Jul-2016 03:19:01 America/Chicago] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 29
+[29-Jul-2016 03:19:55 America/Chicago] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 29
+[29-Jul-2016 03:22:14 America/Chicago] PHP Parse error:  syntax error, unexpected 'each' (T_STRING), expecting '(' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 28
+[29-Jul-2016 03:22:16 America/Chicago] PHP Parse error:  syntax error, unexpected 'each' (T_STRING), expecting '(' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 28
+[29-Jul-2016 03:22:19 America/Chicago] PHP Parse error:  syntax error, unexpected 'each' (T_STRING), expecting '(' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 28
+[29-Jul-2016 03:47:44 America/Chicago] PHP Parse error:  syntax error, unexpected 'window' (T_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 575
+[29-Jul-2016 03:47:48 America/Chicago] PHP Parse error:  syntax error, unexpected 'window' (T_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 575
+[29-Jul-2016 03:47:51 America/Chicago] PHP Parse error:  syntax error, unexpected 'window' (T_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 575
+[29-Jul-2016 03:47:57 America/Chicago] PHP Parse error:  syntax error, unexpected 'window' (T_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 575
+[29-Jul-2016 07:02:57 America/Chicago] PHP Parse error:  syntax error, unexpected 'onclick' (T_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 575
+[29-Jul-2016 07:02:59 America/Chicago] PHP Parse error:  syntax error, unexpected 'onclick' (T_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 575
+[29-Jul-2016 07:03:01 America/Chicago] PHP Parse error:  syntax error, unexpected 'onclick' (T_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 575
+[29-Jul-2016 07:03:06 America/Chicago] PHP Parse error:  syntax error, unexpected 'onclick' (T_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 575
+[29-Jul-2016 07:04:19 America/Chicago] PHP Parse error:  syntax error, unexpected 'invoice' (T_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 575
+[29-Jul-2016 07:04:21 America/Chicago] PHP Parse error:  syntax error, unexpected 'invoice' (T_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 575
+[29-Jul-2016 07:06:29 America/Chicago] PHP Parse error:  syntax error, unexpected ''>Return to Invoicing Vehicles' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 578
+[29-Jul-2016 07:57:04 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 586
+[29-Jul-2016 07:57:14 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 586
+[29-Jul-2016 07:58:50 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 586
+[29-Jul-2016 08:44:34 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 436
+[29-Jul-2016 08:48:33 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 436
+[29-Jul-2016 08:49:18 America/Chicago] PHP Parse error:  syntax error, unexpected '";' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 547
+[29-Jul-2016 08:51:07 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 424
+[29-Jul-2016 08:53:34 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 307
+[29-Jul-2016 08:53:44 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 307
+[29-Jul-2016 08:53:47 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 307
+[29-Jul-2016 08:54:37 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 307
+[29-Jul-2016 08:54:50 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 304
+[29-Jul-2016 08:55:50 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 304
+[29-Jul-2016 08:55:52 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 304
+[29-Jul-2016 08:57:03 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 421
+[29-Jul-2016 08:59:13 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 421
+[29-Jul-2016 08:59:25 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 421
+[29-Jul-2016 09:03:34 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 421
+[29-Jul-2016 09:05:05 America/Chicago] PHP Parse error:  syntax error, unexpected '";' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 543
+[29-Jul-2016 09:06:10 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 574
+[29-Jul-2016 09:08:40 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 574
+[29-Jul-2016 09:18:40 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 574
+[29-Jul-2016 09:19:01 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 574
+[29-Jul-2016 09:19:08 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 574
+[29-Jul-2016 09:19:09 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 574
+[29-Jul-2016 09:22:25 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 595
+[29-Jul-2016 09:36:15 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 595
+[29-Jul-2016 09:37:07 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 595
+[29-Jul-2016 09:37:11 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 595
+[29-Jul-2016 09:38:15 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 596
+[29-Jul-2016 09:42:27 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 421
+[29-Jul-2016 09:42:27 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 421
+[29-Jul-2016 09:42:28 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 421
+[29-Jul-2016 10:16:47 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 47
+[29-Jul-2016 10:25:50 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 4
+[29-Jul-2016 10:26:36 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 4
+[29-Jul-2016 10:26:38 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 4
+[29-Jul-2016 10:26:48 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 4
+[29-Jul-2016 10:28:32 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 4
+[29-Jul-2016 10:28:36 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 4
+[29-Jul-2016 10:28:39 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 4
+[29-Jul-2016 10:28:39 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 4
+[29-Jul-2016 10:29:00 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 4
+[29-Jul-2016 10:29:38 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 4
+[29-Jul-2016 10:30:22 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 4
+[29-Jul-2016 10:31:28 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 4
+[29-Jul-2016 10:31:37 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 4
+[29-Jul-2016 10:31:39 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 4
+[29-Jul-2016 10:31:40 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 4
+[29-Jul-2016 10:32:27 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 4
+[29-Jul-2016 10:33:07 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 4
+[29-Jul-2016 10:33:40 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 4
+[29-Jul-2016 10:34:23 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 4
+[29-Jul-2016 10:34:23 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 4
+[29-Jul-2016 11:00:41 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 140
+[29-Jul-2016 11:01:09 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 584
+[29-Jul-2016 11:03:43 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 585
+[30-Jul-2016 04:25:02 America/Chicago] PHP Parse error:  syntax error, unexpected 'Y' (T_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 546
+[30-Jul-2016 04:27:13 America/Chicago] PHP Parse error:  syntax error, unexpected 'id' (T_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 528
+[30-Jul-2016 04:28:19 America/Chicago] PHP Parse error:  syntax error, unexpected '?' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 530
+[30-Jul-2016 04:29:04 America/Chicago] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 530
+[30-Jul-2016 04:30:06 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 536
+[30-Jul-2016 05:46:00 America/Chicago] PHP Parse error:  syntax error, unexpected ']' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 103
+[30-Jul-2016 05:47:33 America/Chicago] PHP Warning:  file_put_contents(bunker\/1005\/2016-07-30.pdf): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 1021
+[30-Jul-2016 05:47:33 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Unable to create output file: bunker\/1005\/2016-07-30.pdf' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(1022): FPDF->Error('Unable to creat...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/index.php(401): FPDF->Output('bunker\\/1005\\/2...', 'F')
+#2 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[30-Jul-2016 05:48:07 America/Chicago] PHP Warning:  file_put_contents(bunker\/1050\/2016-07-30.pdf): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 1021
+[30-Jul-2016 05:48:07 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Unable to create output file: bunker\/1050\/2016-07-30.pdf' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(1022): FPDF->Error('Unable to creat...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/index.php(401): FPDF->Output('bunker\\/1050\\/2...', 'F')
+#2 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[30-Jul-2016 05:48:56 America/Chicago] PHP Warning:  file_put_contents(/admin/accnts/bunker/1050/2016-07-30.pdf): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 1021
+[30-Jul-2016 05:48:56 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Unable to create output file: /admin/accnts/bunker/1050/2016-07-30.pdf' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(1022): FPDF->Error('Unable to creat...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/index.php(401): FPDF->Output('/admin/accnts/b...', 'F')
+#2 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[30-Jul-2016 05:55:57 America/Chicago] PHP Warning:  file_put_contents(/admin/accnts/bunker/.pdf): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 1021
+[30-Jul-2016 05:55:57 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Unable to create output file: /admin/accnts/bunker/.pdf' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(1022): FPDF->Error('Unable to creat...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/index.php(401): FPDF->Output('/admin/accnts/b...', 'F')
+#2 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[30-Jul-2016 05:56:47 America/Chicago] PHP Warning:  file_put_contents(/admin/accnts/bunker/.pdf): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 1021
+[30-Jul-2016 05:56:47 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Unable to create output file: /admin/accnts/bunker/.pdf' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(1022): FPDF->Error('Unable to creat...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/index.php(401): FPDF->Output('/admin/accnts/b...', 'F')
+#2 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[30-Jul-2016 06:08:07 America/Chicago] PHP Warning:  file_put_contents(/bunker/.pdf): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 1021
+[30-Jul-2016 06:08:07 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Unable to create output file: /bunker/.pdf' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(1022): FPDF->Error('Unable to creat...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/index.php(401): FPDF->Output('/bunker/.pdf', 'F')
+#2 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[30-Jul-2016 06:28:31 America/Chicago] PHP Parse error:  syntax error, unexpected '=' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 402
+[30-Jul-2016 06:44:27 America/Chicago] PHP Warning:  date_format() expects parameter 1 to be DateTime, string given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 558
+[30-Jul-2016 06:46:30 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 557
+[30-Jul-2016 06:46:38 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 557
+[30-Jul-2016 06:46:58 America/Chicago] PHP Parse error:  syntax error, unexpected ''"/></div>'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 558
+[30-Jul-2016 06:48:27 America/Chicago] PHP Parse error:  syntax error, unexpected ''"/></div>'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 558
+[30-Jul-2016 06:53:39 America/Chicago] PHP Warning:  date_format() expects parameter 1 to be DateTime, string given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 558
+[30-Jul-2016 06:53:39 America/Chicago] PHP Warning:  date_format() expects parameter 1 to be DateTime, string given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 558
+[30-Jul-2016 06:54:19 America/Chicago] PHP Warning:  date_format() expects parameter 1 to be DateTime, string given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 558
+[30-Jul-2016 06:54:19 America/Chicago] PHP Warning:  date_format() expects parameter 1 to be DateTime, string given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 558
+[30-Jul-2016 06:54:24 America/Chicago] PHP Warning:  date_format() expects parameter 1 to be DateTime, string given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 558
+[30-Jul-2016 06:54:24 America/Chicago] PHP Warning:  date_format() expects parameter 1 to be DateTime, string given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 558
+[30-Jul-2016 07:13:01 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 520
+[30-Jul-2016 07:22:53 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 405
+[30-Jul-2016 07:24:44 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 405
+[30-Jul-2016 07:24:46 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 405
+[30-Jul-2016 07:38:46 America/Chicago] PHP Fatal error:  Function name must be a string in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 240
+[30-Jul-2016 07:42:19 America/Chicago] PHP Fatal error:  Call to undefined function format() in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 241
+[30-Jul-2016 08:25:34 America/Chicago] PHP Fatal error:  Call to undefined function format() in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 241
+[30-Jul-2016 09:51:38 America/Chicago] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 260
+[30-Jul-2016 09:51:42 America/Chicago] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 260
+[30-Jul-2016 10:03:25 America/Chicago] PHP Parse error:  syntax error, unexpected '>' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 266
+[30-Jul-2016 10:06:08 America/Chicago] PHP Parse error:  syntax error, unexpected '>' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 266
+[30-Jul-2016 10:11:07 America/Chicago] PHP Parse error:  syntax error, unexpected 'query' (T_STRING) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 266
+[30-Jul-2016 10:11:13 America/Chicago] PHP Parse error:  syntax error, unexpected 'query' (T_STRING) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 266
+[30-Jul-2016 10:11:56 America/Chicago] PHP Parse error:  syntax error, unexpected 'query' (T_STRING) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 265
+[30-Jul-2016 10:13:43 America/Chicago] PHP Parse error:  syntax error, unexpected '"', expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 296
+[30-Jul-2016 10:14:38 America/Chicago] PHP Parse error:  syntax error, unexpected '"', expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 296
+[30-Jul-2016 10:14:41 America/Chicago] PHP Parse error:  syntax error, unexpected '"', expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 296
+[30-Jul-2016 10:16:57 America/Chicago] PHP Parse error:  syntax error, unexpected 'or' (T_LOGICAL_OR) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 265
+[30-Jul-2016 10:17:16 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 266
+[30-Jul-2016 10:17:18 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 266
+[30-Jul-2016 10:26:17 America/Chicago] PHP Parse error:  syntax error, unexpected 'S' (T_STRING) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 262
+[30-Jul-2016 10:49:38 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 262
+[30-Jul-2016 10:51:13 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 262
+[30-Jul-2016 10:51:37 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 262
+[30-Jul-2016 10:53:31 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 262
+[30-Jul-2016 11:00:34 America/Chicago] PHP Parse error:  syntax error, unexpected '$qmid' (T_VARIABLE) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 262
+[30-Jul-2016 11:02:42 America/Chicago] PHP Parse error:  syntax error, unexpected ']' in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 261
+[30-Jul-2016 11:05:12 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 262
+[30-Jul-2016 11:07:40 America/Chicago] PHP Parse error:  syntax error, unexpected 'S' (T_STRING) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 263
+[03-Aug-2016 07:38:00 America/Chicago] PHP Parse error:  syntax error, unexpected 'false' (T_STRING) in /home/manheim/public_html/admin/accnts/invoicepdf/index.php on line 256
+[20-Aug-2016 18:04:12 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 113
+[20-Aug-2016 18:32:15 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 113
+[20-Aug-2016 18:51:36 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 113
+[21-Aug-2016 16:25:36 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 645
+[21-Aug-2016 16:25:55 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 645
+[21-Aug-2016 16:26:40 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 645
+[21-Aug-2016 16:42:05 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 645
+[21-Aug-2016 17:03:43 America/Chicago] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 26
+[21-Aug-2016 17:05:49 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 658
+[21-Aug-2016 17:13:17 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 66
+[21-Aug-2016 17:37:47 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 269
+[21-Aug-2016 17:39:14 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 269
+[21-Aug-2016 17:39:16 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 269
+[21-Aug-2016 23:30:47 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 278
+[22-Aug-2016 07:21:48 America/Chicago] PHP Parse error:  syntax error, unexpected '$daddress' (T_VARIABLE) in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 35
+[22-Aug-2016 07:23:51 America/Chicago] PHP Parse error:  syntax error, unexpected '$daddress' (T_VARIABLE) in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 35
+[22-Aug-2016 07:24:04 America/Chicago] PHP Parse error:  syntax error, unexpected '$daddress' (T_VARIABLE) in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 35
+[23-Aug-2016 02:28:59 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 124
+[23-Aug-2016 03:16:43 America/Chicago] PHP Parse error:  syntax error, unexpected ':' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 108
+[23-Aug-2016 03:54:57 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 81
+[23-Aug-2016 04:13:06 America/Chicago] PHP Parse error:  syntax error, unexpected '$updmastEntry' (T_VARIABLE) in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 118
+[23-Aug-2016 04:13:27 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 80
+[23-Aug-2016 04:26:13 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 313
+[23-Aug-2016 04:27:09 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 313
+[23-Aug-2016 04:27:11 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 313
+[23-Aug-2016 04:32:00 America/Chicago] PHP Parse error:  syntax error, unexpected '*' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 318
+[23-Aug-2016 05:04:43 America/Chicago] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 214
+[23-Aug-2016 05:04:46 America/Chicago] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 214
+[23-Aug-2016 05:44:59 America/Chicago] PHP Parse error:  syntax error, unexpected '$invEntry' (T_VARIABLE) in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 74
+[23-Aug-2016 05:45:02 America/Chicago] PHP Parse error:  syntax error, unexpected '$invEntry' (T_VARIABLE) in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 74
+[23-Aug-2016 05:45:20 America/Chicago] PHP Parse error:  syntax error, unexpected ']' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 148
+[23-Aug-2016 06:09:12 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 683
+[23-Aug-2016 06:09:19 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 683
+[23-Aug-2016 06:18:29 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 673
+[23-Aug-2016 06:21:13 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 673
+[23-Aug-2016 06:21:15 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 673
+[23-Aug-2016 06:25:55 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 124
+[23-Aug-2016 17:05:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 99
+[23-Aug-2016 18:26:17 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 313
+[23-Aug-2016 20:36:07 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 574
+[23-Aug-2016 20:39:41 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 573
+[23-Aug-2016 20:43:02 America/Chicago] PHP Parse error:  syntax error, unexpected 'issetpostsubmit' (T_STRING), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 240
+[23-Aug-2016 20:43:26 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 574
+[23-Aug-2016 20:46:32 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 574
+[24-Aug-2016 16:08:17 America/Chicago] PHP Parse error:  syntax error, unexpected 'each' (T_STRING), expecting '(' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 208
+[24-Aug-2016 16:08:59 America/Chicago] PHP Parse error:  syntax error, unexpected 'each' (T_STRING), expecting '(' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 208
+[24-Aug-2016 16:09:01 America/Chicago] PHP Parse error:  syntax error, unexpected 'each' (T_STRING), expecting '(' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 208
+[24-Aug-2016 16:09:46 America/Chicago] PHP Parse error:  syntax error, unexpected 'each' (T_STRING), expecting '(' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 208
+[24-Aug-2016 16:09:48 America/Chicago] PHP Parse error:  syntax error, unexpected 'each' (T_STRING), expecting '(' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 208
+[24-Aug-2016 16:12:52 America/Chicago] PHP Parse error:  syntax error, unexpected 'each' (T_STRING), expecting '(' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 208
+[24-Aug-2016 16:12:54 America/Chicago] PHP Parse error:  syntax error, unexpected 'each' (T_STRING), expecting '(' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 208
+[24-Aug-2016 16:13:21 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 745
+[24-Aug-2016 16:13:23 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 745
+[24-Aug-2016 18:27:31 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/index1.php on line 555
+[24-Aug-2016 23:27:10 America/Chicago] PHP Warning:  require(fpdf.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/fpdfmysql.php on line 8
+[24-Aug-2016 23:27:10 America/Chicago] PHP Warning:  require(fpdf.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/fpdfmysql.php on line 8
+[24-Aug-2016 23:27:10 America/Chicago] PHP Fatal error:  require(): Failed opening required 'fpdf.php' (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/accnts/invoicepdf/fpdfmysql.php on line 8
+[25-Aug-2016 03:48:05 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/try.php on line 189
+[25-Aug-2016 03:49:32 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/try.php on line 189
+[25-Aug-2016 03:49:35 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/try.php on line 189
+[25-Aug-2016 04:04:28 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/try.php on line 137
+[25-Aug-2016 04:06:33 America/Chicago] PHP Warning:  require(fpdf.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/try.php on line 3
+[25-Aug-2016 04:06:33 America/Chicago] PHP Warning:  require(fpdf.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/try.php on line 3
+[25-Aug-2016 04:06:33 America/Chicago] PHP Fatal error:  require(): Failed opening required 'fpdf.php' (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/accnts/invoicepdf/try.php on line 3
+[25-Aug-2016 04:09:27 America/Chicago] PHP Warning:  include(conectmysql.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/try.php on line 6
+[25-Aug-2016 04:09:27 America/Chicago] PHP Warning:  include(conectmysql.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/try.php on line 6
+[25-Aug-2016 04:09:27 America/Chicago] PHP Warning:  include(): Failed opening 'conectmysql.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/accnts/invoicepdf/try.php on line 6
+[25-Aug-2016 04:13:35 America/Chicago] PHP Warning:  number_format() expects parameter 2 to be long, string given in /home/manheim/public_html/admin/accnts/invoicepdf/try.php on line 76
+[25-Aug-2016 04:13:35 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Some data has already been output, can't send PDF file (output started at /home/manheim/public_html/admin/accnts/invoicepdf/try.php:21)' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(1052): FPDF->Error('Some data has a...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(999): FPDF->_checkoutput()
+#2 /home/manheim/public_html/admin/accnts/invoicepdf/try.php(136): FPDF->Output()
+#3 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[25-Aug-2016 04:16:37 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/try.php on line 137
+[25-Aug-2016 04:17:09 America/Chicago] PHP Warning:  number_format() expects parameter 2 to be long, string given in /home/manheim/public_html/admin/accnts/invoicepdf/try.php on line 76
+[25-Aug-2016 04:17:09 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Some data has already been output, can't send PDF file (output started at /home/manheim/public_html/admin/accnts/invoicepdf/try.php:76)' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(1052): FPDF->Error('Some data has a...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(999): FPDF->_checkoutput()
+#2 /home/manheim/public_html/admin/accnts/invoicepdf/try.php(136): FPDF->Output()
+#3 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[25-Aug-2016 04:17:37 America/Chicago] PHP Warning:  number_format() expects parameter 2 to be long, string given in /home/manheim/public_html/admin/accnts/invoicepdf/try.php on line 76
+[25-Aug-2016 04:17:37 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Some data has already been output, can't send PDF file (output started at /home/manheim/public_html/admin/accnts/invoicepdf/try.php:76)' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(1052): FPDF->Error('Some data has a...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(999): FPDF->_checkoutput()
+#2 /home/manheim/public_html/admin/accnts/invoicepdf/try.php(136): FPDF->Output()
+#3 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[25-Aug-2016 04:17:54 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/try.php on line 135
+[25-Aug-2016 04:18:19 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/try.php on line 124
+[25-Aug-2016 04:18:44 America/Chicago] PHP Warning:  number_format() expects parameter 2 to be long, string given in /home/manheim/public_html/admin/accnts/invoicepdf/try.php on line 76
+[25-Aug-2016 04:18:44 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Some data has already been output, can't send PDF file (output started at /home/manheim/public_html/admin/accnts/invoicepdf/try.php:76)' in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php:271
+Stack trace:
+#0 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(1052): FPDF->Error('Some data has a...')
+#1 /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php(999): FPDF->_checkoutput()
+#2 /home/manheim/public_html/admin/accnts/invoicepdf/try.php(136): FPDF->Output()
+#3 {main}
+  thrown in /home/manheim/public_html/admin/accnts/invoicepdf/u/fpdf.php on line 271
+[25-Aug-2016 18:54:44 America/Chicago] PHP Warning:  require(fpdf.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/fpdfmysql.php on line 8
+[25-Aug-2016 18:54:44 America/Chicago] PHP Warning:  require(fpdf.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/fpdfmysql.php on line 8
+[25-Aug-2016 18:54:44 America/Chicago] PHP Fatal error:  require(): Failed opening required 'fpdf.php' (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/accnts/invoicepdf/fpdfmysql.php on line 8
+[25-Aug-2016 19:05:38 America/Chicago] PHP Warning:  require(fpdf.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/fpdfmysql.php on line 8
+[25-Aug-2016 19:05:38 America/Chicago] PHP Warning:  require(fpdf.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/fpdfmysql.php on line 8
+[25-Aug-2016 19:05:38 America/Chicago] PHP Fatal error:  require(): Failed opening required 'fpdf.php' (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/accnts/invoicepdf/fpdfmysql.php on line 8
+[21-Sep-2016 21:50:41 America/Chicago] PHP Parse error:  syntax error, unexpected '$ic_note' (T_VARIABLE) in /home/manheim/public_html/admin/accnts/invoicepdf/step2.php on line 137
+[21-Sep-2016 21:51:28 America/Chicago] PHP Parse error:  syntax error, unexpected '$ichargeEntry' (T_VARIABLE) in /home/manheim/public_html/admin/accnts/invoicepdf/step2.php on line 155
+[21-Sep-2016 21:53:53 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/manheim/public_html/admin/accnts/invoicepdf/step2.php on line 52
+[21-Sep-2016 21:55:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/manheim/public_html/admin/accnts/invoicepdf/step2.php on line 52
+[21-Sep-2016 21:55:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/manheim/public_html/admin/accnts/invoicepdf/step2.php on line 52
+[21-Sep-2016 21:58:20 America/Chicago] PHP Warning:  include(../process/connecti.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/step2.php on line 216
+[21-Sep-2016 21:58:20 America/Chicago] PHP Warning:  include(../process/connecti.php): failed to open stream: No such file or directory in /home/manheim/public_html/admin/accnts/invoicepdf/step2.php on line 216
+[21-Sep-2016 21:58:20 America/Chicago] PHP Warning:  include(): Failed opening '../process/connecti.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/manheim/public_html/admin/accnts/invoicepdf/step2.php on line 216
+[22-Sep-2016 01:41:51 America/Chicago] PHP Parse error:  syntax error, unexpected '$iid' (T_VARIABLE), expecting ',' or ';' in /home/manheim/public_html/admin/accnts/invoicepdf/step2.php on line 80
+[22-Sep-2016 01:46:01 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/step2.php on line 352
+[22-Sep-2016 16:21:56 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/step2.php on line 352
+[22-Sep-2016 16:22:12 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/step2.php on line 352
+[22-Sep-2016 16:26:06 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/step2.php on line 351
+[22-Sep-2016 16:26:18 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/step2.php on line 351
+[22-Sep-2016 16:27:46 America/Chicago] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /home/manheim/public_html/admin/accnts/invoicepdf/step2.php on line 350
+[22-Sep-2016 20:59:31 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/step2.php on line 350
+[22-Sep-2016 20:59:41 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/step2.php on line 350
+[24-Sep-2016 15:42:25 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/step3.php on line 367
+[16-Oct-2016 18:50:48 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/admin/accnts/invoicepdf/invoicestepthree.php on line 365
+[16-Oct-2016 19:30:34 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/invoicestepthree.php on line 365
+[16-Oct-2016 19:37:03 America/Chicago] PHP Parse error:  syntax error, unexpected '$pdf' (T_VARIABLE), expecting function (T_FUNCTION) in /home/manheim/public_html/admin/accnts/invoicepdf/invoicestepthree.php on line 254
+[16-Oct-2016 19:56:03 America/Chicago] PHP Parse error:  syntax error, unexpected '$pdf' (T_VARIABLE), expecting function (T_FUNCTION) in /home/manheim/public_html/admin/accnts/invoicepdf/invoicestepthree.php on line 254
+[16-Oct-2016 19:56:06 America/Chicago] PHP Parse error:  syntax error, unexpected '$pdf' (T_VARIABLE), expecting function (T_FUNCTION) in /home/manheim/public_html/admin/accnts/invoicepdf/invoicestepthree.php on line 254
+[16-Oct-2016 20:43:07 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/admin/accnts/invoicepdf/invoicestepthree.php on line 328

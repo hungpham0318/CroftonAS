@@ -1,0 +1,24 @@
+<?php if(!$user->is_logged_in()){ echo'
+<nav id="primary_nav_wrap">
+<!--<label for="show-menu" class="show-menu">Show Menu</label>
+<input type="checkbox" id="show-menu" role="button">
+<div id="" style="z-index: 1;">-->
+
+<ul >
+  <li><a href="/home.php">Home</a></li>
+  <li><a href="/contactus.php">Questions?</a></li>
+    <li><a href="/caslog/sign-up.php">Sign Up!</a></li>
+    <li><a href="/caslog/login.php">Log In</a></li>
+</ul></div>';
+        }
+
+if($user->is_logged_in()){echo'
+
+    <li><a href="/home.php">Home</a></li>
+    <li><a href="/caslog/userlanding.php">User Home!</a></li>
+    <li><a href="/caslog/edituser.php">User Profile</a></li>
+	<li><a href="/contactcas.php">Change Request</a></li>
+	<li><a href="/caslog/logout.php">Log Out</a></li>
+	</ul>';
+echo '</nav>';
+}?>

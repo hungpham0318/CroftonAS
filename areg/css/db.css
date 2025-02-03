@@ -1,0 +1,39 @@
+body{
+background-color:#DEC9A3;
+color:#801323;
+}
+.info{
+width: 400px;
+height: 30px;
+font-size: 14pt;
+text-transform:uppercase;
+}
+.dinfo{
+width: 400px;
+height: 30px;
+font-size: 14pt;
+text-transform:uppercase;
+}
+.pwd{
+width: 400px;
+height: 30px;
+font-size: 14pt;
+}
+.label {
+font-size:14pt;
+color:#801323;
+width: 200px;
+}
+.dlabel {
+font-size:14pt;
+color:#801323;
+width: 300px;
+}
+.headfoot{
+background-color:#801323;
+width:650px;
+}
+#btn{}
+#maintable{
+width:800px;
+}

@@ -1,0 +1,22 @@
+[10-Jun-2016 02:53:44 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 398
+[10-Jun-2016 02:56:40 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 400
+[10-Jun-2016 03:59:16 America/Chicago] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 220
+[10-Jun-2016 04:10:46 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 221
+[10-Jun-2016 04:12:03 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 221
+[10-Jun-2016 04:14:09 America/Chicago] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 220
+[10-Jun-2016 19:19:08 America/Chicago] PHP Parse error:  syntax error, unexpected '$rtime' (T_VARIABLE), expecting ',' or ';' in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 82
+[10-Jun-2016 19:21:22 America/Chicago] PHP Parse error:  syntax error, unexpected 'line' (T_STRING) in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 204
+[10-Jun-2016 20:41:47 America/Chicago] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 205
+[10-Jun-2016 23:20:35 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 129
+[10-Jun-2016 23:27:51 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 129
+[10-Jun-2016 23:30:49 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 386
+[10-Jun-2016 23:30:49 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 386
+[17-Jun-2016 16:49:20 America/Chicago] PHP Parse error:  syntax error, unexpected '>' in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 81
+[17-Jun-2016 16:50:05 America/Chicago] PHP Fatal error:  Call to a member function execute() on a non-object in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 83
+[03-Aug-2016 09:03:25 America/Chicago] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 215
+[03-Aug-2016 11:06:17 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 391
+[03-Aug-2016 11:10:39 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 391
+[03-Aug-2016 11:16:28 America/Chicago] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 36
+[03-Aug-2016 11:17:52 America/Chicago] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, null given in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 148
+[03-Aug-2016 11:17:52 America/Chicago] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/manheim/public_html/areg/auction/process/form-process-reg.php on line 148
+[02-Mar-2017 22:55:43 America/Chicago] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/croftona/public_html/areg/auction/process/form-process-reg.php on line 92
